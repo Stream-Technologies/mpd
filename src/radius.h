@@ -1,13 +1,12 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.13 2004/03/15 21:19:32 mbretter Exp $
+ * $Id: radius.h,v 1.14 2004/03/25 07:49:07 mbretter Exp $
  *
  */
 
 #include "ppp.h"
 #include "auth.h"
-#include "ccp_mppc.h"
 #include <radlib.h>
 
 #ifndef _RADIUS_H_
