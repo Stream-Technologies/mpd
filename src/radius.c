@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.24 2004/06/17 20:03:39 mbretter Exp $
+ * $Id: radius.c,v 1.25 2004/08/14 19:05:49 mbretter Exp $
  *
  */
 
@@ -648,10 +648,11 @@ RadiusStart(AuthData auth, short request_type)
     }
   }
 
-  if (strlen(auth->info.peeraddr)) {
+  if (strlen(lnk->lcp.auth.peeraddr)) {
     Log(LG_RADIUS, ("[%s] RADIUS: %s: rad_put_string(RAD_CALLING_STATION_ID) %s", 
-      lnk->name, function, auth->info.peeraddr));
-    if (rad_put_string(auth->radius.handle, RAD_CALLING_STATION_ID, auth->info.peeraddr) == -1) {
+      lnk->name, function, lnk->lcp.auth.peeraddr));
+    if (rad_put_string(auth->radius.handle, RAD_CALLING_STATION_ID, 
+        lnk->lcp.auth.peeraddr) == -1) {
       Log(LG_RADIUS, ("[%s] RADIUS: %s: rad_put_string(RAD_CALLING_STATION_ID) failed %s", 
 	lnk->name, function, rad_strerror(auth->radius.handle)));
       return (RAD_NACK);
