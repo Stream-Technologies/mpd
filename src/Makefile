@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.14 2002/10/24 20:01:40 archiecobbs Exp $
+# $Id: Makefile,v 1.15 2002/11/25 23:51:40 archiecobbs Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -42,7 +42,7 @@ PHYSTYPE_PPPOE=		yes
 ENCRYPTION_MPPE=	yes
 ENCRYPTION_DES=		yes
 
-# Define whether to support Microsoft CHAP. This requires libdes.
+# Define whether to support Microsoft CHAP.
 # This is included automatically if you are using MPPE encryption.
 
 MICROSOFT_CHAP=		yes
@@ -150,7 +150,6 @@ COPTS+=		-DENCRYPTION_DES
 NEED_DES=	yes
 .endif
 .if defined ( ENCRYPTION_MPPE )
-SRCS+=		sha-1.c
 COPTS+=		-DENCRYPTION_MPPE
 NEED_MPPC=	yes
 NEED_MSOFT=	yes
@@ -176,8 +175,8 @@ COPTS+=		-DCOMPRESSION_MPPC
 SRCS+=		msoft.c
 .endif
 .if defined ( NEED_DES )
-LDADD+=		-ldes
-DPADD+=		${LIBDES}
+LDADD+=		-lcrypto
+DPADD+=		${LIBCRYPTO}
 .endif
 
 # Now add standard sources
