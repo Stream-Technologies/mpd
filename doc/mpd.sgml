@@ -1,4 +1,4 @@
-<!-- $Id: mpd.sgml,v 1.4 2002/10/17 22:08:04 archiecobbs Exp $ -->
+<!-- $Id: mpd.sgml,v 1.5 2003/08/08 21:27:10 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!DOCTYPE linuxdoc PUBLIC "-//FreeBSD//DTD linuxdoc//EN" [
@@ -52,6 +52,14 @@
 	<name>Archie Cobbs
 	<newline><tt><htmlurl url='mailto:archie@freebsd.org'
 	  name='&lt;archie@freebsd.org&gt;'></tt>
+	</name>
+	<name>Michael Bretterklieber
+	<newline><tt><htmlurl url='mailto:michael@bretterklieber.com'
+	  name='&lt;michael@bretterklieber.com&gt;'></tt>
+	</name>
+	<name>Alexander Motin
+	<newline><tt><htmlurl url='mailto:mav@alkar.net'
+	  name='&lt;mav@alkar.net&gt;'></tt>
 	</name>
       </author>
       <date>&date;</date>

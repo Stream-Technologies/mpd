@@ -1,4 +1,4 @@
-<!-- $Id: overview.sgml,v 1.2 2002/08/16 19:50:46 archiecobbs Exp $ -->
+<!-- $Id: overview.sgml,v 1.3 2003/10/03 18:25:19 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -15,6 +15,7 @@
 	<itemize>
 	<item>Multi-link PPP capability
 	<item>PAP, CHAP, and MS-CHAP authentication
+	<item>EAP (EAP-MD5), EAP-RADIUS Proxy
 	<item>RADIUS authentication and accounting
 	<item>DES and MPPE encryption
 	<item>Stac<bf>*</bf>, and MPPC<bf>*</bf> compression
