@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.15 2004/03/31 18:58:07 mbretter Exp $
+ * $Id: radius.h,v 1.16 2004/04/08 16:05:31 mbretter Exp $
  *
  */
 
@@ -55,15 +55,6 @@
   /* for mppe-keys */
   #define AUTH_LEN		16
   #define SALT_LEN		2
-
-  #define MPPE_POLICY_NONE	0
-  #define MPPE_POLICY_ALLOWED	1
-  #define MPPE_POLICY_REQUIRED	2
-
-  #define MPPE_TYPE_0BIT	0	/* No encryption required */
-  #define MPPE_TYPE_40BIT	2
-  #define MPPE_TYPE_128BIT	4
-  #define MPPE_TYPE_56BIT	8
 
   /* max. length of RAD_ACCT_SESSION_ID, RAD_ACCT_MULTI_SESSION_ID */
   #define RAD_ACCT_MAX_SESSIONID	256
