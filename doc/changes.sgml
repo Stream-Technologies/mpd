@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.37 2004/04/27 07:59:31 mbretter Exp $ -->
+<!-- $Id: changes.sgml,v 1.38 2004/06/06 19:45:46 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,6 +8,7 @@
   <p>
     Changes since version 4.0b1:
     <itemize>
+    <item>Fixed a race-condition wich caused a dead-lock.</item>
     <item>
       RADIUS    
       <itemize>
