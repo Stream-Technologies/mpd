@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.1 2000/11/05 00:33:48 archiecobbs Exp $
+# $Id: Makefile,v 1.1 2001/03/10 06:06:47 archiecobbs Exp $
 
 .NOTPARALLEL:
 
@@ -8,7 +8,7 @@ DOC=		mpd
 FORMATS=	html
 
 SRCS+=		mpd.sgml version.sgml
-SRCS+=		overview.sgml layers.sgml manorg.sgml
+SRCS+=		overview.sgml layers.sgml manorg.sgml changes.sgml
 SRCS+=		getting.sgml building.sgml installing.sgml
 SRCS+=		invoke.sgml configfmt.sgml cli.sgml
 SRCS+=		gencmd.sgml bundle.sgml interface.sgml links.sgml
