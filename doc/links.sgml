@@ -1,4 +1,4 @@
-<!-- $Id: links.sgml,v 1.4 2002/04/26 19:17:48 archiecobbs Exp $ -->
+<!-- $Id: links.sgml,v 1.5 2002/08/23 18:34:19 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -52,8 +52,8 @@ just not configured at all, since all links default to the same
 values anyway). Then mpd will distribute packets in equal sized
 fragments over the links.
 
-<tag><tt>set link mtu <em>numbytes</em></tt></tag>
-<tag><tt>set link mru <em>numbytes</em></tt></tag>
+<tag><tt>set link mtu <em>numbytes</em></tt></tag><p>
+<tag><tt>set link mru <em>numbytes</em></tt></tag><p>
 
 The <tt>set link mtu</tt> command sets the maximum transmit unit
 (MTU) value for the link.  This is the size of the largest single
