@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id$
+ * $Id: event.h,v 1.3 2004/03/15 21:21:15 mbretter Exp $
  *
  */
 
@@ -14,9 +14,11 @@
 
 /* Types of events */
 
-  #define  EVENT_READ		PEVENT_READ	/* value = file descriptor */
-  #define  EVENT_WRITE		PEVENT_WRITE	/* value = file descriptor */
-  #define  EVENT_TIMEOUT	PEVENT_TIME	/* value = time in miliseconds */
+  #define EVENT_READ		PEVENT_READ	/* value = file descriptor */
+  #define EVENT_WRITE		PEVENT_WRITE	/* value = file descriptor */
+  #define EVENT_TIMEOUT		PEVENT_TIME	/* value = time in miliseconds */
+  
+  #define EVENT_RECURRING	PEVENT_RECURRING
 
   typedef void		(*EventHdlr)(int type, void *cookie);
 
@@ -36,7 +38,7 @@
   extern int	EventInit(void);
   extern void	EventStop(void);
   extern int	EventRegister(EventRef *ref, int type, int value,
-		  int prio, EventHdlr action, void *cookie);
+		  int flags, EventHdlr action, void *cookie);
   extern int	EventUnRegister(EventRef *ref);
   extern int	EventIsRegistered(EventRef *ref);
   extern int	EventTimerRemain(EventRef *ref);
