@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.1 2001/03/10 06:06:47 archiecobbs Exp $
+# $Id: Makefile,v 1.2 2001/10/17 03:30:14 archiecobbs Exp $
 
 .NOTPARALLEL:
 
@@ -15,6 +15,7 @@ SRCS+=		gencmd.sgml bundle.sgml interface.sgml links.sgml
 SRCS+=		ipcp.sgml compression.sgml encryption.sgml
 SRCS+=		modem.sgml netgraph.sgml tcp.sgml udp.sgml pptp.sgml pppoe.sgml
 SRCS+=		chat.sgml
+SRCS+=		trouble.sgml
 SRCS+=		refs.sgml
 
 CLEANFILES+=	version.sgml mpd.8
