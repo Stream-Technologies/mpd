@@ -1,9 +1,27 @@
-<!-- $Id: changes.sgml,v 1.6 2002/02/05 17:59:58 archiecobbs Exp $ -->
+<!-- $Id: changes.sgml,v 1.7 2002/05/02 22:37:12 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
+
+  <p>
+    Changes since version 3.8:
+    <itemize>
+    <item>Added the <tt>set link mtu</tt> command.
+    </item>
+    <item>Fixed typo in description of <tt>set bundle period</tt> command.
+    </item>
+    <item>Fixed incorrect description of <tt>set ng hook</tt> command.
+    </item>
+    <item>Updated HTML links to on-line Netgraph documents.
+    </item>
+    <item>Added HTML link to Microsoft update for Windows 95/98.
+    </item>
+    <item>When displaying bundles and links, show the links LCP state as well.
+    </item>
+    </itemize>
+  </p>
 
   <p>
     Changes since version 3.7:
