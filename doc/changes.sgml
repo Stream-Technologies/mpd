@@ -1,9 +1,17 @@
-<!-- $Id: changes.sgml,v 1.13 2002/12/07 00:44:58 archiecobbs Exp $ -->
+<!-- $Id: changes.sgml,v 1.14 2003/02/05 20:40:10 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
+
+  <p>
+    Changes since version 3.11:
+    <itemize>
+    <item>Fixed bug in client-side MPPE key generation.
+    </item>
+    </itemize>
+  </p>
 
   <p>
     Changes since version 3.10:
