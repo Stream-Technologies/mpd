@@ -1,4 +1,4 @@
-<!-- $Id: interface.sgml,v 1.1 2000/11/05 00:33:49 archiecobbs Exp $ -->
+<!-- $Id: interface.sgml,v 1.1 2001/03/10 06:06:47 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -72,12 +72,12 @@ Mpd can optionally run a user program every time the interface
 is brought up or down.
 The <tt><bf>up-script</bf></tt> is called like this:
 <tscreen><tt>
-<em>script</em> <em>interface</em> inet <em>local-ip</em> <em>remote-ip</em>
+<em>script</em> <em>interface</em> inet <em>local-ip</em> <em>remote-ip</em> <em>authname</em>
 </tt></tscreen>
 
 The <tt><bf>down-script</bf></tt> is called like this:
 <tscreen><tt>
-<em>script</em> <em>interface</em> inet
+<em>script</em> <em>interface</em> inet <em>authname</em>
 </tt></tscreen>
 
 <tag><tt>
