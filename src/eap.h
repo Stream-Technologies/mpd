@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.h,v 1.2 2004/03/10 17:14:18 mbretter Exp $
+ * $Id: eap.h,v 1.3 2004/03/15 21:19:32 mbretter Exp $
  *
  */
 
@@ -89,6 +89,7 @@
     short		next_id;		/* Packet id */
     short		retry;			/* Resend count */
     struct pppTimer	identTimer;		/* Identity timer */
+    struct pppTimer	reqTimer;		/* Request timer */
     u_char		identity[EAP_MAX_IDENTITY];	/* Identity */
     u_char		peer_types[EAP_NUM_TYPES];	/* list of acceptable types */
     u_char		want_types[EAP_NUM_TYPES];	/* list of requestable types */
