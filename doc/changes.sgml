@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.12 2002/12/07 00:42:50 archiecobbs Exp $ -->
+<!-- $Id: changes.sgml,v 1.13 2002/12/07 00:44:58 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -43,6 +43,12 @@
     <item>New command added: <tt>set udp origination</tt>.
     </item>
     <item>Link with libcrypto instead of the obsolete libdes.
+    </item>
+    <item>Added new command bundle option <tt>noretry</tt>.
+    </item>
+    <item>Install the PostScript version of the documentation as well.
+    </item>
+    <item>Bumped the max length for an up or down script to 128 (from 32).
     </item>
     </itemize>
   </p>
