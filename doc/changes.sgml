@@ -1,9 +1,34 @@
-<!-- $Id: changes.sgml,v 1.14 2003/02/05 20:40:10 archiecobbs Exp $ -->
+<!-- $Id: changes.sgml,v 1.15 2003/02/10 21:54:57 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
+
+  <p>
+    Changes since version 3.12:
+    <itemize>
+    <item>Support for PPPoE node re-use added. Patch submitted by
+    Gleb Smirnoff
+    <tt><htmlurl url='mailto:glebius@cell.sick.ru' name='&lt;glebius@cell.sick.ru&gt;'></tt>.
+    See also FreeBSD PR
+    <tt><htmlurl url='http://www.freebsd.org/cgi/query-pr.cgi?pr=48138' name='&lt;ports/48138&gt;'></tt>.
+    </item>
+    <item>Multi-session PPPoE support added. Patch submitted by
+    Hideyuki Nishiyama
+    <tt><htmlurl url='mailto:hnishi@mx5.harmonix.ne.jp' name='&lt;hnishi@mx5.harmonix.ne.jp&gt;'></tt>
+    </item>
+    <item>More RADIUS fixes from Michael Bretterklieber
+    <tt><htmlurl url='mailto:mbretter@jawa.at' name='&lt;mbretter@jawa.at&gt;'></tt>
+    </item>
+    <item>After configuring the IP address, add a route to the
+    local IP address via <tt>lo0</tt>. This prevents packets destined
+    for the local machine from needlessly travelling across the link
+    and back. Patch submitted by Fabio Vilan
+    <tt><htmlurl url='mailto:fabio@isec.com.br' name='&lt;fabio@isec.com.br&gt;'></tt>
+    </item>
+    </itemize>
+  </p>
 
   <p>
     Changes since version 3.11:
