@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.2 2001/04/12 17:03:28 archiecobbs Exp $
+# $Id: Makefile,v 1.3 2001/10/16 04:47:20 archiecobbs Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -21,7 +21,7 @@ MPD_CONF_DIR?=		${PREFIX}/etc/mpd
 
 PHYSTYPE_MODEM=		yes
 #PHYSTYPE_TCP=		yes
-#PHYSTYPE_UDP=		yes
+PHYSTYPE_UDP=		yes
 PHYSTYPE_NG_SOCKET=	yes
 PHYSTYPE_PPTP=		yes
 PHYSTYPE_PPPOE=		yes
