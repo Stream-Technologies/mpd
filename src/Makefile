@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.6 2002/01/10 00:38:26 archiecobbs Exp $
+# $Id: Makefile,v 1.7 2002/01/15 18:23:05 archiecobbs Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -10,7 +10,7 @@
 PROG?=			mpd
 PREFIX?=		/usr/local
 BINDIR?=		${PREFIX}/sbin
-VERSION=		3.5
+VERSION=		3.6
 NOMAN=
 
 # Default configuration directory
