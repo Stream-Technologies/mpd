@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.22 2003/10/11 04:28:45 archiecobbs Exp $ -->
+<!-- $Id: changes.sgml,v 1.23 2003/10/30 20:45:33 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -9,6 +9,8 @@
     Changes since version 3.15:
     <itemize>
     <item>Implemented PPPoE server functionality
+    </item>
+    <item>Added the possibility of choosing link by it's number (same as RAD_NAS_PORT) instead of name
     </item>
     </itemize>
   </p>

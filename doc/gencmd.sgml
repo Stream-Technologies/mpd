@@ -1,4 +1,4 @@
-<!-- $Id: gencmd.sgml,v 1.3 2003/04/20 01:12:06 archiecobbs Exp $ -->
+<!-- $Id: gencmd.sgml,v 1.4 2003/10/03 18:26:22 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -25,11 +25,16 @@ The new bundle will be reflected in the prompt.
 <tag><tt>link <em>name</em></tt>
 </tag>
 
+<tag><tt>link [<em>number</em>] </tt>
+</tag>
+
 This command changes the currenly active link to the link named
 <tt><em>name</em></tt>. If this link does not belong to
 the currently active bundle, then the currently active bundle
 is changed to the bundle that owns link <tt><em>name</em></tt>.
 The new link will be reflected in the prompt.
+Link <em>number</em> (RAD_NAS_PORT) can be specified in hex form in 
+square brackets in place of name.
 
 <tag><tt>load <em>configuration</em></tt>
 </tag>
