@@ -1,9 +1,18 @@
-<!-- $Id: changes.sgml,v 1.4 2002/01/15 18:23:04 archiecobbs Exp $ -->
+<!-- $Id: changes.sgml,v 1.5 2002/01/16 21:44:01 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
+
+  <p>
+    Changes since version 3.6:
+    <itemize>
+    <item>Fix a bug where the MPPE keys were being incorrectly generated
+	when MS-CHAP was used to authenticate in both directions.
+    </item>
+    </itemize>
+  </p>
 
   <p>
     Changes since version 3.5:
