@@ -1,4 +1,4 @@
-<!-- $Id: compression.sgml,v 1.2 2002/03/20 18:38:21 archiecobbs Exp $ -->
+<!-- $Id: compression.sgml,v 1.3 2003/03/05 17:15:25 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -87,6 +87,8 @@ of dropped packets.
 
 When enabled, MPPE types (40, 56 or 128 bit) and MPPE policies (whether 
 encryption is required or optional) are controlled by the RADIUS server.
+In order to get MPPE to work you have also to enable mppc in
+<tt>mpd.conf</tt>.
 
 </descrip>
 
