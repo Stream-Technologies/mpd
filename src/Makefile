@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.22 2003/09/03 20:42:02 mbretter Exp $
+# $Id: Makefile,v 1.23 2004/01/02 09:45:02 mbretter Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -10,7 +10,7 @@
 PROG?=			mpd
 PREFIX?=		/usr/local
 BINDIR?=		${PREFIX}/sbin
-VERSION=		3.16
+VERSION=		4.0
 NOMAN=
 
 # Default configuration directory
@@ -48,12 +48,16 @@ SYSLOG_FACILITY=	LOG_DAEMON
 
 # Compiler & linker flags
 
-LDADD+=		-lmd -lwrap
+LDADD+=		-lmd 
 DPADD+=		${LIBMD}
+LDADD+=		-lwrap
+DPADD+=		${LIBWRAP}
 LDADD+=		-lnetgraph
 DPADD+=		${LIBNETGRAPH}
-LDADD+=		-lradius
+LDADD+=		-L/usr/lib -lradius
 DPADD+=		${LIBRADIUS}
+
+LDADD+=		-L/usr/local/lib -lpdel -lssl -lexpat
 
 MPD_VERSION!=	echo -n "${VERSION} (`id -un`@`uname -n` `LC_TIME=C date +'%R %v'`)"
 
@@ -70,7 +74,9 @@ COPTS+=		-Wall \
 		-Wmissing-prototypes \
 		-Wnested-externs \
 		-Wpointer-arith \
-		-Wwrite-strings
+		-Wwrite-strings \
+		-pthread \
+		-I/usr/local/include
 
 # Standard sources
 

@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.26 2003/12/30 13:25:16 mbretter Exp $ -->
+<!-- $Id: changes.sgml,v 1.27 2004/01/12 20:07:20 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -9,6 +9,7 @@
     Changes since version 3:
     <itemize>
     <item>
+	Integrated libpdel
     </item>
     </itemize>
   </p>
