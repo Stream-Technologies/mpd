@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.31 2004/04/18 19:05:10 mbretter Exp $ -->
+<!-- $Id: changes.sgml,v 1.32 2004/04/19 12:11:33 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -23,7 +23,7 @@
 	Rewrites of the authentication subsystem:
 	<itemize>
 	<item>
-	Make authentication and accounting requests asynchronously using paction(3).
+	Make authentication and accounting requests asynchronous using paction(3).
         </item>
 	<item>
         Authentication backends are acting now independently from the rest of Mpd, using
@@ -97,7 +97,7 @@
 	</itemize>
     </item>
     <item>
-	Removed defines <tt>ENCRYPTION_MPPE</tt> and <tt>COMPRESSION_MPPC</tt>, they are now builtin.
+	Removed defines <tt>ENCRYPTION_MPPE</tt> and <tt>COMPRESSION_MPPC</tt>, they are now built in.
     </item>
     <item>
 	Get rid of <tt>IA_CUSTOM</tt> define.
