@@ -1,4 +1,4 @@
-<!-- $Id: mpd.sgml,v 1.3 2001/10/17 03:30:14 archiecobbs Exp $ -->
+<!-- $Id: mpd.sgml,v 1.4 2002/10/17 22:08:04 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!DOCTYPE linuxdoc PUBLIC "-//FreeBSD//DTD linuxdoc//EN" [
@@ -37,6 +37,8 @@
 <!ENTITY chat SYSTEM "chat.sgml">
 
 <!ENTITY trouble SYSTEM "trouble.sgml">
+<!ENTITY todo SYSTEM "todo.sgml">
+<!ENTITY internalsauth SYSTEM "int-auth.sgml">
 
 <!ENTITY refs SYSTEM "refs.sgml">
 
@@ -115,6 +117,11 @@ You must be running FreeBSD version 3.4 or higher.
     <chapt><heading>Troubleshooting</heading>
 
 	&trouble;
+
+    <chapt><heading>Internals</heading>
+
+	&todo;
+	&internalsauth;
 
     <chapt><heading>References</heading>
 
