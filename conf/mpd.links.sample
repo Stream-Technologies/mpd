@@ -13,7 +13,7 @@
 #
 # The first command for each link should be "set link type ..."
 #
-# $Id: mpd.links.sample,v 1.2 2002/04/11 21:18:26 archiecobbs Exp $
+# $Id: mpd.links.sample,v 1.3 2003/04/21 17:03:50 archiecobbs Exp $
 #
 #################################################################
 
@@ -132,4 +132,6 @@ PPPoE:
         set link type pppoe
         set pppoe iface fxp1
         set pppoe service "whatever"
+	set pppoe disable incoming
+	set pppoe enable originate
 
