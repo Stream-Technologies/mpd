@@ -13,7 +13,7 @@
 #
 # The first command for each link should be "set link type ..."
 #
-# $Id: mpd.links.sample,v 1.3 2003/04/21 17:03:50 archiecobbs Exp $
+# $Id: mpd.links.sample,v 1.4.2.1 2004/03/07 14:33:27 mbretter Exp $
 #
 #################################################################
 
@@ -135,3 +135,12 @@ PPPoE:
 	set pppoe disable incoming
 	set pppoe enable originate
 
+#
+# Country specific configuration examples
+#
+
+# Austria ADSL
+adslat:
+	set link type pptp
+	set pptp peer 10.0.0.138
+	set pptp enable originate outcall
