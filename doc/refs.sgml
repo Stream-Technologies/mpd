@@ -1,4 +1,4 @@
-<!-- $Id: refs.sgml,v 1.3 2003/09/14 14:15:52 mbretter Exp $ -->
+<!-- $Id: refs.sgml,v 1.4 2004/03/15 21:23:42 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -63,3 +63,12 @@
 
 
 
+  <sect><heading>Credits<label id="credits"></heading>
+
+  <p>
+  <itemize>
+  <item>
+EAP, RADIUS enhancements, basework for Mpd-4 was sponsored by SURFnet <htmlurl url="http://www.surfnet.nl/" name="SURFnet">.
+  </item>
+  </itemize>
+  <p>
