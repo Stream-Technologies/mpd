@@ -1,10 +1,11 @@
-# $Id: Makefile.doc,v 1.1 2000/11/05 00:33:48 archiecobbs Exp $
+# $Id: Makefile.doc,v 1.2 2002/01/15 18:21:04 archiecobbs Exp $
 
 PREFIX?=	/usr/local
 BINDIR?=	${PREFIX}/share/doc/mpd
 
 MPD_DOC_FILES+=	../README
 MPD_DOC_FILES+=	mpd*.html
+MPD_DOC_FILES+=	mpd.ps
 
 MAN8=		mpd.8
 MANDIR=		${PREFIX}/man/man
