@@ -1,4 +1,4 @@
-<!-- $Id: ipcp.sgml,v 1.4 2002/11/25 23:51:40 archiecobbs Exp $ -->
+<!-- $Id: ipcp.sgml,v 1.5 2003/03/31 20:50:31 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -113,11 +113,6 @@ command, if any.
 
 Currently, mpd does not use the NBNS values for anything; they just
 appear in the log. A future revision may actually do something with them.
-
-<tag><tt>radius-ip</tt></tag>
-
-When using RADIUS for authentication, enable IP address assignment
-via RADIUS as well.
 
 </descrip>
 
