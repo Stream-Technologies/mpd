@@ -1,9 +1,17 @@
-<!-- $Id: changes.sgml,v 1.38 2004/06/06 19:45:46 mbretter Exp $ -->
+<!-- $Id: changes.sgml,v 1.39 2004/06/17 20:19:51 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
+
+  <p>
+    Changes since version 4.0b1:
+    <itemize>
+	<item>Fix <tt>va_args</tt> bug on certain non-i386 platforms.
+	</item>
+    </itemize>
+  </p>
 
   <p>
     Changes since version 4.0b1:
