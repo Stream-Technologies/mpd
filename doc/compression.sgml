@@ -1,4 +1,4 @@
-<!-- $Id: compression.sgml,v 1.1 2001/03/10 06:06:47 archiecobbs Exp $ -->
+<!-- $Id: compression.sgml,v 1.2 2002/03/20 18:38:21 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -82,6 +82,11 @@ Enables 128-bit MPPE encryption.
 Enables stateless mode. This mode requires slightly more CPU time
 and is somewhat less secure, but allows faster recovery in the face
 of dropped packets.
+
+<tag><tt>radius</tt></tag>
+
+When enabled, MPPE types (40, 56 or 128 bit) and MPPE policies (whether 
+encryption is required or optional) are controlled by the RADIUS server.
 
 </descrip>
 

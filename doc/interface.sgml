@@ -1,4 +1,4 @@
-<!-- $Id: interface.sgml,v 1.2 2002/10/19 18:14:26 archiecobbs Exp $ -->
+<!-- $Id: interface.sgml,v 1.3 2002/10/23 21:15:47 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -132,6 +132,16 @@ set up proxy ARP for the remote machine:
 set iface enable proxy-arp
 <newline>set ipcp 192.168.1.10/32 192.168.1.20/32
 </tt></tscreen>
+
+<tag><tt>radius-mtu</tt></tag>
+
+This option causes mpd to use the MTU from the RADIUS server.
+It has the same as effect as <tt>set iface mtu</tt>.
+
+<tag><tt>radius-idle</tt></tag>
+
+This option causes mpd to use the idle timeout from the RADIUS server.
+It has the same as effect as <tt>set iface idle</tt>.
 
 </descrip>
 
