@@ -1,4 +1,4 @@
-<!-- $Id$ -->
+<!-- $Id: trouble.sgml,v 1.1 2002/10/17 22:08:04 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,6 +8,10 @@
   <p>
   Some tips for troubleshooting.
   (This section is under construction).
+
+  <p>
+  For further help, subscribe to the <tt>freebsd-net@freebsd.org</tt>
+  mailing list and ask your question there.
 
 <descrip>
 
