@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.20 2003/09/03 20:42:02 mbretter Exp $ -->
+<!-- $Id: changes.sgml,v 1.21 2003/10/03 18:26:22 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -21,6 +21,11 @@
     <item><tt>set iface enable tcpmssfix</tt> option added.
     Submitted by Sergey Korolew
     <tt><htmlurl url='mailto:dsATbittu.org.ru' name='&lt;dsATbittu.org.ru&gt;'></tt>.
+    </item>
+    <item>
+    New command line flag <tt>-a</tt> for specifying the telnet console
+    IP address. Original idea submitted by Andrey V. Elsukov
+    <tt><htmlurl url='mailto:bu7cher@land.ru' name='&lt;bu7cher@land.ru&gt;'></tt>.
     </item>
     </itemize>
   </p>
