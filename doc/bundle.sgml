@@ -1,4 +1,4 @@
-<!-- $Id: bundle.sgml,v 1.2 2002/05/16 03:40:05 archiecobbs Exp $ -->
+<!-- $Id: bundle.sgml,v 1.3 2002/11/25 23:51:40 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -189,6 +189,9 @@ The default for this option is off.
 <tag><tt>radius-auth</tt></tag>
 
 Enable authentication via RADIUS.
+Note: If authenticating via RADIUS and using MPPE encryption,
+MS-CHAP version 2 is required; support for RADIUS + MPPE + MS-CHAP version 1
+is not yet implemented.
 
 <tag><tt>radius-fallback</tt></tag>
 
