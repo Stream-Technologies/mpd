@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.10 2002/11/25 23:51:40 archiecobbs Exp $ -->
+<!-- $Id: changes.sgml,v 1.11 2002/12/04 20:59:52 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -39,6 +39,8 @@
     work properly; workaround: use multiple MPD processes.
     </item>
     <item>Log the MTU being used each time an interface is configured.
+    </item>
+    <item>Link with libcrypto instead of the obsolete libdes.
     </item>
     </itemize>
   </p>
