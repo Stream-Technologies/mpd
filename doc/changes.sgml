@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.23 2003/10/30 20:45:33 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.24 2003/10/30 22:21:18 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -9,6 +9,10 @@
     Changes since version 3.15:
     <itemize>
     <item>Implemented PPPoE server functionality
+    </item>
+    <item>Added ability to configure ipfw firewall for clients using
+	vendor specific RADIUS attributes. Submitted by Alexander Motin
+    <tt><htmlurl url='mailto:mav@alkar.net' name='&lt;mav@alkar.net&gt;'></tt>.
     </item>
     <item>Added the possibility of choosing link by it's number (same as RAD_NAS_PORT) instead of name
     </item>
