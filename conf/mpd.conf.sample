@@ -10,7 +10,7 @@
 # starting with a "#" are comments and get completely
 # ignored.
 #
-# $Id: mpd.conf.sample,v 1.4 2002/08/23 18:34:18 archiecobbs Exp $
+# $Id: mpd.conf.sample,v 1.5 2002/10/26 20:13:58 archiecobbs Exp $
 #
 #################################################################
 
@@ -71,6 +71,7 @@ dialin:
 	new -i ng0 dialin usr
 	set iface addrs 1.1.1.1 2.2.2.2
 	set iface idle 900
+	set iface enable on-demand
 	set ipcp ranges 1.1.1.1/32 2.2.2.2/32
 	set ipcp yes vjcomp
 	set link enable chap pap
