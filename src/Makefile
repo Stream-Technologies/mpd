@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.3 2001/10/16 04:47:20 archiecobbs Exp $
+# $Id: Makefile,v 1.4 2001/10/17 04:01:04 archiecobbs Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -57,7 +57,7 @@ DPADD+=		${LIBMD}
 LDADD+=		-lnetgraph
 DPADD+=		${LIBNETGRAPH}
 
-MPD_VERSION!=	echo -n "${VERSION} (`id -un`@`uname -n` `date +'%R %v'`)"
+MPD_VERSION!=	echo -n "${VERSION} (`id -un`@`uname -n` `LC_TIME=C date +'%R %v'`)"
 
 COPTS+=		-g -Wall -Wmissing-prototypes -Wnested-externs
 COPTS+=		-DPATH_CONF_DIR=\"${MPD_CONF_DIR}\"
