@@ -1,9 +1,17 @@
-<!-- $Id: changes.sgml,v 1.21 2003/10/03 18:26:22 mbretter Exp $ -->
+<!-- $Id: changes.sgml,v 1.22 2003/10/11 04:28:45 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
+
+  <p>
+    Changes since version 3.15:
+    <itemize>
+    <item>Implemented PPPoE server functionality
+    </item>
+    </itemize>
+  </p>
 
   <p>
     Changes since version 3.14:
