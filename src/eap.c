@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.c,v 1.6 2004/04/08 16:05:30 mbretter Exp $
+ * $Id: eap.c,v 1.7 2004/04/29 13:40:56 mbretter Exp $
  *
  */
 
@@ -556,8 +556,8 @@ EapStat(int ac, char *av[], void *arg)
 {
   EapInfo	const eap = &lnk->lcp.auth.eap;
 
-  printf("\tIdentity     : %s\n", eap->identity);
-  printf("EAP options\n");
+  Printf("\tIdentity     : %s\r\n", eap->identity);
+  Printf("EAP options\r\n");
   OptStat(&eap->conf.options, gConfList);
 
   return (0);
