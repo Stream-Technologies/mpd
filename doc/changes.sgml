@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.35 2004/04/22 14:20:36 mbretter Exp $ -->
+<!-- $Id: changes.sgml,v 1.36 2004/04/26 17:13:51 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -79,6 +79,10 @@
     a recent version of FreeBSD (NGM_PPTPGRE_COOKIE &gt;= 1082548365) in order
     to get this feature.<newline>
     <tt>set pptp disable windowing</tt>
+    </item>
+    <item>
+    Added a new commandline option <tt>-t</tt> for adding ng_tee into the netgraph.<newline>
+    Submitted by: Gleb Smirnoff, glebius at cell dot sick dot ru
     </item>
     <item>
 	Removed configuration parameters:
