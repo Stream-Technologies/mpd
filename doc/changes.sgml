@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.9 2002/10/24 00:10:13 archiecobbs Exp $ -->
+<!-- $Id: changes.sgml,v 1.10 2002/11/25 23:51:40 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,6 +11,11 @@
     <item>Support for authentication and IP address assignment via
     RADIUS was added. Thanks to Michael Bretterklieber
     <tt><htmlurl url='mailto:mbretter@jawa.at' name='&lt;mbretter@jawa.at&gt;'></tt>
+    for submitting the patches.
+    </item>
+    <item>Support for finding passwords using an external authentication
+	script was added.  Thanks to Gregory Bond
+    <tt><htmlurl url='mailto:gnb@itga.com.au' name='&lt;gnb@itga.com.au&gt;'></tt>
     for submitting the patches.
     </item>
     <item>Fixed build failure when MICROSOFT_CHAP is not enabled.
