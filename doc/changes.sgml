@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.34 2004/04/21 09:11:29 mbretter Exp $ -->
+<!-- $Id: changes.sgml,v 1.35 2004/04/22 14:20:36 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -69,6 +69,16 @@
 	<item>Message-Authenticator support.</item>
 	<item>EAP Proxy Support.</item>
 	</itemize>
+    </item>
+    <item>
+    Added a new option for PPTP links for disabling the windowing mechanism  
+    specified by the protocol. Disabling this will cause Mpd to violate 
+    the protocol, possibly confusing other PPTP peers, but often results 
+    in better performance. The windowing mechanism is a design error in 
+    the PPTP protocol; L2TP, the successor to PPTP, removes it. You need 
+    a recent version of FreeBSD (NGM_PPTPGRE_COOKIE &gt;= 1082548365) in order
+    to get this feature.<newline>
+    <tt>set pptp disable windowing</tt>
     </item>
     <item>
 	Removed configuration parameters:
