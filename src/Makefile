@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.31 2004/04/28 18:19:27 mbretter Exp $
+# $Id: Makefile,v 1.32 2004/06/17 20:19:52 mbretter Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -7,15 +7,15 @@
 # See ``COPYRIGHT.whistle''
 #
 
-PROG?=			mpd
+PROG?=			mpd4
 PREFIX?=		/usr/local
 BINDIR?=		${PREFIX}/sbin
-VERSION=		4.0b2
+VERSION=		4.0b3
 NOMAN=
 
 # Default configuration directory
 
-MPD_CONF_DIR?=		${PREFIX}/etc/mpd
+MPD_CONF_DIR?=		${PREFIX}/etc/mpd4
 
 # Define supported physical layer types
 
