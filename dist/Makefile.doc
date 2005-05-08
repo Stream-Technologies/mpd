@@ -1,4 +1,4 @@
-# $Id: Makefile.doc,v 1.4 2004/04/30 07:30:20 mbretter Exp $
+# $Id: Makefile.doc,v 1.5 2005/05/08 16:02:23 mbretter Exp $
 
 PREFIX?=	/usr/local
 BINDIR?=	${PREFIX}/share/doc/mpd4
@@ -17,7 +17,7 @@ clean cleandir:
 
 all:		mpd4.8
 
-mpd4.8:          mpd.8.in
+mpd4.8:          mpd4.8.in
 	sed -e "s,@PREFIX@,${PREFIX},g" < ${.ALLSRC} > ${.TARGET}
 
 .if !defined(NOPORTDOCS)
