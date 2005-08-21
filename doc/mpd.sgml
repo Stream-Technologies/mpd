@@ -1,4 +1,4 @@
-<!-- $Id: mpd.sgml,v 1.7 2004/03/15 21:28:28 mbretter Exp $ -->
+<!-- $Id: mpd.sgml,v 1.8 2004/04/19 12:11:33 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!DOCTYPE linuxdoc PUBLIC "-//FreeBSD//DTD linuxdoc//EN" [
@@ -20,6 +20,8 @@
 <!ENTITY cli SYSTEM "cli.sgml">
 
 <!ENTITY gencmd SYSTEM "gencmd.sgml">
+<!ENTITY global SYSTEM "global.sgml">
+<!ENTITY console SYSTEM "console.sgml">
 <!ENTITY bundle SYSTEM "bundle.sgml">
 <!ENTITY interface SYSTEM "interface.sgml">
 <!ENTITY ipcp SYSTEM "ipcp.sgml">
@@ -101,6 +103,8 @@ You must be running FreeBSD version 3.4 or higher.
     <chapt><heading>Configuring Mpd</heading>
 
 	&gencmd;
+	&global;
+	&console;
 	&bundle;
 	&interface;
 	&ipcp;
