@@ -1,4 +1,4 @@
-<!-- $Id: interface.sgml,v 1.9 2003/12/08 17:09:37 archiecobbs Exp $ -->
+<!-- $Id: interface.sgml,v 1.10 2004/04/19 12:11:33 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -136,7 +136,7 @@ and using the LAN address 192.168.1.20. Then these commands would
 set up proxy ARP for the remote machine:
 <tscreen><tt>
 set iface enable proxy-arp
-<newline>set ipcp 192.168.1.10/32 192.168.1.20/32
+<newline>set ipcp ranges 192.168.1.10/32 192.168.1.20/32
 </tt></tscreen>
 
 <tag><tt>tcpmssfix</tt></tag>
