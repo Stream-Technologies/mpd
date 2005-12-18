@@ -1,4 +1,4 @@
-<!-- $Id: interface.sgml,v 1.10 2004/04/19 12:11:33 mbretter Exp $ -->
+<!-- $Id: interface.sgml,v 1.11 2005/09/24 21:31:22 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -140,7 +140,7 @@ set iface enable proxy-arp
 </tt></tscreen>
 
 <tag><tt>tcpmssfix</tt></tag>
-This option causes mpd to adjust outgoing TCP data so that the
+This option causes mpd to adjust incoming TCP data so that the
 requested segment size is not greater than the amount allowed by
 the interface MTU.
 
