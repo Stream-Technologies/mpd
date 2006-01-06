@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.43 2005/05/08 14:55:33 mbretter Exp $ -->
+<!-- $Id: changes.sgml,v 1.44 2005/08/21 19:59:55 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,6 +8,19 @@
   <p>
     Changes since version 4.0b2:
     <itemize>
+	<item>ng_tee(4) now can be inserted on a per bundle basis.
+	<item>New feature: on FreeBSD 6.0 and higher ng_tcpmss(4) is
+		utilized if doing TCP MSS fixup.
+	</item>
+	<item>BugFix: tcpmssfix now works for both incoming and outgoing
+		TCP segments.
+	</item>
+	<item>New options: update-limit-in, update-limit-out.
+	</item>
+	<item>Fixed loss of statistics when -t options is used.
+	</item>
+	<item>Fixed chat scripting, modem links not broken anymore.
+	</item>
         <item>BugFix: make PPPoE interface control events recurring, PPPoE is
 		not broken anymore.
         </item>
