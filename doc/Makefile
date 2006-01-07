@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.7 2004/03/15 21:23:42 mbretter Exp $
+# $Id: Makefile,v 1.8 2005/08/21 19:59:55 mbretter Exp $
 
 .NOTPARALLEL:
 
@@ -19,6 +19,7 @@ SRCS+=		trouble.sgml
 SRCS+=		refs.sgml
 SRCS+=		int-auth.sgml
 SRCS+=		todo.sgml
+SRCS+=		netflow.sgml
 
 CLEANFILES+=	version.sgml mpd.8 mpd.ps
 
