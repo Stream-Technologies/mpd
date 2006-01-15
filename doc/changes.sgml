@@ -1,10 +1,23 @@
-<!-- $Id: changes.sgml,v 1.45 2006/01/06 12:39:19 glebius Exp $ -->
+<!-- $Id: changes.sgml,v 1.46 2006/01/06 12:39:51 glebius Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
 
+  <p>
+    Changes since version 4.0b3:
+    <itemize>
+        <item>BugFix: Allocate mem, before copying in the RAD_MICROSOFT_MS_CHAP_DOMAIN.
+		This caused Mpd to crash, when receiving the RAD_MICROSOFT_MS_CHAP_DOMAIN
+		attribute from the RADIUS-Server.
+		Thanx to: Arcadiy Ivanov arcivanov at mail dot ru
+        </item>
+        <item>BugFix: Check correctly, whether events are registered or not.
+		This fixes some locks in the chat-stuff for modems.
+        </item>
+    </itemize>
+  </p>
   <p>
     Changes since version 4.0b2:
     <itemize>
