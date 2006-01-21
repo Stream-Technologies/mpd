@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.3 2005/05/08 16:02:15 mbretter Exp $
+# $Id: Makefile,v 1.4 2006/01/21 12:25:26 glebius Exp $
 
 VERSION!=	cat src/Makefile | grep ^VERSION | awk '{ print $$2 }'
 
@@ -11,7 +11,7 @@ all:		${TARBALL} ${PORTBALL}
 
 ${TARBALL}:	.export
 	cd mpd && ${MAKE} .${TARBALL}
-	mv mpd/${TARBALL} .
+	mv mpd/.${TARBALL} .
 
 .${TARBALL}:	.dist-done
 	rm -f ${TARBALL}
