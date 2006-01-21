@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.6 2006/01/21 12:32:23 glebius Exp $
+# $Id: Makefile,v 1.7 2006/01/21 12:39:40 glebius Exp $
 
 VERSION!=	cat src/Makefile | grep ^VERSION | awk '{ print $$2 }'
 
@@ -19,7 +19,7 @@ ${TARBALL}:	.export-done
 
 ${PORTBALL}:	.export-done
 	cd mpd && ${MAKE} .${PORTBALL}
-	mv mpd/.${PORTBALL} ./${PORTBALL}
+	mv mpd/${PORTBALL} ./${PORTBALL}
 
 .${PORTBALL}:	.dist-done
 	cd port && ${MAKE} port
