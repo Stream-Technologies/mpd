@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.48 2006/01/21 11:38:56 glebius Exp $ -->
+<!-- $Id: changes.sgml,v 1.49 2006/01/31 14:00:52 glebius Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,6 +8,7 @@
   <p>
     Changes since version 4.0b4:
     <itemize>
+	<item>New feature: TCP link type is working now!
 	<item>BugFix: fix races between startup process and
 		client connecting.
 	</item>
