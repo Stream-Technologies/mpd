@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.35 2005/11/26 19:58:01 glebius Exp $
+# $Id: Makefile,v 1.36 2006/01/21 10:29:24 glebius Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -20,7 +20,7 @@ MPD_CONF_DIR?=		${PREFIX}/etc/mpd4
 # Define supported physical layer types
 
 PHYSTYPE_MODEM=		yes
-#PHYSTYPE_TCP=		yes
+PHYSTYPE_TCP=		yes
 PHYSTYPE_UDP=		yes
 PHYSTYPE_NG_SOCKET=	yes
 PHYSTYPE_PPTP=		yes
