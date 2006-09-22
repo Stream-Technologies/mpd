@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.51 2006/09/20 21:04:43 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.52 2006/09/22 12:55:18 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -18,6 +18,8 @@
 	<item>BugFix: RAD_NAS_PORT could be wrong fixed.
 	<item>BugFix: RADIUS support rewritten from select() to poll() to avoid 
 		problems with big number of links
+	<item>BugFix: Significant rework on incoming calls processing to
+		fix some aspects of multilink server functionality
 	</item>
     </itemize>
   </p>
