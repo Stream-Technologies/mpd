@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.36 2006/01/21 10:29:24 glebius Exp $
+# $Id: Makefile,v 1.37 2006/02/01 18:31:13 glebius Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -68,7 +68,7 @@ MPD_VERSION!=	echo -n "${VERSION} (`id -un`@`uname -n` `LC_TIME=C date +'%R %v'`
 COPTS+=		-DPATH_CONF_DIR=\"${MPD_CONF_DIR}\"
 COPTS+=		-DSYSLOG_FACILITY=${SYSLOG_FACILITY}
 COPTS+=		-DMPD_VERSION='"${MPD_VERSION}"'
-COPTS+=		-g
+COPTS+=		-g -p -O2
 COPTS+=		-Wall \
 		-Wcast-align \
 		-Wchar-subscripts \
