@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.16 2004/04/08 16:05:31 mbretter Exp $
+ * $Id: radius.h,v 1.17 2004/04/18 19:06:34 mbretter Exp $
  *
  */
 
@@ -97,6 +97,7 @@
 
   struct radius_acl {	/* List of ACLs received from RADIUS */
     int number;		/* ACL number given by RADIUS server */
+    int real_number;	/* ACL number allocated my mpd */
     char rule[ACL_LEN]; /* Text of ACL */
     struct radius_acl *next;
   };
