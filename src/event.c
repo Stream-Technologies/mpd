@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: event.c,v 1.10 2005/01/10 22:43:18 mbretter Exp $
+ * $Id: event.c,v 1.11 2005/12/10 12:52:57 glebius Exp $
  *
  */
 
@@ -22,6 +22,7 @@
  */
 
   static struct pevent_ctx *gPeventCtx = NULL;
+  static pthread_t  	gCtxThread = NULL;
 
   static void   (*gWarnx)(const char *fmt, ...) = warnx;
 
@@ -218,5 +219,14 @@ EventHandler(void *arg)
 {
   EventRef	ev = (EventRef) arg;
 
+  gCtxThread = pthread_self();
   (ev->handler)(ev->type, ev->arg);
+}
+
+int
+EventIsCtxThread(void)
+{
+  if (!gCtxThread) 
+    return 0;
+  return pthread_equal(gCtxThread,pthread_self());
 }
