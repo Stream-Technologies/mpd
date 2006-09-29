@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.35 2006/09/22 12:55:18 amotin Exp $
+ * $Id: radius.c,v 1.36 2006/09/28 11:48:03 amotin Exp $
  *
  */
 
@@ -865,7 +865,7 @@ RadiusSendRequest(AuthData auth)
       return RAD_NACK;
     }
 
-    if (fds[0].revents&POLLIN!=POLLIN) {
+    if ((fds[0].revents&POLLIN)!=POLLIN) {
       /* Compute a new timeout */
       gettimeofday(&tv, NULL);
       timersub(&timelimit, &tv, &tv);
