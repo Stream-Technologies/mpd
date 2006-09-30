@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.17 2004/04/18 19:06:34 mbretter Exp $
+ * $Id: radius.h,v 1.18 2006/09/23 19:38:31 amotin Exp $
  *
  */
 
@@ -50,6 +50,10 @@
 
   #ifndef RAD_MESSAGE_AUTHENTIC
   #define RAD_MESSAGE_AUTHENTIC 80
+  #endif
+
+  #ifndef RAD_MAX_ATTR_LEN
+  #define RAD_MAX_ATTR_LEN 253
   #endif
 
   /* for mppe-keys */
