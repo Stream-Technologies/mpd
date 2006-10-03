@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.55 2006/10/01 21:49:52 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.56 2006/10/02 14:23:24 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,6 +11,7 @@
 	<item>New feature: initial IPV6CP support added, 
 	      NCPs and IFACE calls was rewritten to support many NCPs.
 		For IPv6 not yet supported: TcpMSSFix, NetFlow, Tee, DialOnDemand.
+	<item>New feature: IPv6 console support.
 	<item>New feature: TCP link type is working now!
 	<item>New feature: NetFlow generation on outgoing packets.
 	<item>New feature: usage of specified existing ng_netflow node.
