@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.18 2006/09/23 19:38:31 amotin Exp $
+ * $Id: radius.h,v 1.19 2006/09/30 08:38:24 amotin Exp $
  *
  */
 
@@ -63,9 +63,6 @@
   /* max. length of RAD_ACCT_SESSION_ID, RAD_ACCT_MULTI_SESSION_ID */
   #define RAD_ACCT_MAX_SESSIONID	256
 
-  /* max. length of acl rule, */
-  #define ACL_LEN	256
-
   #define RAD_VENDOR_MPD	12341
   #define RAD_MPD_RULE		1
   #define RAD_MPD_PIPE		2
@@ -93,18 +90,12 @@
     int		radius_retries;
     int 	acct_update;		/* Accounting Update Interval */
     struct	in_addr radius_me;
+    struct	u_addr radius_mev6;
     char	file[PATH_MAX];
     struct radiusserver_conf *server;
     struct optinfo	options;	/* Configured options */
   };
   typedef struct radiusconf *RadConf;
-
-  struct radius_acl {	/* List of ACLs received from RADIUS */
-    int number;		/* ACL number given by RADIUS server */
-    int real_number;	/* ACL number allocated my mpd */
-    char rule[ACL_LEN]; /* Text of ACL */
-    struct radius_acl *next;
-  };
 
   struct rad_chapvalue {
     u_char	ident;

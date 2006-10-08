@@ -1,4 +1,4 @@
-<!-- $Id: radius.sgml,v 1.3 2004/04/22 14:20:36 mbretter Exp $ -->
+<!-- $Id: radius.sgml,v 1.4 2006/09/20 21:04:43 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -37,6 +37,12 @@ set radius me <em>IP</em>|<em>ifname</em>|<em>hostname</em>
 </tt></tag>
 
 Send the given IP in the RAD_NAS_IP_ADDRESS attribute to the server
+
+<tag><tt>
+set radius v6me <em>IPv6</em>
+</tt></tag>
+
+Send the given IP in the RAD_NAS_IPV6_ADDRESS attribute to the server
 
 <tag><tt>
 set radius enable message-authentic
