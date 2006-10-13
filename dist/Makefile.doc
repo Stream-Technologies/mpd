@@ -1,7 +1,7 @@
-# $Id: Makefile.doc,v 1.5 2005/05/08 16:02:23 mbretter Exp $
+# $Id: Makefile.doc,v 1.6 2005/05/08 17:26:23 mbretter Exp $
 
 PREFIX?=	/usr/local
-BINDIR?=	${PREFIX}/share/doc/mpd4
+DOCDIR?=	${PREFIX}/share/doc/mpd4
 
 MPD_DOC_FILES+=	../README
 MPD_DOC_FILES+=	mpd*.html
@@ -22,9 +22,9 @@ mpd4.8:          mpd4.8.in
 
 .if !defined(NOPORTDOCS)
 afterinstall:
-	[ -d ${BINDIR} ] || mkdir ${BINDIR}
-	${INSTALL} -c -o ${DOCOWN} -g ${DOCGRP} -m ${DOCMODE} ${MPD_DOC_FILES} \
-		${BINDIR}
+	[ -d ${DOCDIR} ] || mkdir ${DOCDIR}
+	${INSTALL} -c -o ${DOCOWN} -g ${DOCGRP} -m ${DOCMODE} \
+	    ${MPD_DOC_FILES} ${DOCDIR}
 .endif
 
 .include <bsd.prog.mk>
