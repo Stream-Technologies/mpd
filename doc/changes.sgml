@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.60 2006/10/10 15:25:52 glebius Exp $ -->
+<!-- $Id: changes.sgml,v 1.61 2006/10/11 09:21:33 glebius Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -63,6 +63,9 @@
 	  </item>
 	  <item> RADIUS support rewritten to use poll(2) instead of
 	         select(2), allowing to create a bigger number of links.
+	  </item>
+	  <item> Fixed a problem with identifying correct interface
+		 for proxy-arp when alias addresses are used.
 	  </item>
 	</itemize>
 	</item>
