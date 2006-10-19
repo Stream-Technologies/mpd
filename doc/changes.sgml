@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.62 2006/10/13 12:51:44 glebius Exp $ -->
+<!-- $Id: changes.sgml,v 1.63 2006/10/16 15:01:03 glebius Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -69,6 +69,9 @@
 	  </item>
 	  <item> Fixed memory leaks and crashes when more than 256 PPTP
 		 bundles are in use.
+	  </item>
+	  <item> Fixed crash in PPPoE when more than 64 parent Ethernet
+		 interfaces used.
 	  </item>
 	</itemize>
 	</item>
