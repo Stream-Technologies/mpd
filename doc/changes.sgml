@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.66 2006/12/06 22:25:39 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.67 2006/12/06 22:31:35 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -24,6 +24,8 @@
 	  <item> Fixed race condition in accepting PPPoE connections.
 	  </item>
 	  <item> Link up/down reason recording is now more accurate.
+	  </item>
+	  <item> Complete link shutdown procedure on auth failure.
 	  </item>
 	</itemize>
     </itemize>
