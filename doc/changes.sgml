@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.64 2006/10/19 17:14:23 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.65 2006/11/08 22:30:34 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,9 +8,20 @@
   <p>
     Changes since version 4.0b5:
     <itemize>
+	<item>New features:
+	<itemize>
+	  <item> New command 'show phys' added.
+	  </item>
+	</itemize>
 	<item> Bugfixes:
 	<itemize>
-	  <item> Fixed a few bugs on amd64 and sparc64 platforms
+	  <item> Fixed a few bugs on amd64 and sparc64 platforms.
+	  </item>
+	  <item> Phys layer made stateless to remove race condition.
+	  </item>
+	  <item> Link layer changed to remove race conditions on LinkDown().
+	  </item>
+	  <item> Fixed race condition in accepting PPPoE connections.
 	  </item>
 	</itemize>
     </itemize>

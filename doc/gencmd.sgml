@@ -1,4 +1,4 @@
-<!-- $Id: gencmd.sgml,v 1.7 2004/04/19 12:11:33 mbretter Exp $ -->
+<!-- $Id: gencmd.sgml,v 1.8 2006/09/22 21:42:05 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -57,6 +57,9 @@ values for <tt><em>item</em></tt> are:
 Show status information about the currently active bundle.
 <tag>link</tag>
 Show status information about the currently active link.
+<tag>phys</tag>
+Show status information about the physical device 
+associated with the currently active link.
 <tag>iface</tag>
 Show status information about the interface layer associated
 with the currently active bundle.
