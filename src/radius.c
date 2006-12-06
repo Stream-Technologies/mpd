@@ -1,24 +1,22 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.44 2006/10/08 22:25:45 amotin Exp $
+ * $Id: radius.c,v 1.45 2006/10/13 10:24:42 glebius Exp $
  *
  */
 
 #include "ppp.h"
-#ifdef PHYSTYPE_PPTP
-#include "pptp.h"
-#endif
 #ifdef PHYSTYPE_PPPOE
 #include "pppoe.h"
 #endif
-#include "ngfunc.h"
 #ifdef PHYSTYPE_MODEM
 #include "modem.h"
 #endif
 #ifdef PHYSTYPE_NG_SOCKET
 #include "ng.h"
 #endif
+#include "msgdef.h"
+#include "util.h"
 
 #include <sys/types.h>
 
