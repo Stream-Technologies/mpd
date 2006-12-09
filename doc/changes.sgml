@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.68 2006/12/06 22:52:20 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.69 2006/12/07 23:16:34 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -10,6 +10,9 @@
     <itemize>
 	<item>New features:
 	<itemize>
+	  <item> TCP level was completely rewritten. It has some minor issues 
+		 due to limitation of ng_ksocket module, but now IT WORKS! :)
+	  </item>
 	  <item> New command 'show phys' added.
 	  </item>
 	</itemize>
