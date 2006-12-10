@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.71 2006/12/09 15:33:07 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.72 2006/12/10 17:07:08 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,6 +11,8 @@
 	<item>New features:
 	<itemize>
 	  <item> Integrated Web server added.
+	  </item>
+	  <item> NAT support by ng_nat(4) added.
 	  </item>
 	  <item> UDP device type was completely rewritten. Now it:
 	         - does not require manual 'open' command on the server side,
