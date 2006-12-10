@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.40 2006/10/01 21:49:52 amotin Exp $
+# $Id: Makefile,v 1.41 2006/10/13 14:49:41 glebius Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -88,7 +88,7 @@ STDSRCS=        assert.c auth.c bund.c ccp.c chap.c \
 		console.c command.c ecp.c fsm.c iface.c input.c \
 		ip.c ipcp.c ipv6cp.c lcp.c link.c log.c main.c mbuf.c mp.c \
 		msg.c ngfunc.c pap.c phys.c proto.c radius.c timer.c \
-		util.c vars.c custom.c eap.c ccp_mppc.c msoft.c
+		util.c vars.c custom.c eap.c ccp_mppc.c msoft.c web.c
 
 # Mpd is event based, using this handy little event library..
 
