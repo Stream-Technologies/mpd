@@ -10,7 +10,7 @@
 # starting with a "#" are comments and get completely
 # ignored.
 #
-# $Id: mpd.conf.sample,v 1.17 2004/04/28 15:34:56 mbretter Exp $
+# $Id: mpd.conf.sample,v 1.18 2005/09/18 12:49:49 mbretter Exp $
 #
 #################################################################
 
@@ -303,7 +303,7 @@ PPPoE:
 	set link keep-alive 10 60
 	set ipcp yes vjcomp
 	set ipcp ranges 0.0.0.0/0 0.0.0.0/0
-	open iface
+	open
 
 radius:
 # You can use radius.conf(5), its useful, because you can share the
