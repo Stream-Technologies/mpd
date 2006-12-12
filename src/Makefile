@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.41 2006/10/13 14:49:41 glebius Exp $
+# $Id: Makefile,v 1.42 2006/12/10 17:07:09 amotin Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -32,7 +32,7 @@ PHYSTYPE_PPPOE=		yes
 #  welcome. The STAC and MPPC compressions require proprietary
 #  code from Stac Electronics (now known as Hi/Fn).
 
-#COMPRESSION_PRED1=	yes
+COMPRESSION_PRED1=	yes
 #COMPRESSION_STAC=	yes
 #COMPRESSION_DEFLATE=	yes
 
