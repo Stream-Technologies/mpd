@@ -1,4 +1,4 @@
-<!-- $Id: bundle.sgml,v 1.18 2006/10/10 15:25:52 glebius Exp $ -->
+<!-- $Id: bundle.sgml,v 1.19 2006/12/10 22:35:03 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -155,13 +155,11 @@ Enable/Disable IPV6CP negotiation. Default is disabled.
 
 <tag><tt>compression</tt></tag>
 
-When compression support is compiled into mpd, this option must
-be enabled in order to activate it.
+Enable/Disable CCP (Compression Control Protocol) negotiation. Default is disabled.
 
 <tag><tt>encryption</tt></tag>
 
-When encryption support is compiled into mpd, this option must
-be enabled in order to activate it.
+Enable/Disable ECP (Encryption Control Protocol) negotiation. Default is disabled.
 
 <tag><tt>crypt-reqd</tt></tag>
 

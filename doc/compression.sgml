@@ -1,4 +1,4 @@
-<!-- $Id: compression.sgml,v 1.5 2004/04/19 12:11:33 mbretter Exp $ -->
+<!-- $Id: compression.sgml,v 1.6 2006/12/13 01:54:20 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -10,6 +10,10 @@
   This chapter describes commands that configure the Compression Control
   Protocol (CCP) layer. All of these commands apply to the currently
   active bundle.
+  <p>
+  To use CCP you should enable compression at the bundle level.
+  To allow compression to be negotiated you should enable here some of 
+  compression protocols.
 
 <descrip>
 
