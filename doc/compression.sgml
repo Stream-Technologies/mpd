@@ -1,4 +1,4 @@
-<!-- $Id: compression.sgml,v 1.4 2003/04/20 01:12:06 archiecobbs Exp $ -->
+<!-- $Id: compression.sgml,v 1.5 2004/04/19 12:11:33 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -45,9 +45,9 @@ that are not included with the normal mpd distribution.
 
 <descrip>
 
-<tag><tt>stac</tt></tag>
+<tag><tt>pred1</tt></tag>
 
-This option enables STAC compression.
+This option enables Predictor-1 (rfc 1978) compression.
 
 <tag><tt>mppc</tt></tag>
 
