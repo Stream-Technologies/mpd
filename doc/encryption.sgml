@@ -1,4 +1,4 @@
-<!-- $Id: encryption.sgml,v 1.1 2001/03/10 06:06:47 archiecobbs Exp $ -->
+<!-- $Id: encryption.sgml,v 1.2 2006/12/13 01:54:21 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -10,8 +10,6 @@
   This chapter describes commands that configure the Encryption Control
   Protocol (ECP) layer. All of these commands apply to the currently
   active bundle.
-  <p>
-  <bf>Note:</bf> At this time the only one available DES cypher is broken.
 
 <descrip>
 

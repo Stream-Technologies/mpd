@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.73 2006/12/10 22:35:03 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.74 2006/12/13 01:54:20 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -29,7 +29,7 @@
 	  </item>
 	  <item> Compression Predictor-1 (rfc 1978) added.
 	  </item>
-	  <item> Encryption DES (rfc 1969) commented out as broken.
+	  <item> Encryption DES (rfc 1969) support fixed.
 	  </item>
 	  <item> New command 'show phys' added.
 	  </item>

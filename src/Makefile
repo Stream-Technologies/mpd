@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.43 2006/12/12 21:46:14 amotin Exp $
+# $Id: Makefile,v 1.44 2006/12/13 01:40:05 amotin Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -38,7 +38,7 @@ COMPRESSION_PRED1=	yes
 
 # Define supported encryption types
 
-#ENCRYPTION_DES=		yes
+ENCRYPTION_DES=		yes
 
 # Set syslog logging facility. Change LOG_DAEMON to whatever you like.
 
