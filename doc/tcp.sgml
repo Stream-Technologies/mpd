@@ -1,4 +1,4 @@
-<!-- $Id: tcp.sgml,v 1.4 2006/12/09 02:20:45 amotin Exp $ -->
+<!-- $Id: tcp.sgml,v 1.5 2006/12/09 15:33:07 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,10 +11,12 @@
   valid if the currently active link has type <bf>tcp</bf>.
   <p>
   Due to limitations of ng_ksocket module this device type have two issues:
-  - when there are no free incoming link, new connection will anyway 
+  <itemize>
+  <item>when there are no free incoming link, new connection will anyway 
     be acceped and then dropped instead of not accepting it,
-  - tcp connection status is not monitored, so you should use 
+  <item>tcp connection status is not monitored, so you should use 
     'set link keep-alive' to detect broken links.
+  </itemize>
 
 <descrip>
 
