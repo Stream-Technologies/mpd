@@ -1,4 +1,4 @@
-<!-- $Id: compression.sgml,v 1.6 2006/12/13 01:54:20 amotin Exp $ -->
+<!-- $Id: compression.sgml,v 1.7 2006/12/13 18:26:19 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -52,6 +52,8 @@ that are not included with the normal mpd distribution.
 <tag><tt>pred1</tt></tag>
 
 This option enables Predictor-1 (rfc 1978) compression.
+This algorithm implemented in user-level, so require much CPU power
+on fast (>10Mbit/s) links.
 
 <tag><tt>mppc</tt></tag>
 
