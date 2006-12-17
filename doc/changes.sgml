@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.75 2006/12/13 12:45:51 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.76 2006/12/13 18:26:19 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -55,6 +55,10 @@
 	  <item> Removed limitation about PPTP which must be in the bundle alone.
 	  </item>
 	  <item> Fixed MSCHAP auth which was broken in 4.0b5.
+	  </item>
+	  <item> Fixed memory leak in PAP and CHAP auth on the client side.
+	  </item>
+	  <item> Fixed some CCP negotiation issues.
 	  </item>
 	</itemize>
     </itemize>
