@@ -1,4 +1,4 @@
-<!-- $Id: global.sgml,v 1.1 2005/08/21 19:59:56 mbretter Exp $ -->
+<!-- $Id: global.sgml,v 1.2 2005/08/22 14:42:38 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -10,6 +10,17 @@
   This chapter describes options that affect Mpd's behavior globally.
 
 <descrip>
+
+<tag><tt>
+set global startrule <em>num</em>
+<newline>set global startpipe <em>num</em>
+<newline>set global startqueue <em>num</em>
+<newline>set global starttable <em>num</em>
+</tt></tag>
+
+These commands define initial values for autonumeration of ipfw
+rules, pipes, queues and tables. 
+Defaults are 10000, 10000, 10000 and 32 accordingly.
 
 <tag><tt>
 set global enable <em>option ...</em>
