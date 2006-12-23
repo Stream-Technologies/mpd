@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.44 2006/12/13 01:40:05 amotin Exp $
+# $Id: Makefile,v 1.45 2006/12/13 12:45:51 amotin Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -139,8 +139,6 @@ COPTS+=		-DCOMPRESSION_STAC
 .if defined ( COMPRESSION_DEFLATE )
 SRCS+=		ccp_deflate.c
 COPTS+=		-DCOMPRESSION_DEFLATE
-LDADD+=		-lz
-DPADD+=		${LIBZ}
 .endif
 
 # Encryption
