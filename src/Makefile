@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.46 2006/12/23 03:00:23 amotin Exp $
+# $Id: Makefile,v 1.47 2006/12/25 02:45:59 amotin Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -34,7 +34,7 @@ PHYSTYPE_PPPOE=		yes
 
 COMPRESSION_PRED1=	yes
 #COMPRESSION_STAC=	yes
-#COMPRESSION_DEFLATE=	yes
+COMPRESSION_DEFLATE=	yes
 
 # Define supported encryption types
 
