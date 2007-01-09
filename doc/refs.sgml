@@ -1,4 +1,4 @@
-<!-- $Id: refs.sgml,v 1.4 2004/03/15 21:23:42 mbretter Exp $ -->
+<!-- $Id: refs.sgml,v 1.5 2004/12/18 14:51:55 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -42,6 +42,8 @@
 <htmlurl url="http://www.ietf.org/rfc/rfc1994.txt" name="RFC 1994 PPP Challenge Handshake Authentication Protocol (CHAP)">
 
 <htmlurl url="http://www.ietf.org/rfc/rfc2284.txt" name="RFC 2284 EAP">
+
+<htmlurl url="http://www.ietf.org/rfc/rfc2419.txt" name="RFC 2419 The PPP DES Encryption Protocol, Version 2 (DESE-bis)">
 
 <htmlurl url="http://www.ietf.org/rfc/rfc2427.txt" name="RFC 2427 Multiprotocol Interconnect over Frame Relay">
 
