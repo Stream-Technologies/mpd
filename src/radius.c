@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.46 2006/12/06 21:45:58 amotin Exp $
+ * $Id: radius.c,v 1.47 2006/12/22 12:58:49 amotin Exp $
  *
  */
 
@@ -1004,17 +1004,21 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 {
   Link		lnk = auth->lnk;	/* hide the global "lnk" */
   ChapInfo	const chap = &lnk->lcp.auth.chap;
-  int		res, i, j, tmpkey_len;
+  int		res, i, j;
   size_t	len;
   const void	*data;
   u_int32_t	vendor;
   char		*route, *acl1, *acl2;
-  u_char	*tmpkey, *tmpval;
+  u_char	*tmpval;
   short		got_mppe_keys = FALSE;
   struct in_addr	ip;
   struct acl		**acls, *acls1;
   struct ifaceroute	r;
   struct u_range	range;
+#if (!defined(__FreeBSD__) || __FreeBSD_version >= 530000)
+  u_char	*tmpkey;
+  int		tmpkey_len;
+#endif
 
   Freee(MB_AUTH, auth->params.eapmsg);
   auth->params.eapmsg = NULL;
