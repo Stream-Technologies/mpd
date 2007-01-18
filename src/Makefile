@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.47 2006/12/25 02:45:59 amotin Exp $
+# $Id: Makefile,v 1.48 2007/01/09 18:40:10 amotin Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -10,7 +10,7 @@
 PROG?=			mpd4
 PREFIX?=		/usr/local
 BINDIR?=		${PREFIX}/sbin
-VERSION=		4.0b5
+VERSION=		4.0rc1
 NO_MAN=
 
 # Default configuration directory
@@ -151,7 +151,6 @@ NEED_DES=	yes
 .endif
 
 # Add in required support files and libraries
-
 
 .if defined ( NEED_DES )
 LDADD+=		-lcrypto
