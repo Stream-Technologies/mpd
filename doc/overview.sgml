@@ -1,4 +1,4 @@
-<!-- $Id: overview.sgml,v 1.4 2004/03/15 21:23:42 mbretter Exp $ -->
+<!-- $Id: overview.sgml,v 1.5 2006/12/15 16:16:34 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -29,6 +29,10 @@
 	    setup, manual server login, etc.
         <item><bf>Point-to-Point Tunnelling Protocol (PPTP)</bf> Mpd can connect over the Internet using
 	    the Point-to-Point Tunnelling Protocol (PPTP).
+	    This protocol is supported by the popular Microsoft Dial-Up
+	    Networking client.
+        <item><bf>Layer Two Tunnelling Protocol (L2TP)</bf> Mpd can connect over the Internet using
+	    the Layer Two Tunnelling Protocol (L2TP).
 	    This protocol is supported by the popular Microsoft Dial-Up
 	    Networking client.
         <item><bf>PPP over Ethernet (PPPoE)</bf> Mpd can connect over an Ethernet port
