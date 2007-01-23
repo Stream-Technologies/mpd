@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: event.c,v 1.11 2005/12/10 12:52:57 glebius Exp $
+ * $Id: event.c,v 1.12 2006/09/27 09:56:01 amotin Exp $
  *
  */
 
@@ -17,11 +17,12 @@
 
   #define MAXOF(x,y)		((x)>(y)?(x):(y))
 
+  struct pevent_ctx	*gPeventCtx = NULL;
+
 /*
  * INTERNAL VARIABLES
  */
 
-  static struct pevent_ctx *gPeventCtx = NULL;
   static pthread_t  	gCtxThread = NULL;
 
   static void   (*gWarnx)(const char *fmt, ...) = warnx;

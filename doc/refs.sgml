@@ -1,4 +1,4 @@
-<!-- $Id: refs.sgml,v 1.5 2004/12/18 14:51:55 mbretter Exp $ -->
+<!-- $Id: refs.sgml,v 1.6 2007/01/09 20:02:41 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -54,6 +54,8 @@
 <htmlurl url="http://www.ietf.org/rfc/rfc2548.txt" name="RFC 2548 Microsoft Vendor-specific RADIUS Attributes">
 
 <htmlurl url="http://www.ietf.org/rfc/rfc2637.txt" name="RFC 2637 Point-to-Point Tunneling Protocol (PPTP)">
+
+<htmlurl url="http://www.ietf.org/rfc/rfc2661.txt" name="RFC 2661 Layer Two Tunneling Protocol (L2TP)">
 
 <htmlurl url="http://www.ietf.org/rfc/rfc2865.txt" name="RFC 2865 Remote Authentication Dial In User Service (RADIUS)">
 

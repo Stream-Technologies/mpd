@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.81 2006/12/28 13:23:37 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.82 2007/01/18 15:52:11 glebius Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -13,6 +13,8 @@
 	  <item> Integrated Web server added.
 	  </item>
 	  <item> NAT support by ng_nat(4) added.
+	  </item>
+	  <item> L2TP (RFC 2661) device type implemented.
 	  </item>
 	  <item> UDP device type was completely rewritten. Now it:
 	    <itemize>
