@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.47 2006/12/22 12:58:49 amotin Exp $
+ * $Id: radius.c,v 1.48 2007/01/12 18:44:18 amotin Exp $
  *
  */
 
@@ -472,7 +472,7 @@ RadiusSetCommand(int ac, char *av[], void *arg)
   if (ac == 0)
       return(-1);
 
-    switch ((int) arg) {
+    switch ((intptr_t)arg) {
 
       case SET_SERVER:
 	if (ac > 4 || ac < 2) {
