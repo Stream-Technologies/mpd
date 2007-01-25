@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.50 2007/01/23 23:26:49 amotin Exp $
+ * $Id: radius.c,v 1.51 2007/01/25 09:58:30 amotin Exp $
  *
  */
 
@@ -807,7 +807,7 @@ RadiusStart(AuthData auth, short request_type)
 	Log(LG_RADIUS2, ("[%s] RADIUS: %s: rad_put_string(RAD_CALLED_STATION_ID) %s", 
     	    lnk->name, __func__, auth->params.callednum));
 	if (rad_put_string(auth->radius.handle, RAD_CALLED_STATION_ID, 
-    	    auth->params.callingnum) == -1) {
+    	    auth->params.callednum) == -1) {
     		Log(LG_RADIUS, ("[%s] RADIUS: %s: rad_put_string(RAD_CALLED_STATION_ID) failed %s", 
 		    lnk->name, __func__, rad_strerror(auth->radius.handle)));
     		return (RAD_NACK);
