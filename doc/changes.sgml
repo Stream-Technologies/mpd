@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.83 2007/01/23 13:42:33 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.84 2007/01/25 15:22:34 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -52,6 +52,10 @@
 	  <item> New commands 'set global start...' added..
 	  </item>
 	  <item> Added support of calling/called numbers (mostly for PPTP/L2TP).
+	  </item>
+	</itemize>
+	<item> Changes:
+	  <item> MPPE policy option moved from auth layer to ccp.
 	  </item>
 	</itemize>
 	<item> Bugfixes:
@@ -125,6 +129,10 @@
 	  </item>
 	</itemize>
 	</item>
+	<item> Changes:
+	  <item> Default argument of open/close commands changed from iface to lcp.
+	  </item>
+	</itemize>
 	<item> Bugfixes:
 	<itemize>
 	  <item> Fixed races between startup process and client connecting.
