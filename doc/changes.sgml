@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.82 2007/01/18 15:52:11 glebius Exp $ -->
+<!-- $Id: changes.sgml,v 1.83 2007/01/23 13:42:33 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -51,6 +51,8 @@
 	  </item>
 	  <item> New commands 'set global start...' added..
 	  </item>
+	  <item> Added support of calling/called numbers (mostly for PPTP/L2TP).
+	  </item>
 	</itemize>
 	<item> Bugfixes:
 	<itemize>
@@ -77,6 +79,8 @@
 	  <item> Fixed some CCP negotiation issues.
 	  </item>
 	  <item> Fixed threads-related crash in internal auth.
+	  </item>
+	  <item> Fixed crash on incoming when no free PPTP link found.
 	  </item>
 	</itemize>
     </itemize>
