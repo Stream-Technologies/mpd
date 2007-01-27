@@ -1,4 +1,4 @@
-<!-- $Id: bundle.sgml,v 1.19 2006/12/10 22:35:03 amotin Exp $ -->
+<!-- $Id: bundle.sgml,v 1.20 2006/12/13 18:26:19 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -66,10 +66,10 @@ below <tt><em>lowat</em></tt> percent, respectively. The utilization is
 sampled every <tt><em>period</em></tt> divided by 6 seconds, and
 is averaged over the past <tt><em>period</em></tt> seconds.
 
-Mpd will not attempt to reconnect a link unless it has been disconnected
-for at least <tt><em>min-dis</em></tt> seconds. Similarly, mpd will
-not bring down a link unless it has stayed connected for at least
-<tt><em>min-con</em></tt> seconds. These latter two parameters
+Mpd will not attempt to disconnect a link unless previous one was 
+disconnected at least <tt><em>min-dis</em></tt> seconds before. 
+Similarly, mpd will not open a link unless previous was opened at least
+<tt><em>min-con</em></tt> seconds before. These two parameters
 help prevent oscillations, but cause slower response time.
 
 <tag><tt>
