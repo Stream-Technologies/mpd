@@ -1,4 +1,4 @@
-<!-- $Id: pptp.sgml,v 1.4 2002/08/20 18:44:46 archiecobbs Exp $ -->
+<!-- $Id: pptp.sgml,v 1.5 2004/04/26 17:13:51 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -58,10 +58,13 @@ host. Otherwise, only connections from the stated IP address
 (and, optionally, port) are allowed.
 
 <tag><tt>
-set pptp phonenum <em>number</em>
+set pptp callingnum <em>number</em>
+</tt></tag><p>
+<tag><tt>
+set pptp callednum <em>number</em>
 </tt></tag>
 
-Sets the called telephone number to use when initiating a PPTP
+Sets the calling and called telephone number to use when initiating a PPTP
 connection. For most VPN applications this is ignored, but in certain
 cases an actual phone number is required.
 The default is the empty string.
