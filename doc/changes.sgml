@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.88 2007/01/27 00:54:20 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.89 2007/01/27 00:55:12 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -93,6 +93,8 @@
 	  <item> Fixed crash on incoming when no free PPTP link found.
 	  </item>
 	  <item> Bug in "rubber bandwidth" algorithm fixed.
+	  </item>
+	  <item> Bug and possible crush fixed in DoD code.
 	  </item>
 	</itemize>
     </itemize>
