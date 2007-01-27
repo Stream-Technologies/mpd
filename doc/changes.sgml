@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.86 2007/01/26 00:05:37 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.87 2007/01/27 00:53:22 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -53,6 +53,8 @@
 	  </item>
 	  <item> Added support of calling/called numbers (mostly for PPTP/L2TP).
 	  </item>
+	  <item> Bug in "rubber bandwidth" algorithm fixed.
+	  </item>
 	</itemize>
 	</item>
 	<item> Changes:
@@ -91,8 +93,6 @@
 	  <item> Fixed threads-related crash in internal auth.
 	  </item>
 	  <item> Fixed crash on incoming when no free PPTP link found.
-	  </item>
-	  <item> Bug in "rubber bandwidth" algorithm fixed.
 	  </item>
 	</itemize>
     </itemize>
