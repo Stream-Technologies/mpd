@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.90 2007/01/27 13:25:44 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.91 2007/01/27 14:54:08 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -57,6 +57,8 @@
 	</item>
 	<item> Changes:
 	<itemize>
+	  <item> "lcp" layer in open/close commands replaced by "link".
+	  </item>
 	  <item> Auth configuration (set auth ...) moved from bundle layer to lcp. 
 		 It works per link now.
 	  </item>
