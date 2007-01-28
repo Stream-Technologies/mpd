@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.91 2007/01/27 14:54:08 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.92 2007/01/28 00:50:04 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -99,6 +99,9 @@
 	  <item> Bug and possible crash fixed in DoD code.
 	  </item>
 	  <item> Fixed bug in AUTHPROTO negotiation.
+	  </item>
+	  <item> Fixed bug in RAD_MICROSOFT_MS_CHAP2_SUCCESS handeling.
+		 Needs testing.
 	  </item>
 	</itemize>
     </itemize>
