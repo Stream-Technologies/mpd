@@ -1,4 +1,4 @@
-<!-- $Id: console.sgml,v 1.2 2005/08/22 14:42:38 archiecobbs Exp $ -->
+<!-- $Id: console.sgml,v 1.3 2006/10/03 14:57:46 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -55,10 +55,6 @@ set console enable <em>option ...</em>
 </tt></tag>
 
 These commands configure various console options.
-
-<p>
-The <tt><bf>enable</bf></tt> and <tt><bf>disable</bf></tt> commands determine
-whether we want the corresponding option.
 
 The options available for the console are:
 
