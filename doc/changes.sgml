@@ -1,9 +1,21 @@
-<!-- $Id: changes.sgml,v 1.92 2007/01/28 00:50:04 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.93 2007/01/28 13:51:37 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
+
+  <p>
+    Changes since version 4.0rc1:
+    <itemize>
+	<item> Bugfixes:
+	<itemize>
+	  <item> Idle timeout fixed.
+	  </item>
+	</itemize>
+	</item>
+    </itemize>
+  </p>
 
   <p>
     Changes since version 4.0b5:
