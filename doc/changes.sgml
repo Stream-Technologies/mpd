@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.95 2007/01/31 10:17:22 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.96 2007/01/31 10:31:16 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -13,6 +13,8 @@
 	  <item> Idle timeout fixed.
 	  </item>
 	  <item> Fixed bug with 'set l2tp self ' specified at the server side.
+	  </item>
+	  <item> Check of the current device type fot device-specific commands added.
 	  </item>
 	</itemize>
 	</item>
