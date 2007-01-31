@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.93 2007/01/28 13:51:37 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.94 2007/01/29 12:54:34 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,6 +11,8 @@
 	<item> Bugfixes:
 	<itemize>
 	  <item> Idle timeout fixed.
+	  </item>
+	  <item> Fixed bug with 'selt l2tp self ' specified at the server side.
 	  </item>
 	</itemize>
 	</item>
