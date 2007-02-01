@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.97 2007/01/31 15:31:51 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.98 2007/02/01 16:47:12 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -17,6 +17,10 @@
 	  <item> Device type check for device-specific commands added.
 	  </item>
 	  <item> IPCP reject is not fatal by itself now.
+	  </item>
+	  <item> Up/down-script will now be called not for the whole interface, 
+		 but for each of negotiated protocols. Proto parameter should 
+		 be checked in the script!
 	  </item>
 	</itemize>
 	</item>
