@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.98 2007/02/01 16:47:12 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.99 2007/02/01 21:02:33 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -21,6 +21,8 @@
 	  <item> Up/down-script will now be called not for the whole interface, 
 		 but for each of negotiated protocols. Proto parameter should 
 		 be checked in the script!
+	  </item>
+	  <item> Fixed ng_ppp link bandwidth configuration.
 	  </item>
 	</itemize>
 	</item>
