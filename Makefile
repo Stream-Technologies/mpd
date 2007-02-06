@@ -1,8 +1,8 @@
-# $Id: Makefile,v 1.9 2006/01/21 13:01:09 glebius Exp $
+# $Id: Makefile,v 1.10 2006/10/13 16:29:12 glebius Exp $
 
 VERSION!=	cat src/Makefile | grep ^VERSION | awk '{ print $$2 }'
 
-DISTNAME=	mpd4-${VERSION}
+DISTNAME=	mpd-${VERSION}
 TARBALL=	${DISTNAME}.tar.gz
 PORTBALL=	port.tgz
 CVSROOT?=	mpd.cvs.sourceforge.net:/cvsroot/mpd

@@ -1,9 +1,14 @@
-<!-- $Id: changes.sgml,v 1.99 2007/02/01 21:02:33 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.100 2007/02/04 11:12:37 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
+
+  <p>
+    Mpd version was bumped from 4.0rc2 to 4.1rc2 due to large number of changes 
+    done since 4.0b4 and FreeBSD ports version number conflict.
+  </p>
 
   <p>
     Changes since version 4.0rc1:
