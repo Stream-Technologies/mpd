@@ -1,4 +1,4 @@
-<!-- $Id: pptp.sgml,v 1.5 2004/04/26 17:13:51 mbretter Exp $ -->
+<!-- $Id: pptp.sgml,v 1.6 2007/01/27 20:38:46 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -44,6 +44,8 @@ set pptp self <em>ipaddr</em> [ <em>port</em> ]
 </tt></tag>
 
 Sets the local IP address and port for the PPTP connection.
+There is only one distinct IP address possible in current mpd's PPTP 
+implementation.
 
 <tag><tt>
 set pptp peer <em>ipaddr</em> [ <em>port</em> ]
