@@ -1,4 +1,4 @@
-<!-- $Id: pppoe.sgml,v 1.1 2001/03/10 06:06:47 archiecobbs Exp $ -->
+<!-- $Id: pppoe.sgml,v 1.2 2003/10/30 20:28:59 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -20,6 +20,11 @@
   be supplied by your ISP. If you do not have a service name, then
   the empty string (the default) often suffices.
 
+  <p>
+  <bf>Note:</bf> There is a bug in Windows 2000 PPPoE implementation
+  which makes connection impossible due to LCP mru negotiation failure.
+  Other Windows version have no this bug.
+  
 <descrip>
 
 <tag><tt>
