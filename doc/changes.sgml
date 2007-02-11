@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.101 2007/02/06 19:17:19 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.102 2007/02/08 20:12:41 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,6 +8,14 @@
   <p>
     Changes since version 4.1rc2:
     <itemize>
+	<item> Changes:
+	<itemize>
+	  <item> Default value of link's max-redial parameter changed to -1.
+	  </item>
+	  <item> Bundle's noretry option is enabled by default now.
+	  </item>
+	</itemize>
+	</item>
 	<item> Bugfixes:
 	<itemize>
 	  <item> Better up/down reason tracking.
