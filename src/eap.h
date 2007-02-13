@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.h,v 1.5 2004/03/31 19:05:04 mbretter Exp $
+ * $Id: eap.h,v 1.6 2004/04/08 16:05:30 mbretter Exp $
  *
  */
 
@@ -101,7 +101,7 @@
  */
 
   extern void	EapInit(void);
-  extern void	EapStart(EapInfo eap, int which);
+  extern void	EapStart(Link lnk, int which);
   extern void	EapStop(EapInfo eap);
   extern void	EapInput(struct authdata *auth, const u_char *pkt, u_short len);
   extern const	char *EapCode(u_char code);

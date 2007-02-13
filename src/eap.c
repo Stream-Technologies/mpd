@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.c,v 1.10 2006/12/12 22:33:04 amotin Exp $
+ * $Id: eap.c,v 1.11 2007/02/13 22:09:32 amotin Exp $
  *
  */
 
@@ -86,8 +86,9 @@ EapInit()
  */
 
 void
-EapStart(EapInfo eap, int which)
+EapStart(Link lnk, int which)
 {
+  EapInfo	eap = &lnk->lcp.auth.eap;
   int	i;
 
   for (i = 0; i < EAP_NUM_TYPES; i++)
@@ -430,6 +431,8 @@ EapRadiusProxy(AuthData auth, const u_char *pkt, u_short len)
 
   auth->params.eapmsg_len = len + sizeof(lh);
   strlcpy(auth->params.authname, eap->identity, sizeof(auth->params.authname));
+
+  auth->eap_radius = TRUE;
 
   auth->finish = EapRadiusProxyFinish;
   AuthAsyncStart(auth);
