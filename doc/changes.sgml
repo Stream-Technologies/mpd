@@ -1,9 +1,31 @@
-<!-- $Id: changes.sgml,v 1.102 2007/02/08 20:12:41 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.103 2007/02/11 20:52:23 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
+
+  <p>
+    Changes since version 4.1:
+    <itemize>
+	<item> New features:
+	<itemize>
+	  <item> Implemented link repeater functionality (aka LAC/PAC).
+	  </item>
+	</itemize>
+	</item>
+	<item> Changes:
+	<itemize>
+	  <item> 'set link type ...' command removed. Use 'set phys type ...' instead.
+	  </item>
+	  <item> Auth subsystem refactored to avoid incorrect cross-level dependencies.
+	  </item>
+	  <item> Physival device level refactored to remove link and bundle level dependencies.
+	  </item>
+	</itemize>
+	</item>
+    </itemize>
+  </p>
 
   <p>
     Changes since version 4.1rc2:

@@ -1,4 +1,4 @@
-<!-- $Id: bundle.sgml,v 1.22 2007/01/27 19:01:17 amotin Exp $ -->
+<!-- $Id: bundle.sgml,v 1.23 2007/02/11 20:52:23 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -49,7 +49,8 @@ The links that constitute the bundle are created and named
 <tt><em>link1</em></tt>, <tt><em>link2</em></tt>, etc.  For each
 link, there must be a corresponding entry with the same name (i.e.,
 label) in <tt>mpd.links</tt>. This entry must at the very least
-define the type of the link (via the <tt>set link type</tt> command).
+define the type of the physival device associated with link 
+(via the <tt>set phys type</tt> command).
 
 <tag><tt>
 set bundle period <em>seconds</em>

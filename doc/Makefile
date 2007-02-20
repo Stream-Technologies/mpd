@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.10 2006/12/10 17:07:07 amotin Exp $
+# $Id: Makefile,v 1.11 2007/01/23 13:42:33 amotin Exp $
 
 .NOTPARALLEL:
 
@@ -11,15 +11,10 @@ SRCS+=		mpd.sgml version.sgml
 SRCS+=		overview.sgml layers.sgml manorg.sgml changes.sgml
 SRCS+=		getting.sgml building.sgml installing.sgml
 SRCS+=		invoke.sgml configfmt.sgml cli.sgml
-SRCS+=		gencmd.sgml global.sgml console.sgml web.sgml bundle.sgml interface.sgml links.sgml
-SRCS+=		ipcp.sgml compression.sgml encryption.sgml
+SRCS+=		gencmd.sgml global.sgml console.sgml web.sgml bundle.sgml repeater.sgml 
+SRCS+=		interface.sgml links.sgml ipcp.sgml compression.sgml encryption.sgml
 SRCS+=		modem.sgml netgraph.sgml tcp.sgml udp.sgml pptp.sgml l2tp.sgml pppoe.sgml
-SRCS+=		chat.sgml
-SRCS+=		trouble.sgml
-SRCS+=		refs.sgml
-SRCS+=		int-auth.sgml
-SRCS+=		todo.sgml
-SRCS+=		netflow.sgml
+SRCS+=		chat.sgml trouble.sgml refs.sgml int-auth.sgml todo.sgml netflow.sgml
 
 CLEANFILES+=	version.sgml mpd.8 mpd.ps
 
