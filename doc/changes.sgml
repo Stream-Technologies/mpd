@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.105 2007/03/12 18:59:42 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.106 2007/03/15 00:30:29 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -17,6 +17,8 @@
 	  <item> Implemented traffic shaping/rate-limiting with ng_car.
 	  </item>
 	  <item> Added workaround for Windows 2000 PPPoE MRU negotiation bug.
+	  </item>
+	  <item> Implemented minimal client side of auth-driven callback (w/o number specification).
 	  </item>
 	</itemize>
 	</item>
@@ -38,6 +40,8 @@
 	<item> Bugfixes:
 	<itemize>
 	  <item> Fixed thread-safety related crash in accounting.
+	  </item>
+	  <item> Fixed assertion in PPTP on control connection fail while answering.
 	  </item>
 	</itemize>
 	</item>
