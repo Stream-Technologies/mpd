@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.107 2007/03/15 12:40:45 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.108 2007/03/16 10:50:37 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -42,6 +42,8 @@
 	  <item> Fixed thread-safety related crash in accounting.
 	  </item>
 	  <item> Fixed assertion in PPTP on control connection fail while answering.
+	  </item>
+	  <item> Fixed assertion in L2TP on control message sending failure.
 	  </item>
 	  <item> Fixed broken L2TP outcall mode.
 	  </item>
