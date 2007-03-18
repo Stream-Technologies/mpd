@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.66 2007/02/23 18:43:17 amotin Exp $
+ * $Id: radius.c,v 1.67 2007/02/27 20:23:45 amotin Exp $
  *
  */
 
@@ -85,9 +85,9 @@
  */
 
 void
-RadiusInit(void)
+RadiusInit(Link l)
 {
-    RadConf       const conf = &lnk->lcp.auth.conf.radius;
+    RadConf       const conf = &l->lcp.auth.conf.radius;
 
     memset(conf, 0, sizeof(*conf));
     Disable(&conf->options, RADIUS_CONF_MESSAGE_AUTHENTIC);

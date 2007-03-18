@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.22 2007/01/25 09:58:30 amotin Exp $
+ * $Id: radius.h,v 1.23 2007/02/23 16:46:09 amotin Exp $
  *
  */
 
@@ -128,7 +128,7 @@
  * FUNCTIONS
  */
 
-  extern void	RadiusInit(void);
+  extern void	RadiusInit(Link l);
   extern int	RadiusAuthenticate(struct authdata *auth);
   extern void	RadiusAccount(struct authdata *auth);
   extern void	RadiusClose(struct authdata *auth);
