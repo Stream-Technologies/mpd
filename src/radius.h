@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.23 2007/02/23 16:46:09 amotin Exp $
+ * $Id: radius.h,v 1.24 2007/03/18 14:04:17 amotin Exp $
  *
  */
 
@@ -133,6 +133,6 @@
   extern void	RadiusAccount(struct authdata *auth);
   extern void	RadiusClose(struct authdata *auth);
   extern void	RadiusEapProxy(void *arg);
-  extern int	RadStat(int ac, char *av[], void *arg);
+  extern int	RadStat(Context ctx, int ac, char *av[], void *arg);
 
 #endif
