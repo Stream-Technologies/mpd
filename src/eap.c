@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.c,v 1.13 2007/02/14 20:17:24 amotin Exp $
+ * $Id: eap.c,v 1.14 2007/03/12 21:13:45 amotin Exp $
  *
  */
 
@@ -526,7 +526,7 @@ EapRadiusSendMsg(void *ptr)
   }
 
   memcpy(MBDATAU(bp), a->params.eapmsg, a->params.eapmsg_len);
-  NgFuncWritePppFrame(lnk->bundleIndex, PROTO_EAP, bp);
+  NgFuncWritePppFrame(bund, lnk->bundleIndex, PROTO_EAP, bp);
 }
 
 /*
