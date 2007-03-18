@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.68 2007/03/18 14:04:17 amotin Exp $
+ * $Id: radius.c,v 1.69 2007/03/18 18:34:02 amotin Exp $
  *
  */
 
@@ -1382,9 +1382,13 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 		break;
 
 	      case RAD_MICROSOFT_MS_MPPE_ENCRYPTION_TYPES:
-		auth->params.msoft.types = rad_cvt_int(data);
-		Log(LG_RADIUS2, ("[%s] RADIUS: %s: RAD_MICROSOFT_MS_MPPE_ENCRYPTION_TYPES: %d (%s)",
-		  auth->info.lnkname, __func__, auth->params.msoft.types, AuthMPPETypesname(auth->params.msoft.types)));
+	        {
+		    char	buf[64];
+		    auth->params.msoft.types = rad_cvt_int(data);
+		    Log(LG_RADIUS2, ("[%s] RADIUS: %s: RAD_MICROSOFT_MS_MPPE_ENCRYPTION_TYPES: %d (%s)",
+			auth->info.lnkname, __func__, auth->params.msoft.types, 
+			AuthMPPETypesname(auth->params.msoft.types, buf, sizeof(buf))));
+		}
 		break;
 
 	      default:
