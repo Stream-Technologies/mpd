@@ -1,4 +1,4 @@
-<!-- $Id: pptp.sgml,v 1.7 2007/02/07 13:28:18 amotin Exp $ -->
+<!-- $Id: pptp.sgml,v 1.8 2007/03/16 11:20:59 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -116,7 +116,7 @@ initiated as either an incoming or an outgoing call.
 This is to allow, for example, making an outgoing telephone call (by PNS) 
 via a remote access server (PAC), as well as the more common use of forwarding
 of an incoming telephone call from an access server (PAC) to a remote
-L2TP server (PNS).
+PPTP server (PNS).
 
 When this option is enabled, mpd will initiate outgoing calls (PNS);
 otherwise mpd will initiate incoming calls (PAC). Although it seems that
