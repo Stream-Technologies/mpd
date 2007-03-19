@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.c,v 1.17 2007/03/18 18:34:01 amotin Exp $
+ * $Id: eap.c,v 1.18 2007/03/18 22:43:09 amotin Exp $
  *
  */
 
@@ -582,7 +582,7 @@ EapStat(Context ctx, int ac, char *av[], void *arg)
 
   Printf("\tIdentity     : %s\r\n", eap->identity);
   Printf("EAP options\r\n");
-  OptStat(&eap->conf.options, gConfList);
+  OptStat(ctx, &eap->conf.options, gConfList);
 
   return (0);
 }

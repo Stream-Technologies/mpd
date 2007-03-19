@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.69 2007/03/18 18:34:02 amotin Exp $
+ * $Id: radius.c,v 1.70 2007/03/18 22:43:10 amotin Exp $
  *
  */
 
@@ -417,7 +417,7 @@ RadStat(Context ctx, int ac, char *av[], void *arg)
   }
 
   Printf("RADIUS options\r\n");
-  OptStat(&conf->options, gConfList);
+  OptStat(ctx, &conf->options, gConfList);
 
   Printf("Data:\r\n");
   Printf("\tAuthenticated  : %s\r\n", a->params.authentic == AUTH_CONF_RADIUS_AUTH ? 
