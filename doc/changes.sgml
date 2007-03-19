@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.108 2007/03/16 10:50:37 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.109 2007/03/16 15:22:00 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -19,6 +19,8 @@
 	  <item> Added workaround for Windows 2000 PPPoE MRU negotiation bug.
 	  </item>
 	  <item> Implemented minimal client side of auth-driven callback (w/o number specification).
+	  </item>
+	  <item> Restored control console on stdin.
 	  </item>
 	</itemize>
 	</item>
