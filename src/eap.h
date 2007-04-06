@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.h,v 1.9 2007/03/18 18:34:01 amotin Exp $
+ * $Id: eap.h,v 1.10 2007/03/18 22:43:09 amotin Exp $
  *
  */
 
@@ -88,7 +88,7 @@
     short		retry;			/* Resend count */
     struct pppTimer	identTimer;		/* Identity timer */
     struct pppTimer	reqTimer;		/* Request timer */
-    u_char		identity[AUTH_MAX_AUTHNAME];	/* Identity */
+    char		identity[AUTH_MAX_AUTHNAME];	/* Identity */
     u_char		peer_types[EAP_NUM_TYPES];	/* list of acceptable types */
     u_char		want_types[EAP_NUM_TYPES];	/* list of requestable types */
     struct eapconf	conf;			/* Configured options */

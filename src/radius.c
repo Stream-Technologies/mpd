@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.70 2007/03/18 22:43:10 amotin Exp $
+ * $Id: radius.c,v 1.71 2007/03/19 23:04:33 amotin Exp $
  *
  */
 
@@ -1030,7 +1030,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
   const void	*data;
   u_int32_t	vendor;
   char		*route, *acl, *acl1, *acl2;
-  u_char	*tmpval;
+  char		*tmpval;
   short		got_mppe_keys = FALSE;
   struct in_addr	ip;
   struct acl		**acls, *acls1;
