@@ -1,4 +1,4 @@
-<!-- $Id: l2tp.sgml,v 1.3 2007/02/07 13:28:18 amotin Exp $ -->
+<!-- $Id: l2tp.sgml,v 1.4 2007/03/16 11:20:59 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -61,6 +61,19 @@ specify where to connect to. For incoming connections, this command
 is optional; if not given, mpd accepts incoming connections from any
 host. Otherwise, only connections from the stated IP address
 (and, optionally, port) are allowed.
+
+<tag><tt>
+set l2tp secret <em>secret</em>
+</tt></tag>
+
+Sets the L2TP tunnel secret. Used to authenticate tunnel connection 
+and encrypt important control packets avpairs. For server side, only
+one unique secret supported for every listening IP (set l2tp self ...).
+If several secrets defined, only the first will be used for all incoming 
+connections to that IP.
+
+NOTE: This options is not related with usual PPP authentication.
+Windows client does not support tunnel authentication.
 
 <tag><tt>
 set l2tp callingnum <em>number</em>

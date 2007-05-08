@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.110 2007/03/19 23:09:10 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.111 2007/05/03 08:20:59 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -13,6 +13,8 @@
 	  <item> Implemented link repeater functionality (aka LAC/PAC). New "phys" and "repeater" layers added.
 	  </item>
 	  <item> PPTP now supports listening on multiple different IPs.
+	  </item>
+	  <item> L2TP now supports tunnel authentication with shared secret.
 	  </item>
 	  <item> Implemented traffic filtering using ng_bpf.
 	  </item>
@@ -54,6 +56,12 @@
 	  <item> Fixed broken L2TP outcall mode.
 	  </item>
 	  <item> Updated chat scripts to detect incoming modem calls speed.
+	  </item>
+	</itemize>
+	</item>
+	<item> Performance improvements:
+	<itemize>
+	  <item> Calls to ifconfig program replaced by internal functions.
 	  </item>
 	</itemize>
 	</item>
