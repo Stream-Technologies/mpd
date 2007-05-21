@@ -1,4 +1,4 @@
-<!-- $Id: links.sgml,v 1.10 2007/02/20 21:24:32 amotin Exp $ -->
+<!-- $Id: links.sgml,v 1.11 2007/03/15 00:23:28 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -90,7 +90,7 @@ set link ident <em>string</em>
 
 This enables the sending of an identification string to the peer
 via the LCP Ident code. The Ident string is sent when the link is
-brought up. This is useful for deubgging, etc. and is meant to be
+brought up. This is useful for debugging, etc. and is meant to be
 human-readable. However, it confuses some broken PPP implementations.
 
 Setting an empty string disables this feature; this is the default.
