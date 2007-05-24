@@ -1,4 +1,4 @@
-<!-- $Id: compression.sgml,v 1.14 2007/01/28 21:47:57 amotin Exp $ -->
+<!-- $Id: compression.sgml,v 1.15 2007/01/29 14:00:44 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -90,7 +90,7 @@ Enables MPPC compression. This is the only compression method supported by
 Microsoft Windows RAS.
 <P>
 This option requires compression support from ng_mppc node which is 
-usually not implemented as it require some Hi/Fn proprietary files.
+usually disabled as it require some Hi/Fn proprietary files.
 
 <tag><tt>mpp-e40</tt></tag>
 
