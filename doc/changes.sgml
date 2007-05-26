@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.111 2007/05/03 08:20:59 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.112 2007/05/08 07:55:13 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -27,6 +27,8 @@
 	  <item> Restored control console on stdin.
 	  </item>
 	  <item> Added new 'ext-auth' auth backend as full-featured alternative to 'radius-auth'.
+	  </item>
+	  <item> Added support for some new ng_nat features.
 	  </item>
 	</itemize>
 	</item>
