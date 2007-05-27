@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.112 2007/05/08 07:55:13 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.113 2007/05/26 12:43:39 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -29,6 +29,8 @@
 	  <item> Added new 'ext-auth' auth backend as full-featured alternative to 'radius-auth'.
 	  </item>
 	  <item> Added support for some new ng_nat features.
+	  </item>
+	  <item> Implemented PPTP/L2TP SetLintInfo sending to PAC/LAC.
 	  </item>
 	</itemize>
 	</item>
