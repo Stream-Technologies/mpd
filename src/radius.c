@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.72 2007/04/06 08:24:32 amotin Exp $
+ * $Id: radius.c,v 1.73 2007/05/28 22:00:40 amotin Exp $
  *
  */
 
@@ -422,7 +422,6 @@ RadStat(Context ctx, int ac, char *av[], void *arg)
   Printf("Data:\r\n");
   Printf("\tAuthenticated  : %s\r\n", a->params.authentic == AUTH_CONF_RADIUS_AUTH ? 
   	"yes" : "no");
-  Printf("\tClass          : %ld\r\n", a->params.class);
   
   buf = Bin2Hex(a->params.state, a->params.state_len); 
   Printf("\tState          : %s\r\n", buf);
@@ -1229,9 +1228,8 @@ RadiusGetParams(AuthData auth, int eap_proxy)
         break;
 
       case RAD_CLASS:
-	auth->params.class = rad_cvt_int(data);
-	Log(LG_RADIUS2, ("[%s] RADIUS: %s: RAD_CLASS: %lu ",
-	  auth->info.lnkname, __func__, auth->params.class));
+	Log(LG_RADIUS2, ("[%s] RADIUS: %s: (RAD_CLASS)",
+	  auth->info.lnkname, __func__));
         break;
 
       case RAD_REPLY_MESSAGE:
