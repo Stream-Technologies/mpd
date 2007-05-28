@@ -1,4 +1,4 @@
-<!-- $Id: auth.sgml,v 1.7 2007/02/15 14:05:04 amotin Exp $ -->
+<!-- $Id: auth.sgml,v 1.8 2007/05/24 14:01:36 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -104,9 +104,11 @@ Currently supported request attributes:
 USER_NAME
 USER_PASSWORD - for PAP only
 NAS_PORT
+NAS_PORT_TYPE
 CALLING_STATION_ID
 CALLED_STATION_ID
 PEER_ADDR
+PEER_PORT
 </verb>
 
 Currently supported response attributes:
