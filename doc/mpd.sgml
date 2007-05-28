@@ -1,4 +1,4 @@
-<!-- $Id: mpd.sgml,v 1.14 2007/02/20 21:24:32 amotin Exp $ -->
+<!-- $Id: mpd.sgml,v 1.15 2007/05/26 12:43:39 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!DOCTYPE linuxdoc PUBLIC "-//FreeBSD//DTD linuxdoc//EN" [
@@ -50,6 +50,8 @@
 <!ENTITY trouble SYSTEM "trouble.sgml">
 <!ENTITY todo SYSTEM "todo.sgml">
 <!ENTITY internalsauth SYSTEM "int-auth.sgml">
+<!ENTITY internalsextauth SYSTEM "int-extauth.sgml">
+<!ENTITY internalsradius SYSTEM "int-radius.sgml">
 <!ENTITY developer SYSTEM "developer.sgml">
 
 <!ENTITY refs SYSTEM "refs.sgml">
@@ -146,6 +148,8 @@ You must be running FreeBSD version 4.x or higher.
 
 	&todo;
 	&internalsauth;
+	&internalsradius;
+	&internalsextauth;
 	&developer;
 
     <chapt><heading>References</heading>
