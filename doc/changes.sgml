@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.113 2007/05/26 12:43:39 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.114 2007/05/27 01:01:02 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -25,6 +25,8 @@
 	  <item> Implemented minimal client side of auth-driven callback (w/o number specification).
 	  </item>
 	  <item> Restored control console on stdin.
+	  </item>
+	  <item> Added multiline console command history.
 	  </item>
 	  <item> Added new 'ext-auth' auth backend as full-featured alternative to 'radius-auth'.
 	  </item>
