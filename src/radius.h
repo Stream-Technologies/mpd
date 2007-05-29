@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.24 2007/03/18 14:04:17 amotin Exp $
+ * $Id: radius.h,v 1.25 2007/03/18 18:34:02 amotin Exp $
  *
  */
 
@@ -83,8 +83,8 @@
   struct radiusserver_conf {
     char	*hostname;
     char	*sharedsecret;
-    int		auth_port;
-    int		acct_port;
+    in_port_t	auth_port;
+    in_port_t	acct_port;
     struct	radiusserver_conf *next;
   };
   typedef struct radiusserver_conf *RadServe_Conf;
@@ -96,7 +96,7 @@
     int 	acct_update;		/* Accounting Update Interval */
     struct	in_addr radius_me;
     struct	u_addr radius_mev6;
-    char	file[PATH_MAX];
+    char	*file;
     struct radiusserver_conf *server;
     struct optinfo	options;	/* Configured options */
   };
