@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.25 2007/03/18 18:34:02 amotin Exp $
+ * $Id: radius.h,v 1.26 2007/05/29 20:02:59 amotin Exp $
  *
  */
 
@@ -93,7 +93,6 @@
   struct radiusconf {
     int		radius_timeout;
     int		radius_retries;
-    int 	acct_update;		/* Accounting Update Interval */
     struct	in_addr radius_me;
     struct	u_addr radius_mev6;
     char	*file;
