@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.114 2007/05/27 01:01:02 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.115 2007/05/28 14:24:12 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -48,6 +48,9 @@
 	  <item> Auth subsystem refactored to avoid incorrect cross-level dependencies.
 	  </item>
 	  <item> Physical device level refactored to remove link and bundle levels dependencies.
+	  </item>
+	  <item> While accepting calls PPTP, L2TP, TCP and UDP links are now trying 
+		 to use link with most specific peer address configured.
 	  </item>
 	</itemize>
 	</item>
