@@ -1,4 +1,4 @@
-<!-- $Id: int-extauth.sgml,v 1.4 2007/05/28 14:40:13 amotin Exp $ -->
+<!-- $Id: int-extauth.sgml,v 1.1 2007/05/28 15:00:30 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -40,6 +40,7 @@ FRAMED_MTU
 SESSION_TIMEOUT
 IDLE_TIMEOUT
 REPLY_MESSAGE
+MS_CHAP_ERROR
 MPD_RULE
 MPD_PIPE
 MPD_QUEUE
