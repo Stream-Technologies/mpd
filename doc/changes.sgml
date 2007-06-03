@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.115 2007/05/28 14:24:12 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.116 2007/06/02 14:41:48 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -32,7 +32,7 @@
 	  </item>
 	  <item> Added support for some new ng_nat features.
 	  </item>
-	  <item> Implemented PPTP/L2TP SetLintInfo sending to PAC/LAC.
+	  <item> Implemented PPTP/L2TP SetLinkInfo sending to PAC/LAC.
 	  </item>
 	</itemize>
 	</item>
