@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.c,v 1.19 2007/03/19 23:04:31 amotin Exp $
+ * $Id: eap.c,v 1.20 2007/04/06 08:24:32 amotin Exp $
  *
  */
 
@@ -204,7 +204,7 @@ EapSendRequest(Link l, u_char type)
       }
 
       TimerInit(&chap->chalTimer, "ChalTimer",
-        l->conf.retry_timeout * SECONDS, ChapChalTimeout, (void *) chap);
+        l->conf.retry_timeout * SECONDS, ChapChalTimeout, l);
       TimerStart(&chap->chalTimer);
 
       /* Send first challenge */
