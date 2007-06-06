@@ -1,4 +1,4 @@
-<!-- $Id: l2tp.sgml,v 1.4 2007/03/16 11:20:59 amotin Exp $ -->
+<!-- $Id: l2tp.sgml,v 1.5 2007/05/08 07:55:13 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -122,6 +122,13 @@ L2TP server (LNS).
 
 When this option is enabled, mpd will initiate outgoing calls (LNS);
 otherwise mpd will initiate incoming calls (LAC).
+
+<tag><tt>hidden</tt></tag>
+
+When L2TP tunnel secret is configured it is possible hide (encrypt) some
+control data for additional protection.
+
+Default is disabled.
 
 </descrip>
 
