@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.118 2007/06/05 21:14:41 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.119 2007/06/12 21:03:56 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -78,7 +78,7 @@
 	<itemize>
 	  <item> Calls to ifconfig program replaced by internal functions.
 	  </item>
-	  <item> Where possible system() calls replaced by by fork()+execv()
+	  <item> Where possible system() calls replaced by fork()+execv()
 		 to avoid shell execution.
 	  </item>
 	</itemize>
