@@ -1,4 +1,4 @@
-<!-- $Id: building.sgml,v 1.3 2004/04/19 12:11:33 mbretter Exp $ -->
+<!-- $Id: building.sgml,v 1.4 2007/01/28 12:46:17 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -34,12 +34,9 @@
   Define these to include support for the corresponding device type.
 
   <tag><tt>COMPRESSION_PRED1</tt></tag><p>
-  <tag><tt>COMPRESSION_STAC</tt></tag><p>
   <tag><tt>COMPRESSION_DEFLATE</tt></tag><p>
 
   These enable support for the corresponding compression types.
-  Note that STAC and MPPC compression require proprietary source
-  files that are not included.
 
   <tag><tt>ENCRYPTION_DES</tt></tag><p>
 
