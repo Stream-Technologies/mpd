@@ -1,4 +1,4 @@
-<!-- $Id: installing.sgml,v 1.1 2000/11/05 00:33:49 archiecobbs Exp $ -->
+<!-- $Id: installing.sgml,v 1.1 2001/03/10 06:06:47 archiecobbs Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,11 +8,11 @@
   <p>
 	If you use the FreeBSD package or port, mpd will be
 	automatically installed
-	into <tt>/usr/local/sbin/mpd</tt>.
+	into <tt>/usr/local/sbin/mpd4</tt>.
 	with the default set of device types compiled into it.
 	In order to run, mpd needs
 	a few configuration files. The directory
-	<tt>/usr/local/etc/mpd</tt> is created
+	<tt>/usr/local/etc/mpd4</tt> is created
 	to hold them.
 	In it you will find some sample configuration files.
 </p>
