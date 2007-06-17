@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.76 2007/05/29 20:02:59 amotin Exp $
+ * $Id: radius.c,v 1.77 2007/05/29 21:35:23 amotin Exp $
  *
  */
 
@@ -189,27 +189,6 @@ RadiusAccount(AuthData auth)
     authentic = RAD_AUTH_RADIUS;
   } else {
     authentic = RAD_AUTH_LOCAL;
-  }
-
-  /*
-   * Suppress sending of accounting update, if byte threshold
-   * is configured, and delta since last update doesn't exceed it.
-   */
-  if (auth->acct_type == AUTH_ACCT_UPDATE &&
-      (auth->conf.acct_update_lim_recv > 0 ||
-       auth->conf.acct_update_lim_xmit > 0)) {
-    if ((auth->info.stats.recvOctets - auth->params.prev_stats.recvOctets <
-    	    auth->conf.acct_update_lim_recv) &&
-        (auth->info.stats.xmitOctets - auth->params.prev_stats.xmitOctets <
-    	    auth->conf.acct_update_lim_xmit)) {
-      Log(LG_RADIUS, ("[%s] RADIUS: %s: shouldn't send Interim-Update",
-        auth->info.lnkname, __func__));
-      return;
-     } else {
-	/* Save old statistics. */
-	memcpy(&auth->params.prev_stats, &auth->info.stats, 
-	    sizeof(auth->params.prev_stats));
-     }
   }
 
   if (RadiusStart(auth, RAD_ACCOUNTING_REQUEST) == RAD_NACK)
