@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.119 2007/06/12 21:03:56 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.120 2007/06/16 20:01:42 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -80,6 +80,10 @@
 	  </item>
 	  <item> Where possible system() calls replaced by fork()+execv()
 		 to avoid shell execution.
+	  </item>
+	  <item> Added connect requests storm overload protection.
+		 Mpd will drop incoming requests when message queue 
+		 reach some defined length.
 	  </item>
 	</itemize>
 	</item>
