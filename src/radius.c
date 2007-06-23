@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.77 2007/05/29 21:35:23 amotin Exp $
+ * $Id: radius.c,v 1.78 2007/06/17 19:18:41 amotin Exp $
  *
  */
 
@@ -997,7 +997,7 @@ RadiusSendRequest(AuthData auth)
     case RAD_ACCOUNTING_RESPONSE:
       Log(LG_RADIUS, ("[%s] RADIUS: rec'd RAD_ACCOUNTING_RESPONSE for user %s", 
         auth->info.lnkname, auth->params.authname));
-      return RAD_ACK;
+      break;
 
     case -1:
       Log(LG_RADIUS, ("[%s] RADIUS: rad_send_request failed: %s", 
@@ -1457,6 +1457,11 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 	        break;
 	      }
 	      acls = &(auth->params.acl_limits[i]);
+	    } else if (res == RAD_MPD_DROP_USER) {
+	      auth->drop_user = rad_cvt_int(data);
+	      Log(LG_RADIUS2, ("[%s] RADIUS: %s: RAD_MPD_DROP_USER: %d",
+		auth->info.lnkname, __func__, auth->drop_user));
+	      break;
 	    } else {
 	      Log(LG_RADIUS2, ("[%s] RADIUS: %s: Dropping MPD vendor specific attribute: %d",
 		auth->info.lnkname, __func__, res));
