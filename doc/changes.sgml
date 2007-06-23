@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.120 2007/06/16 20:01:42 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.121 2007/06/19 08:34:54 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -39,6 +39,8 @@
 		 NOTE: To have more then 1000 interfaces with NetFlow in 6-STABLE 
 		 you may need to increase NG_NETFLOW_MAXIFACES constant
 		 in netflow.h and rebuild ng_netflow kernel module.
+	  </item>
+	  <item> Added mpd-drop-user vendor specific accounting reply attribute support.
 	  </item>
 	</itemize>
 	</item>
