@@ -1,4 +1,4 @@
-<!-- $Id: int-radius.sgml,v 1.4 2007/05/28 14:40:13 amotin Exp $ -->
+<!-- $Id: int-radius.sgml,v 1.1 2007/05/28 15:01:19 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -62,6 +62,7 @@ ATTRIBUTE       mpd-table       4       string          mpd
 ATTRIBUTE       mpd-table-static       5       string          mpd 
 ATTRIBUTE       mpd-filter      6       string          mpd 
 ATTRIBUTE       mpd-limit       7       string          mpd 
+ATTRIBUTE	mpd-drop-user	154	integer		mpd
 #----------------------------------------------------------
 </verb>
 
