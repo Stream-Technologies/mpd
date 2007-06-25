@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.63 2007/05/28 15:08:07 amotin Exp $
+# $Id: Makefile,v 1.64 2007/06/23 12:08:42 amotin Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -10,7 +10,7 @@
 PROG?=			mpd4
 PREFIX?=		/usr/local
 BINDIR?=		${PREFIX}/sbin
-VERSION=		4.2rc2
+VERSION=		4.2
 NOMAN=
 NO_MAN=
 
