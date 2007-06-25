@@ -1,4 +1,4 @@
-<!-- $Id: int-radius.sgml,v 1.1 2007/05/28 15:01:19 amotin Exp $ -->
+<!-- $Id: int-radius.sgml,v 1.2 2007/06/24 23:04:33 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -39,6 +39,9 @@ The following attributes are set when doing accounting requests:
 <newline>RAD_ACCT_OUTPUT_GIGAWORDS
 <newline>RAD_ACCT_SESSION_TIME
 </tt>
+
+Mpd allows RADIUS server to terminate user session by setting vendor specific
+mpd-drop-user attribute to nonzero value in accounting start/update reply packet.
 
 <tag>RADIUS ACL's</tag>
 <p>
