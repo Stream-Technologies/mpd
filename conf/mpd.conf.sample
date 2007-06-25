@@ -10,7 +10,7 @@
 # starting with a "#" are comments and get completely
 # ignored.
 #
-# $Id: mpd.conf.sample,v 1.23 2007/03/13 23:10:20 amotin Exp $
+# $Id: mpd.conf.sample,v 1.24 2007/06/25 09:07:21 amotin Exp $
 #
 #################################################################
 
@@ -285,6 +285,24 @@ vpn:
 	set ccp yes mpp-e128
 	set bundle enable crypt-reqd
 	set ccp yes mpp-stateless
+	open
+
+#
+# mpd as pptp-vpn client: only outgoing calls, auto reconnect,
+# ipcp-negotiated address, one-sided authentication,
+# default route points on ISP's end
+#
+
+pptp-client:
+	new pptp-cl pptp-cl
+	set iface route default
+	set bundle no noretry
+	set auth authname MyLogin
+	set auth password MyPass
+	set link max-redial 0
+	set link mtu 1460
+	set link keep-alive 20 75
+	set ipcp ranges 0.0.0.0/0 0.0.0.0/0
 	open
 
 #

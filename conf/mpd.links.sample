@@ -13,7 +13,7 @@
 #
 # The first command for each link should be "set phys type ..."
 #
-# $Id: mpd.links.sample,v 1.5 2004/03/07 14:40:20 mbretter Exp $
+# $Id: mpd.links.sample,v 1.6 2007/03/13 23:10:21 amotin Exp $
 #
 #################################################################
 
@@ -121,6 +121,17 @@ vpn:
         set pptp self 1.2.3.4
         set pptp peer 2.3.4.5
         set pptp enable originate incoming outcall
+
+#
+# PPTP-Client connection
+# ISP has a PPTP-hub on a 5.6.7.8
+#
+
+pptp-cl:
+	set link type pptp
+        set pptp peer 5.6.7.8
+        set pptp enable originate
+        set pptp disable incoming windowing
 
 #
 # For our PPPoE connection, using Ethernte interface "fxp1"
