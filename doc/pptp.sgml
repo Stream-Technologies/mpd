@@ -1,4 +1,4 @@
-<!-- $Id: pptp.sgml,v 1.10 2007/05/03 08:20:59 amotin Exp $ -->
+<!-- $Id: pptp.sgml,v 1.11 2007/05/24 14:18:56 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -39,6 +39,11 @@ client <- some link type -> PAC <- PPTP tunnel -> PNS
 <verb>
 client (PAC emulator) <- PPTP tunnel -> PNS
 </verb>
+
+  Mpd is able to operate in both PAC and PNS modes. As PAC mpd supports 
+  both simple case PAC emulator and complete PAC topologies. Complete 
+  PAC can be configured by joining two physical devices using mpd's
+  repeater functionality.
 
 <descrip>
 

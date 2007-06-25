@@ -1,4 +1,4 @@
-<!-- $Id: l2tp.sgml,v 1.5 2007/05/08 07:55:13 amotin Exp $ -->
+<!-- $Id: l2tp.sgml,v 1.6 2007/06/06 22:29:35 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -30,6 +30,11 @@ client <- some link type -> LAC <- L2TP tunnel -> LNS
 <verb>
 client (LAC emulator) <- L2TP tunnel -> LNS
 </verb>
+
+  Mpd is able to operate in both LAC and LNS modes. As LAC mpd supports 
+  both simple case LAC emulator and complete LAC topologies. Complete 
+  LAC can be configured by joining two physical devices using mpd's
+  repeater functionality.
 
   Windows L2TP client uses IPSec encryption for the additional tunnel 
   security. So, to let it connect you must configure IPSec on your 
