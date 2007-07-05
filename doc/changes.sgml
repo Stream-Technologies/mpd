@@ -1,9 +1,23 @@
-<!-- $Id: changes.sgml,v 1.123 2007/06/24 23:02:06 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.124 2007/06/27 10:57:48 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
+
+  <p>
+    Changes since version 4.2.1:
+    <itemize>
+	<item> Bugfixes:
+	<itemize>
+	  <item> Fixed build on FreeBSD 5.x.
+	  </item>
+	  <item> Fixed startup script dependencies.
+	  </item>
+	</itemize>
+	</item>
+    </itemize>
+  </p>
 
   <p>
     Changes since version 4.2:
