@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.126 2007/07/05 22:12:55 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.127 2007/07/10 19:32:14 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,6 +11,11 @@
 	<item> New features:
 	<itemize>
 	  <item> Added L2TP local hostname configuration.
+	  </item>
+	  <item> Added L2TP length option.
+	  </item>
+	  <item> L2TP local hostname and secret at server side is now configurable
+	         depending on client address.
 	  </item>
 	</itemize>
 	</item>
