@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.128 2007/07/11 18:22:39 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.129 2007/07/12 22:56:00 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -16,6 +16,14 @@
 	  </item>
 	  <item> L2TP local hostname and secret at server side is now configurable
 	         depending on client address.
+	  </item>
+	</itemize>
+	</item>
+	<item> Bugfixes:
+	<itemize>
+	  <item> Fixed race condition on PPTP tunnel creation/death.
+	  </item>
+	  <item> Fixed crash when stdout redirected to /dev/null.
 	  </item>
 	</itemize>
 	</item>
