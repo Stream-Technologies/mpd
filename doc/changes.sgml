@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.129 2007/07/12 22:56:00 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.130 2007/07/23 19:36:58 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -16,6 +16,8 @@
 	  </item>
 	  <item> L2TP local hostname and secret at server side is now configurable
 	         depending on client address.
+	  </item>
+	  <item> Reimplemented RADIUS Class attribute support.
 	  </item>
 	</itemize>
 	</item>
