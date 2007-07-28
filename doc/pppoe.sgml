@@ -1,4 +1,4 @@
-<!-- $Id: pppoe.sgml,v 1.2 2003/10/30 20:28:59 amotin Exp $ -->
+<!-- $Id: pppoe.sgml,v 1.3 2007/02/07 16:21:02 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -41,6 +41,12 @@ set pppoe service <em>service-name</em>
 Sets the requested PPPoE service name. Setting service name to "*" 
 on link with allowed incoming connections allows to accept incoming 
 connection requests with any service name specified.
+
+<tag><tt>
+set pppoe acname <em>name</em>
+</tt></tag>
+
+Set name of this PPPoE access concentrator to be sent to clients.
 
 <tag><tt>set pppoe enable <em>option ...</em> </tt></tag><p>
 <tag><tt>set pppoe disable <em>option ...</em> </tt></tag><p>
