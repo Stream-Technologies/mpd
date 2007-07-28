@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.130 2007/07/23 19:36:58 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.131 2007/07/27 10:59:37 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -18,6 +18,8 @@
 	         depending on client address.
 	  </item>
 	  <item> Reimplemented RADIUS Class attribute support.
+	  </item>
+	  <item> Added PPPoE AC-name specification for the server side.
 	  </item>
 	</itemize>
 	</item>
