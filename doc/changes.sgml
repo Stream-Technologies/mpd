@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.132 2007/07/28 19:34:45 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.133 2007/07/29 08:59:57 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -20,6 +20,8 @@
 	  <item> Reimplemented RADIUS Class attribute support.
 	  </item>
 	  <item> Added PPPoE AC-name specification for the server side.
+	  </item>
+	  <item> Added IP accounting with ng_ipacct node support.
 	  </item>
 	  <item> Added configure script for better system features detection.
 	  </item>

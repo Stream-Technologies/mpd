@@ -1,4 +1,4 @@
-<!-- $Id: interface.sgml,v 1.15 2007/03/12 18:59:42 amotin Exp $ -->
+<!-- $Id: interface.sgml,v 1.16 2007/03/12 22:59:38 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -173,6 +173,9 @@ If enabled, the bundle will participate in
 NetFlow generation. See <ref id="netflow" name="the NetFlow chapter">
 for more information. The netflow-out option is like netflow-in, but 
 generates NetFlow data for outgoing packets instead of incoming.
+
+<tag><tt>ipacct</tt></tag>
+If enabled, the bundle will participate in IP accounting with ng_ipacct node.
 
 </descrip>
 
