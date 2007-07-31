@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.133 2007/07/29 08:59:57 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.134 2007/07/29 22:08:07 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -34,6 +34,8 @@
 	  <item> Fixed race condition on PPTP tunnel creation/death.
 	  </item>
 	  <item> Fixed crash when stdout redirected to /dev/null.
+	  </item>
+	  <item> Fixed memory leak in proxy-arp.
 	  </item>
 	</itemize>
 	</item>
