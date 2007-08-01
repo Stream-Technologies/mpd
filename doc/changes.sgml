@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.134 2007/07/29 22:08:07 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.135 2007/07/31 20:21:46 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -26,6 +26,9 @@
 	  <item> Added configure script for better system features detection.
 	  </item>
 	  <item> 'show version' command now shows compiled-in system features.
+	  </item>
+	  <item> 'session ...' and 'msession ...' commands to select link/bundle
+		 by their current session IDs added.
 	  </item>
 	</itemize>
 	</item>
