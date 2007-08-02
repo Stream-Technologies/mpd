@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.135 2007/07/31 20:21:46 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.136 2007/08/01 14:47:37 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -39,6 +39,12 @@
 	  <item> Fixed crash when stdout redirected to /dev/null.
 	  </item>
 	  <item> Fixed memory leak in proxy-arp.
+	  </item>
+	</itemize>
+	</item>
+	<item> Performance improvements:
+	<itemize>
+	  <item> Added support for 64bit ng_ppp counters where available.
 	  </item>
 	</itemize>
 	</item>
