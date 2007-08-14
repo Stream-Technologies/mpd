@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.136 2007/08/01 14:47:37 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.137 2007/08/02 14:45:34 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -39,6 +39,8 @@
 	  <item> Fixed crash when stdout redirected to /dev/null.
 	  </item>
 	  <item> Fixed memory leak in proxy-arp.
+	  </item>
+	  <item> Fixed Dial-on-Demand functionality.
 	  </item>
 	</itemize>
 	</item>
