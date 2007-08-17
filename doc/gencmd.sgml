@@ -1,4 +1,4 @@
-<!-- $Id: gencmd.sgml,v 1.15 2007/05/26 12:43:39 amotin Exp $ -->
+<!-- $Id: gencmd.sgml,v 1.16 2007/08/01 14:47:37 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -241,7 +241,7 @@ Normally, only the <tt>iface</tt> and <tt>link</tt> layers should be explicitly
 opened or closed. This is because the other layers are programmed
 to automatically open and close when appropriate. Note that
 the <bf>SIGUSR1</bf> and <bf>SIGUSR2</bf> signals are an alternative
-way to open and close the currently active link.
+way to open and close the first link.
 
 <tag><tt>close [ <em>layer</em> ] </tt>
 </tag>

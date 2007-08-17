@@ -1,4 +1,4 @@
-<!-- $Id: invoke.sgml,v 1.4 2006/09/22 21:42:05 amotin Exp $ -->
+<!-- $Id: invoke.sgml,v 1.5 2006/12/15 16:16:34 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -100,12 +100,12 @@
 
 	<tag>SIGUSR1</tag>
 	This signal causes mpd to initiate a connection
-	with the currently active link. If mpd is already
+	with the first link. If mpd is already
 	attempting to connect, this signal has no effect.
 
 	<tag>SIGUSR2</tag>
 	This signal has the opposite effect, namely, it causes
-	mpd to close the currently active link. If the link
+	mpd to close the first link. If the link
 	is already in a closed state, this signal has no effect.
 
 	</descrip>
