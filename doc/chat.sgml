@@ -1,4 +1,4 @@
-<!-- $Id: chat.sgml,v 1.1 2001/03/10 06:06:47 archiecobbs Exp $ -->
+<!-- $Id: chat.sgml,v 1.2 2004/04/26 17:17:49 mbretter Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -167,7 +167,7 @@ ${i_am_safely_followed_by_a_letter}
     <tag><tt>$modemDevice</tt></tag>
 
     The serial port device in use as set by the
-    <tt>set modem device</tt> command, e.g., <tt>/dev/cuaa0</tt>.
+    <tt>set modem device</tt> command, e.g., <tt>/dev/cuad0</tt>.
     Changing this string does not change the port being used.
 
     <tag><tt>$Baudrate</tt></tag>

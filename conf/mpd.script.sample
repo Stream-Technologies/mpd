@@ -1,6 +1,6 @@
 #################################################################
 #
-# $Id: mpd.script.sample,v 1.3 2007/03/15 14:09:52 amotin Exp $
+# $Id: mpd.script.sample,v 1.4 2007/03/15 14:26:35 amotin Exp $
 #
 # Copyright (c) 1995-1999 Whistle Communications, Inc. All rights reserved.
 # See ``COPYRIGHT.whistle''
@@ -454,7 +454,7 @@ GenericNoDialtone:
 UsrSetup:
 # Lower baudrate to 57600 for crappy internal Sportster modem
 	if $SportsterHack != "yes" goto UsrSetup2
-	if $modemDevice != "/dev/cuaa2" goto UsrSetup2
+	if $modemDevice != "/dev/cuad2" goto UsrSetup2
 	set $Baudrate 57600
 	set $modemCmd ""
 	call ModemCmd2
