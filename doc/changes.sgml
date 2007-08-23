@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.138 2007/08/14 16:02:49 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.139 2007/08/16 22:15:14 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -40,9 +40,11 @@
 	  </item>
 	  <item> Fixed memory leak in proxy-arp.
 	  </item>
-	  <item> Fixed Dial-on-Demand functionality.
+	  <item> Fixed Dial-on-Demand functionality broken in 4.2.
 	  </item>
-	  <item> Do not send SLI message for a Sync L2TP links.
+	  <item> Do not set ACCM for a Sync links.
+	  </item>
+	  <item> Fixed Sync mode detection for L2TP links.
 	  </item>
 	</itemize>
 	</item>
