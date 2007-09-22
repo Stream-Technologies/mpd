@@ -1,4 +1,4 @@
-<!-- $Id: cli.sgml,v 1.4 2007/03/22 13:43:28 amotin Exp $ -->
+<!-- $Id: cli.sgml,v 1.5 2007/06/21 21:04:32 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -12,7 +12,7 @@
 	the status of the defined bundles and links.
 	The commands available at the command line interface
 	are exactly the same ones available in the
-	<tt>mpd.conf</tt> and <tt>mpd.links</tt> config files.
+	<tt>mpd.conf</tt> config file.
 
 	At any given time, there is always an <em>active bundle</em>
 	and an <em>active link</em> within that bundle. These are

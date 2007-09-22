@@ -1,4 +1,4 @@
-<!-- $Id: building.sgml,v 1.4 2007/01/28 12:46:17 amotin Exp $ -->
+<!-- $Id: building.sgml,v 1.5 2007/06/16 19:31:15 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -21,7 +21,7 @@
   </tt></tag>
 
   The default configuration directory where mpd looks for
-  <tt>mpd.conf</tt>, <tt>mpd.links</tt>, etc.
+  <tt>mpd.conf</tt>, etc.
 
   <tag><tt>PHYSTYPE_MODEM</tt></tag><p>
   <tag><tt>PHYSTYPE_TCP</tt></tag><p>

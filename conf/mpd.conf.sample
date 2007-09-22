@@ -9,7 +9,7 @@
 # in at the console. Lines without padding are labels. Lines
 # starting with a "#" are comments.
 #
-# $Id: mpd.conf.sample,v 1.25 2007/06/25 09:20:26 amotin Exp $
+# $Id: mpd.conf.sample,v 1.26 2007/09/22 12:03:12 amotin Exp $
 #
 #################################################################
 
@@ -230,7 +230,7 @@ pptp_vpn:
 #
 # The "inside" IP addresses are configured by "set ipcp ranges ..."
 # (in mpd.conf) while the "outside" IP addreses are configured by
-# "set pptp self ..." and "set pptp peer ..." (in mpd.links).
+# "set pptp self ..." and "set pptp peer ...".
 #
 
 	create bundle static B1
