@@ -1,4 +1,4 @@
-<!-- $Id: auth.sgml,v 1.11 2007/05/28 15:00:29 amotin Exp $ -->
+<!-- $Id: auth.sgml,v 1.12 2007/09/22 12:36:53 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -88,7 +88,7 @@ Default <tt><bf>disable</bf></tt>.
 
 <tag><tt>ext-auth</tt></tag>
 
-Enable authentication by calling external authentination script.
+Enable authentication by calling external script.
 This method pretended to be a fullfeatured alternative to the 
 <tt><bf>radius-auth</bf></tt>.
 

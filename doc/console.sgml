@@ -1,4 +1,4 @@
-<!-- $Id: console.sgml,v 1.3 2006/10/03 14:57:46 amotin Exp $ -->
+<!-- $Id: console.sgml,v 1.4 2007/01/28 16:32:36 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -28,8 +28,7 @@ Closes the console, i.e., closes the listening TCP socket.
 Only the listener is affected; active sessions are not closed.
 
 <tag><tt>
-set console port <em>port</em>
-<newline>set console ip <em>ip</em>
+set console self <em>ip</em> [ <em>port</em> ]
 </tt></tag>
 
 Sets the credentials for the console-listener. After changing one of these
