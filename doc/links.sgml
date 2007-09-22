@@ -1,4 +1,4 @@
-<!-- $Id: links.sgml,v 1.12 2007/05/21 11:06:14 amotin Exp $ -->
+<!-- $Id: links.sgml,v 1.13 2007/09/22 14:14:32 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -17,6 +17,12 @@
 This command specifies the name of bundle which link should join
 after reaching NETWORK state if there is no multilink bundle ready for it.
 If the bundle template name specified new bundle will be created
+using it.
+
+<tag><tt>set link repeater <em>name</em></tt></tag><p>
+
+This command specifies the name of repeater which link should join.
+If the repeater template name specified new repeater will be created
 using it.
 
 <tag><tt>set link latency <em>microseconds</em></tt></tag><p>
