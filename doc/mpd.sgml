@@ -1,4 +1,4 @@
-<!-- $Id: mpd.sgml,v 1.18 2007/09/22 14:30:50 amotin Exp $ -->
+<!-- $Id: mpd.sgml,v 1.19 2007/09/22 20:53:49 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!DOCTYPE linuxdoc PUBLIC "-//FreeBSD//DTD linuxdoc//EN" [
@@ -24,7 +24,6 @@
 <!ENTITY console SYSTEM "console.sgml">
 <!ENTITY web SYSTEM "web.sgml">
 <!ENTITY bundle SYSTEM "bundle.sgml">
-<!ENTITY repeater SYSTEM "repeater.sgml">
 <!ENTITY interface SYSTEM "interface.sgml">
 <!ENTITY netflow SYSTEM "netflow.sgml">
 <!ENTITY ipcp SYSTEM "ipcp.sgml">
@@ -110,7 +109,6 @@ all mpd features.
 	&console;
 	&web;
 	&bundle;
-	&repeater;
 	&interface;
 	&ipcp;
 	&links;
