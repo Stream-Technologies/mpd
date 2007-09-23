@@ -1,4 +1,4 @@
-<!-- $Id: int-radius.sgml,v 1.3 2007/06/25 17:53:12 amotin Exp $ -->
+<!-- $Id: int-radius.sgml,v 1.4 2007/08/13 15:04:54 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -59,6 +59,7 @@ N   Name                       	   Access	 Accounting
 60  CHAP-Challenge		+	-	-	-
 61  NAS-Port-Type		+	-	+	-
 85  Acct-Interim-Interval	-	+	-	-
+88  Framed-Pool			-	+	-	-
 95  NAS-IPv6-Address		+	-	+	-
 99  Framed-IPv6-Route		-	+	-	-
 

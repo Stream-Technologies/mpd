@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.27 2007/05/29 20:06:21 amotin Exp $
+ * $Id: radius.h,v 1.28 2007/06/23 11:28:22 amotin Exp $
  *
  */
 
@@ -50,6 +50,10 @@
 
   #ifndef RAD_MESSAGE_AUTHENTIC
   #define RAD_MESSAGE_AUTHENTIC 80
+  #endif
+
+  #ifndef RAD_FRAMED_POOL
+  #define RAD_FRAMED_POOL	88
   #endif
 
   #ifndef RAD_MAX_ATTR_LEN

@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.83 2007/08/10 11:06:39 amotin Exp $
+ * $Id: radius.c,v 1.84 2007/09/21 19:39:58 amotin Exp $
  *
  */
 
@@ -1265,6 +1265,15 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 	auth->reply_message = Malloc(MB_AUTH, len + 1);
 	memcpy(auth->reply_message, tmpval, len + 1);
 	free(tmpval);
+        break;
+
+      case RAD_FRAMED_POOL:
+	tmpval = rad_cvt_string(data, len);
+	/* copy it into the persistent data struct */
+	strcpy(auth->params.ippool, tmpval);
+	free(tmpval);
+	Log(LG_RADIUS2, ("[%s] RADIUS: %s: RAD_FRAMED_POOL: %s ",
+	  auth->info.lnkname, __func__, auth->params.ippool));
         break;
 
       case RAD_VENDOR_SPECIFIC:
