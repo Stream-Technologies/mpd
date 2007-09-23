@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.140 2007/08/23 22:06:56 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.141 2007/09/22 14:14:32 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -29,6 +29,14 @@
 	  </item>
 	  <item> To simplify configuration link and phys layers separated
 		 since version 4.2 are now rejoined again into single link layer.
+	  </item>
+	</itemize>
+	</item>
+	<item> New features:
+	<itemize>
+	  <item> Added PAM authentication and accounting.
+	  </item>
+	  <item> Added dynamic IP addresses pools support.
 	  </item>
 	</itemize>
 	</item>
