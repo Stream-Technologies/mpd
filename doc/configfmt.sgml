@@ -1,4 +1,4 @@
-<!-- $Id: configfmt.sgml,v 1.6 2007/09/22 12:12:23 amotin Exp $ -->
+<!-- $Id: configfmt.sgml,v 1.7 2007/09/22 14:14:32 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -55,10 +55,10 @@ client:
 	set modem var $Telephone "1234567"
 	set link no pap chap eap
 	set link accept pap
-	set link max-redial 0
-	set link bundle B1
 	set auth authname "MyLogin"
 	set auth password "MyPassword"
+	set link max-redial 0
+	set link action bundle B1
 	open
 </verb></tscreen>
 
