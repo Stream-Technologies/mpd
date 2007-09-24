@@ -9,7 +9,7 @@
 # in at the console. Lines without padding are labels. Lines
 # starting with a "#" are comments.
 #
-# $Id: mpd.conf.sample,v 1.35 2007/09/24 14:53:23 amotin Exp $
+# $Id: mpd.conf.sample,v 1.36 2007/09/24 17:49:33 amotin Exp $
 #
 #################################################################
 
@@ -61,9 +61,10 @@ dialup:
 	set link accept chap pap
 # Configure the account name. Password will be taken from mpd.secret.
 	set auth authname MyLogin
-# To make Ringback work we should specify how to handle it's
-# link originated call.
+# To make Ringback work we should specify how to handle "incoming"
+# calls originated by it.
 	set link action bundle B1
+	set link enable incoming
 
 # Create static bundle named B1
 	create bundle static B1
