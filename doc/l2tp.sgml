@@ -1,4 +1,4 @@
-<!-- $Id: l2tp.sgml,v 1.10 2007/07/11 20:23:02 amotin Exp $ -->
+<!-- $Id: l2tp.sgml,v 1.11 2007/07/12 22:56:00 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -114,18 +114,6 @@ Enable and disable L2TP device type options for the link.
 The following options are supported:
 
 <descrip>
-
-<tag><tt>originate</tt></tag>
-
-This option enables the initiation of L2TP connections to the peer.
-If this option is disabled, mpd will not initiate any L2TP connections.
-You must configure the peer's IP address with the
-<tt><bf>set l2tp peer</bf></tt> command.
-
-<tag><tt>incoming</tt></tag>
-
-This option enables the acceptance of incoming L2TP connections.
-If this option is disabled, mpd will not accept any incoming connections.
 
 <tag><tt>outcall</tt></tag>
 

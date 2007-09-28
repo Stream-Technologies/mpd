@@ -1,4 +1,4 @@
-<!-- $Id: pptp.sgml,v 1.12 2007/06/25 17:54:16 amotin Exp $ -->
+<!-- $Id: pptp.sgml,v 1.13 2007/09/22 12:12:23 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -88,18 +88,6 @@ Enable and disable PPTP device type options for the link.
 The following options are supported:
 
 <descrip>
-
-<tag><tt>originate</tt></tag>
-
-This option enables the initiation of PPTP connections to the peer.
-If this option is disabled, mpd will not initiate any PPTP connections.
-You must configure the peer's IP address with the
-<tt><bf>set pptp peer</bf></tt> command.
-
-<tag><tt>incoming</tt></tag>
-
-This option enables the acceptance of incoming PPTP connections.
-If this option is disabled, mpd will not accept any incoming connections.
 
 <tag><tt>outcall</tt></tag>
 
