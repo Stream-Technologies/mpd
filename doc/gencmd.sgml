@@ -1,4 +1,4 @@
-<!-- $Id: gencmd.sgml,v 1.20 2007/09/22 20:53:49 amotin Exp $ -->
+<!-- $Id: gencmd.sgml,v 1.21 2007/09/23 14:11:04 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -15,17 +15,21 @@
 <tag><tt>create bundle [ template | static ] <em>name</em> [ <em>template</em> ] </tt>
 </tag>
 
-Create new bundle with specified name, optionally based on
-specified template. If 'template' option is specified bundle template
-will be created, else if will be an instance. If 'static' option
-is specified, it will be a permanent bundle which will not disapear
-after operation.
+Create new bundle with specified name, optionally based on specified template.
+If 'template' option is specified bundle will not operate itself,
+but will be used to create new bundles on demand.
+If 'static' option is specified, it will be a permanent bundle which will not
+disapear after operation complete.
 
 <tag><tt>create link [ template | static ] <em>name</em> ( <em>type</em> | <em>template</em> ) </tt>
 </tag>
 
 Create new link with specified name and type, optionally based on
 specified template.
+If 'template' option is specified link will not operate itself,
+but will be used to create new links on demand.
+If 'static' option is specified, it will be a permanent link which will not
+disapear after operation complete.
 
 <tag><tt>bundle [ <em>name</em> ] </tt>
 </tag>
