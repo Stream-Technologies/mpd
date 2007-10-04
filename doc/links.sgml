@@ -1,4 +1,4 @@
-<!-- $Id: links.sgml,v 1.16 2007/09/23 18:25:39 amotin Exp $ -->
+<!-- $Id: links.sgml,v 1.17 2007/09/28 21:47:53 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -16,7 +16,7 @@
 
 List of such command describes how incoming calls should be processed.
 "bundle" means that connection should be processed locally with
-spefied bundle. "forward" means that connection should be forwarded
+specified bundle. "forward" means that connection should be forwarded
 using repeater to the specified link. Optional "regexp" parameneter
 defines regular expression which will be checked against peer auth name.
 
