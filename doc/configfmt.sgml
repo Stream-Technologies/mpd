@@ -1,4 +1,4 @@
-<!-- $Id: configfmt.sgml,v 1.7 2007/09/22 14:14:32 amotin Exp $ -->
+<!-- $Id: configfmt.sgml,v 1.8 2007/09/23 21:49:11 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -61,6 +61,14 @@ client:
 	set link action bundle B1
 	open
 </verb></tscreen>
+
+Commands are independant and executed one by one as if they were
+entered using console. Operation of the most of commands related
+to the active context, which incudes currently active link, bundle
+and repeater. Information about active context is shown at the 
+console command prompt. Some commands, like <tt>link</tt>, 
+<tt>bundle</tt>, <tt>repeater</tt> and <tt>create</tt> can modify
+this context.
 
 <sect1><heading><tt>mpd.secret</tt></heading>
 
