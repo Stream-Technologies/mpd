@@ -9,7 +9,7 @@
 # in at the console. Lines without padding are labels. Lines
 # starting with a "#" are comments.
 #
-# $Id: mpd.conf.sample,v 1.39 2007/09/25 05:36:14 amotin Exp $
+# $Id: mpd.conf.sample,v 1.40 2007/10/04 20:25:51 amotin Exp $
 #
 #################################################################
 
@@ -306,7 +306,7 @@ pppoe_server:
 	set link enable multilink
 # Set bundle template to use
 	set link action bundle B
-# Allow peer to authenticate us
+# Enable peer authentication
 	set link disable chap pap eap
 	set link enable pap
 	load radius
