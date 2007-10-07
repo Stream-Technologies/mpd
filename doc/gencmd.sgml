@@ -1,4 +1,4 @@
-<!-- $Id: gencmd.sgml,v 1.22 2007/10/04 21:52:13 amotin Exp $ -->
+<!-- $Id: gencmd.sgml,v 1.23 2007/10/05 17:36:02 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -30,6 +30,16 @@ If 'template' option is specified link will not operate itself,
 but will be used to create new links on demand.
 If 'static' option is specified, it will be a permanent link which will not
 disapear after operation complete.
+
+<tag><tt>
+<newline>destroy bundle [ <em>name</em> ]
+<newline>destroy link [ <em>name</em> ]
+</tt>
+</tag>
+
+Destroy existing link/bundle.
+Note, that if link is in use it may not disapear after command return,
+it may take some time to properly close it.
 
 <tag><tt>bundle [ <em>name</em> ] </tt>
 </tag>
