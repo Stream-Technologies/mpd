@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.c,v 1.21 2007/06/05 19:32:13 amotin Exp $
+ * $Id: eap.c,v 1.22 2007/09/16 14:03:58 amotin Exp $
  *
  */
 
@@ -477,8 +477,7 @@ EapRadiusProxyFinish(Link l, AuthData auth)
     lh.id = auth->id;
     lh.length = htons(sizeof(lh));
 
-    a->params.eapmsg = Malloc(MB_AUTH, sizeof(lh));
-    memcpy(a->params.eapmsg, &lh, sizeof(lh));
+    a->params.eapmsg = Mdup(MB_AUTH, &lh, sizeof(lh));
     a->params.eapmsg_len = sizeof(lh);
   }
 
