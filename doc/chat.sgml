@@ -1,4 +1,4 @@
-<!-- $Id: chat.sgml,v 1.3 2007/08/22 08:32:01 amotin Exp $ -->
+<!-- $Id: chat.sgml,v 1.4 2007/09/22 12:12:23 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -24,9 +24,7 @@
   column and ends with a colon character.
 
   <bf>Chat commands</bf> are indented with tab characters and written
-  one per line. Contrary to <tt>mpd.conf</tt>,
-  the processing of chat commands <em>does not</em> stop when a blank
-  line is encountered.
+  one per line.
 
   Commands are executed sequentially.
   Execution continues without stopping until there is an error or
