@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.150 2007/10/13 19:43:47 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.151 2007/10/22 17:59:20 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,6 +8,12 @@
   <p>
     Changes since version 5.0b1:
     <itemize>
+	<item> New features:
+	<itemize>
+	  <item> Added 'set link max-children ...' command.
+	  </item>
+	</itemize>
+	</item>
 	<item> Bugfixes:
 	<itemize>
 	  <item> Rewritten PPPoE, L2TP, TCP and UDP link types to fulfill new

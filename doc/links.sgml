@@ -1,4 +1,4 @@
-<!-- $Id: links.sgml,v 1.17 2007/09/28 21:47:53 amotin Exp $ -->
+<!-- $Id: links.sgml,v 1.18 2007/10/04 21:59:57 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -157,6 +157,15 @@ This setting should be used with links that are dedicated for dial-in.
 If <tt>max-redial</tt> is set to 0, then mpd will redial infinitely.
 
 The default value is -1.
+
+<tag><tt>
+set link max-children <em>num</em>
+</tt></tag>
+
+This template option specifies maximum number of links, created using
+this template, that could exist at the same time. Value 0 disables template.
+
+The default value is 10000.
 
 <tag><tt>set link accept <em>option ...</em> </tt></tag><p>
 <tag><tt>set link deny <em>option ...</em> </tt></tag><p>
