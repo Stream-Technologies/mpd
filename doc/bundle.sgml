@@ -1,4 +1,4 @@
-<!-- $Id: bundle.sgml,v 1.26 2007/09/22 12:12:23 amotin Exp $ -->
+<!-- $Id: bundle.sgml,v 1.27 2007/09/22 14:14:32 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -37,7 +37,7 @@ Similarly, mpd will not open a link unless previous was opened at least
 help prevent oscillations, but cause slower response time.
 
 <tag><tt>
-set bundle retry <em>seconds</em>
+set bundle fsm-timeout <em>seconds</em>
 </tt></tag>
 
 This sets the finite state machine (FSM) retry interval for all
