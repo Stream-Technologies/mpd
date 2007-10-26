@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.153 2007/10/24 11:49:05 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.154 2007/10/26 17:01:29 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -35,6 +35,10 @@
 	<item> Changes:
 	<itemize>
 	  <item> 'set bundle retry' commend renamed to 'set bundle fsm-timeout'.
+	  </item>
+	  <item> Increased number of auth retries to 5.
+	  </item>
+	  <item> PPTP windowing is disabled by default.
 	  </item>
 	</itemize>
 	</item>
