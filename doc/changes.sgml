@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.157 2007/10/26 21:57:10 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.158 2007/10/27 11:55:46 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -26,6 +26,8 @@
 	  <item> Increased number of auth retries to 5.
 	  </item>
 	  <item> PPTP windowing is disabled by default.
+	  </item>
+	  <item> Improved unified command error reporting.
 	  </item>
 	</itemize>
 	</item>
