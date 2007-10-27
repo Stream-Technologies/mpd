@@ -1,9 +1,9 @@
-<!-- $Id: nat.sgml,v 1.1 2007/05/26 12:43:39 amotin Exp $ -->
+<!-- $Id: nat.sgml,v 1.2 2007/05/29 07:40:56 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
-  <sect><heading>NAT commands<label id="nat"></heading>
+  <sect><heading>Network Address Translation (NAT)<label id="nat"></heading>
 
 <p>
 

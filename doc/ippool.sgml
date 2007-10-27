@@ -1,9 +1,9 @@
-<!-- $Id: ippool.sgml,v 1.1 2007/09/24 09:31:15 amotin Exp $ -->
+<!-- $Id: ippool.sgml,v 1.2 2007/10/04 20:25:52 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
-  <sect><heading>IP pool commands<label id="ippool"></heading>
+  <sect><heading>IP address pools<label id="ippool"></heading>
 
 <p>
 Mpd implementing dynamic IP addresses pool management. When user

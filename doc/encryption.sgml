@@ -1,9 +1,9 @@
-<!-- $Id: encryption.sgml,v 1.9 2007/01/09 20:14:12 amotin Exp $ -->
+<!-- $Id: encryption.sgml,v 1.10 2007/01/28 12:46:17 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
-  <sect><heading>Encryption layer commands<label id="encryption"></heading>
+  <sect><heading>Encryption (ECP) layer<label id="encryption"></heading>
 
   <p>
   This chapter describes commands that configure the Encryption Control
