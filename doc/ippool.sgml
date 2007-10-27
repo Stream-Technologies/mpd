@@ -1,4 +1,4 @@
-<!-- $Id: ippool.sgml,v 1.2 2007/10/04 20:25:52 amotin Exp $ -->
+<!-- $Id: ippool.sgml,v 1.3 2007/10/27 11:55:46 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -6,12 +6,13 @@
   <sect><heading>IP address pools<label id="ippool"></heading>
 
 <p>
-Mpd implementing dynamic IP addresses pool management. When user
+Mpd implements dynamic IP addresses pool management. When user
 is authenticated and auth backend have not provided IP address,
-it can be taken from pool. To make work it you should create
+it can be taken from pool. To make it work you should create
 one or more address pools with 'set ippool add ...'
-commands and define which pool should be used with
-'set ipcp ranges ... ippool ...' command or RADIUS Framed-Pool attribute.
+command and define which pool should be used with
+'set ipcp ranges ... ippool ...' command, radius-auth Framed-Pool attribute
+or ext-auth FRAMED_POOL attribute.
 
 <descrip>
 
