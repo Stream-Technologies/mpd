@@ -1,4 +1,4 @@
-<!-- $Id: compression.sgml,v 1.18 2007/10/26 21:57:10 amotin Exp $ -->
+<!-- $Id: compression.sgml,v 1.19 2007/10/27 11:55:46 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -43,9 +43,7 @@ The <bf><tt>no</tt></bf> command is the same as
 </descrip>
 
 <p>
-The options available at the CCP layer are listed below. Note that
-the MPPC options require proprietary files present in system
-that are not included with the normal distribution.
+The options available at the CCP layer are listed below.
 
 <descrip>
 
