@@ -1,4 +1,4 @@
-<!-- $Id: console.sgml,v 1.6 2007/10/05 17:36:02 amotin Exp $ -->
+<!-- $Id: console.sgml,v 1.7 2007/10/27 11:55:46 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -34,13 +34,6 @@ set console self <em>ip</em> [ <em>port</em> ]
 Sets the credentials for the console-listener. After changing one of these
 options, the console must be closed and re-opened for the changes to
 take effect.
-
-<tag><tt>
-set console user <em>username</em> <em>password</em>
-</tt></tag>
-
-This configures which users are allowed to connect to the console.
-This command may be invoked multiple times with different usernames.
 
 </descrip>
 

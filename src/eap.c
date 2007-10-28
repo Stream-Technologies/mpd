@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.c,v 1.22 2007/09/16 14:03:58 amotin Exp $
+ * $Id: eap.c,v 1.23 2007/10/09 18:00:32 amotin Exp $
  *
  */
 
@@ -41,17 +41,17 @@
 
   const struct cmdtab EapSetCmds[] = {
     { "accept [opt ...]",		"Accept option",
-	EapSetCommand, NULL, (void *) SET_ACCEPT },
+	EapSetCommand, NULL, 2, (void *) SET_ACCEPT },
     { "deny [opt ...]",			"Deny option",
-	EapSetCommand, NULL, (void *) SET_DENY },
+	EapSetCommand, NULL, 2, (void *) SET_DENY },
     { "enable [opt ...]",		"Enable option",
-	EapSetCommand, NULL, (void *) SET_ENABLE },
+	EapSetCommand, NULL, 2, (void *) SET_ENABLE },
     { "disable [opt ...]",		"Disable option",
-	EapSetCommand, NULL, (void *) SET_DISABLE },
+	EapSetCommand, NULL, 2, (void *) SET_DISABLE },
     { "yes [opt ...]",			"Enable and accept option",
-	EapSetCommand, NULL, (void *) SET_YES },
+	EapSetCommand, NULL, 2, (void *) SET_YES },
     { "no [opt ...]",			"Disable and deny option",
-	EapSetCommand, NULL, (void *) SET_NO },
+	EapSetCommand, NULL, 2, (void *) SET_NO },
     { NULL },
   };
 
