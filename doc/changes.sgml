@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.159 2007/10/27 21:23:01 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.160 2007/10/28 11:18:04 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -16,6 +16,8 @@
 	  </item>
 	  <item> Web console rewritten and allows now execute any commands
 		 allowed by privileges. Added plain-text command interface.
+	  </item>
+	  <item> New 'show sessions' command added.
 	  </item>
 	</itemize>
 	</item>
