@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.160 2007/10/28 11:18:04 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.161 2007/10/28 13:32:29 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -54,6 +54,8 @@
 	  <item> MPPC now automaically disables unusable subprotocols.
 		 For example, it is impossible to use MPPE encryption
 		 without MSCHAP.
+	  </item>
+	  <item> Fixed FSM instantiation to fix LCP keep-alives.
 	  </item>
 	  <item> Many small fixes.
 	  </item>
