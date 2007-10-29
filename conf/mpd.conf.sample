@@ -9,19 +9,19 @@
 # in at the console. Lines without padding are labels. Lines
 # starting with a "#" are comments.
 #
-# $Id: mpd.conf.sample,v 1.42 2007/10/22 21:56:08 amotin Exp $
+# $Id: mpd.conf.sample,v 1.43 2007/10/26 21:57:10 amotin Exp $
 #
 #################################################################
 
 startup:
+	# configure mpd users
+	set user foo bar admin
+	set user foo1 bar1
 	# configure the console
 	set console self 127.0.0.1 5005
-	set console user foo bar
-	set console user foo1 bar1
 	set console open
 	# configure the web server
 	set web self 0.0.0.0 5006
-	set web user foo bar
 	set web open
 
 #
