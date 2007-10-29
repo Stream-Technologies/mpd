@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.88 2007/10/27 21:19:34 amotin Exp $
+ * $Id: radius.c,v 1.89 2007/10/28 11:18:07 amotin Exp $
  *
  */
 
@@ -1506,7 +1506,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 		    acls1->number = 0;
 		    acls1->real_number = i;
 	    }
-	    strncpy(acls1->rule, acl2, ACL_LEN);
+	    strlcpy(acls1->rule, acl2, ACL_LEN);
 	    while ((*acls != NULL) && ((*acls)->number < acls1->number))
 	      acls = &((*acls)->next);
 
