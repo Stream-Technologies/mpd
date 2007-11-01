@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.162 2007/10/29 16:51:54 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.163 2007/11/01 16:58:37 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -58,6 +58,8 @@
 		 without MSCHAP.
 	  </item>
 	  <item> Fixed FSM instantiation to fix LCP keep-alives.
+	  </item>
+	  <item> Fixed 'set eap ...' context.
 	  </item>
 	  <item> Many small fixes.
 	  </item>
