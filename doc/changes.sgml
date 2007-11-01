@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.161 2007/10/28 13:32:29 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.162 2007/10/29 16:51:54 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -18,6 +18,8 @@
 		 allowed by privileges. Added plain-text command interface.
 	  </item>
 	  <item> New 'show sessions' command added.
+	  </item>
+	  <item> Acct-Session-Id attribute now present in auth request.
 	  </item>
 	</itemize>
 	</item>
