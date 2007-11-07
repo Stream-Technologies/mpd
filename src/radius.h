@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.28 2007/06/23 11:28:22 amotin Exp $
+ * $Id: radius.h,v 1.29 2007/09/23 11:25:18 amotin Exp $
  *
  */
 
@@ -75,6 +75,10 @@
   #define RAD_MPD_TABLE_STATIC	5
   #define RAD_MPD_FILTER	6
   #define RAD_MPD_LIMIT		7
+  #define RAD_MPD_INPUT_OCTETS	8
+  #define RAD_MPD_INPUT_PACKETS	9
+  #define RAD_MPD_OUTPUT_OCTETS	10
+  #define RAD_MPD_OUTPUT_PACKETS	11
   #define RAD_MPD_DROP_USER	154
 
   /* Configuration options */

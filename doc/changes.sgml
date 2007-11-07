@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.163 2007/11/01 16:58:37 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.164 2007/11/01 19:15:40 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -10,6 +10,9 @@
     <itemize>
 	<item> New features:
 	<itemize>
+	  <item> Implemented type-differentiated traffic accounting
+		 based on mpd-limit traffic filters.
+	  </item>
 	  <item> Added 'set link max-children ...' command for DoS protection.
 	  </item>
 	  <item> Implemented user privilege levels "admin"/"operator"/"user".
