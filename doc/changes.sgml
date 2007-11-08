@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.164 2007/11/01 19:15:40 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.165 2007/11/07 21:58:04 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -63,6 +63,8 @@
 	  <item> Fixed FSM instantiation to fix LCP keep-alives.
 	  </item>
 	  <item> Fixed 'set eap ...' context.
+	  </item>
+	  <item> Implemented PAP-ACK packet retransmit.
 	  </item>
 	  <item> Many small fixes.
 	  </item>
