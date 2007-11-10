@@ -1,4 +1,4 @@
-<!-- $Id: invoke.sgml,v 1.6 2007/08/17 19:27:08 amotin Exp $ -->
+<!-- $Id: invoke.sgml,v 1.7 2007/10/05 17:36:02 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -49,6 +49,13 @@
 
 	Specify an initial configuration file other than the default,
 	<tt>mpd.conf</tt>.
+
+	<tag><tt>
+	-o  --one-shot
+	</tt></tag>
+
+	This option forces mpd terminate itself after the last link disappear.
+	Link templates are not counted as links.
 
 	<tag><tt>
 	-p  --pidfile <em>filename</em>

@@ -1,4 +1,4 @@
-<!-- $Id: gencmd.sgml,v 1.29 2007/10/28 13:32:29 amotin Exp $ -->
+<!-- $Id: gencmd.sgml,v 1.30 2007/11/09 14:35:10 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -191,6 +191,11 @@ The <tt><bf>enable</bf></tt> and <tt><bf>disable</bf></tt> commands
 determine whether or not we want the corresponding option.
 
 The options available are:
+
+<tag><tt>one-shot</tt></tag>
+
+This option forces mpd terminate itself after the last link disappear.
+Link templates are not counted as links.
 
 <tag><tt>tcp-wrapper</tt></tag>
 
