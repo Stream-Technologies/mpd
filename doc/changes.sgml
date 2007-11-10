@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.167 2007/11/09 14:35:10 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.168 2007/11/10 15:34:41 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -26,6 +26,8 @@
 		 in complicated dial setups.
 	  </item>
 	  <item> Acct-Session-Id attribute now present in auth request.
+	  </item>
+	  <item> Show to auth real PPPoE session name received from peer.
 	  </item>
 	</itemize>
 	</item>
