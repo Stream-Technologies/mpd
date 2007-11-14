@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: event.c,v 1.14 2007/03/19 23:04:32 amotin Exp $
+ * $Id: event.c,v 1.15 2007/11/14 20:52:05 amotin Exp $
  *
  */
 
@@ -223,8 +223,9 @@ static void
 EventHandler(void *arg)
 {
     EventRef	ev = (EventRef) arg;
+    const char	*dbg = ev->dbg;
 
-    Log(LG_EVENTS, ("EVENT: Processing event %s", ev->dbg));
+    Log(LG_EVENTS, ("EVENT: Processing event %s", dbg));
     (ev->handler)(ev->type, ev->arg);
-    Log(LG_EVENTS, ("EVENT: Processing event %s done", ev->dbg));
+    Log(LG_EVENTS, ("EVENT: Processing event %s done", dbg));
 }
