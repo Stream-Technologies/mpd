@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.c,v 1.23 2007/10/09 18:00:32 amotin Exp $
+ * $Id: eap.c,v 1.24 2007/10/28 11:18:05 amotin Exp $
  *
  */
 
@@ -542,13 +542,12 @@ static void
 EapRadiusSendMsgTimeout(void *ptr)
 {
     Link	l = (Link)ptr;
-  EapInfo	const eap = &l->lcp.auth.eap;
+    EapInfo	const eap = &l->lcp.auth.eap;
 
-  TimerStop(&eap->reqTimer);
-  if (--eap->retry > 0) {
-    TimerStart(&eap->reqTimer);
-    EapRadiusSendMsg(l);
-  }
+    if (--eap->retry > 0) {
+	TimerStart(&eap->reqTimer);
+	EapRadiusSendMsg(l);
+    }
 }
 
 /*
@@ -563,11 +562,10 @@ EapIdentTimeout(void *ptr)
     Link	l = (Link)ptr;
     EapInfo	const eap = &l->lcp.auth.eap;
 
-  TimerStop(&eap->identTimer);
-  if (--eap->retry > 0) {
-    TimerStart(&eap->identTimer);
-    EapSendIdentRequest(l);
-  }
+    if (--eap->retry > 0) {
+	TimerStart(&eap->identTimer);
+	EapSendIdentRequest(l);
+    }
 }
 
 /*
