@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.97 2007/11/11 20:10:09 amotin Exp $
+ * $Id: radius.c,v 1.98 2007/11/11 20:29:55 amotin Exp $
  *
  */
 
@@ -1252,8 +1252,11 @@ RadiusGetParams(AuthData auth, int eap_proxy)
         break;
 
       case RAD_FRAMED_COMPRESSION:
-	Log(LG_RADIUS2, ("[%s] RADIUS: %s: (RAD_FRAMED_COMPRESSION: %d)",
-	  auth->info.lnkname, __func__, rad_cvt_int(data)));
+        i = rad_cvt_int(data);
+	Log(LG_RADIUS2, ("[%s] RADIUS: %s: RAD_FRAMED_COMPRESSION: %d",
+	  auth->info.lnkname, __func__, i));
+	if (i == RAD_COMP_VJ)
+	    auth->params.vjc_enable = 1;
         break;
 
       case RAD_FRAMED_PROTOCOL:
