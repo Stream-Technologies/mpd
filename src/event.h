@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: event.h,v 1.7 2007/11/14 20:52:05 amotin Exp $
+ * $Id: event.h,v 1.8 2007/11/17 13:33:17 amotin Exp $
  *
  */
 
@@ -50,8 +50,6 @@
   extern int	EventIsRegistered(EventRef *ref);
   extern int	EventTimerRemain(EventRef *ref);
   extern void	EventDump(Context ctx, const char *msg);
-
-  extern void	EventSetLog(int sanity, void (*warnx)(const char *fmt, ...));
 
 #endif
 
