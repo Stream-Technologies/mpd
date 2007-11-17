@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.98 2007/11/11 20:29:55 amotin Exp $
+ * $Id: radius.c,v 1.99 2007/11/16 23:24:19 amotin Exp $
  *
  */
 
@@ -90,7 +90,6 @@ RadiusInit(Link l)
     RadConf       const conf = &l->lcp.auth.conf.radius;
 
     memset(conf, 0, sizeof(*conf));
-    Disable(&conf->options, RADIUS_CONF_MESSAGE_AUTHENTIC);
     Enable(&conf->options, RADIUS_CONF_PEER_AS_CALLING);
     conf->radius_retries = 3;
     conf->radius_timeout = 5;
