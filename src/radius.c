@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.100 2007/11/17 12:11:28 amotin Exp $
+ * $Id: radius.c,v 1.101 2007/11/18 22:36:51 amotin Exp $
  *
  */
 
@@ -1613,7 +1613,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
   
     /* If Framed-IP-Address is present and Framed-Netmask != 32 add route */
     if (auth->params.range_valid && auth->params.range.width == 32 &&
-	    auth->params.netmask != 32) {
+	    auth->params.netmask != 0 && auth->params.netmask != 32) {
 	struct in_addr tmpmask;
 	widthtoin_addr(auth->params.netmask, &tmpmask);
 	r = Malloc(MB_AUTH, sizeof(struct ifaceroute));
