@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.169 2007/11/10 22:37:07 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.170 2007/11/17 12:37:41 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -53,6 +53,8 @@
 	<item> Bugfixes:
 	<itemize>
 	  <item> Fixed memory leak on link/bundle shutdown.
+	  </item>
+	  <item> Fixed reference (memory) leak on console close.
 	  </item>
 	  <item> Fixed netflow setup errors handeling.
 	  </item>
