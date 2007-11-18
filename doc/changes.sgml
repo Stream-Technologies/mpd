@@ -1,10 +1,23 @@
-<!-- $Id: changes.sgml,v 1.170 2007/11/17 12:37:41 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.171 2007/11/18 17:26:43 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
 
+  <p>
+    Changes since version 5.0b3:
+    <itemize>
+	<item> New features:
+	<itemize>
+	  <item> If Framed-Netmask RADIUS attribute != 255.255.255.255
+		 mpd will create Framed-IP-Address/Framed-Netmask route
+		 to the client side.
+	  </item>
+	</itemize>
+	</item>
+    </itemize>
+  </p>
   <p>
     Changes since version 5.0b1:
     <itemize>
