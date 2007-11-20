@@ -1,4 +1,4 @@
-<!-- $Id: gencmd.sgml,v 1.31 2007/11/10 15:34:41 amotin Exp $ -->
+<!-- $Id: gencmd.sgml,v 1.32 2007/11/10 21:47:26 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -20,6 +20,8 @@ If 'template' option is specified bundle will not operate itself,
 but will be used to create new bundles on demand.
 If 'static' option is specified, it will be a permanent bundle which will not
 disapear after operation complete.
+Maximum name length is 11 characters for templates and 15 characters
+for the rest of links.
 
 <tag><tt>create link [ template | static ] <em>name</em> ( <em>type</em> | <em>template</em> ) </tt>
 </tag>
@@ -30,6 +32,8 @@ If 'template' option is specified link will not operate itself,
 but will be used to create new links on demand.
 If 'static' option is specified, it will be a permanent link which will not
 disapear after operation complete.
+Maximum name length is 11 characters for templates and 15 characters
+for the rest of bundles.
 
 <tag><tt>
 <newline>destroy bundle [ <em>name</em> ]
