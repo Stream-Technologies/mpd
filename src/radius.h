@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.30 2007/11/07 21:58:05 amotin Exp $
+ * $Id: radius.h,v 1.31 2007/11/19 22:44:37 amotin Exp $
  *
  */
 
@@ -50,6 +50,10 @@
 
   #ifndef RAD_MESSAGE_AUTHENTIC
   #define RAD_MESSAGE_AUTHENTIC 80
+  #endif
+
+  #ifndef RAD_NAS_PORT_ID
+  #define RAD_NAS_PORT_ID	87
   #endif
 
   #ifndef RAD_FRAMED_POOL
