@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.c,v 1.24 2007/10/28 11:18:05 amotin Exp $
+ * $Id: eap.c,v 1.25 2007/11/15 19:09:42 amotin Exp $
  *
  */
 
@@ -523,11 +523,6 @@ EapRadiusSendMsg(void *ptr)
   } 
 
   bp = mballoc(MB_AUTH, a->params.eapmsg_len);
-  if (bp == NULL) {
-    Log(LG_ERR, ("[%s] EapRadiusSendMsg: mballoc() error", l->name));
-    return;
-  }
-
   memcpy(MBDATAU(bp), a->params.eapmsg, a->params.eapmsg_len);
   NgFuncWritePppFrameLink(l, PROTO_EAP, bp);
 }
