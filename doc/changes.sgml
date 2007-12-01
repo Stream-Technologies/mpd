@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.173 2007/11/20 21:27:09 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.174 2007/11/22 12:17:24 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -16,6 +16,12 @@
 	  </item>
 	  <item> Added reporting peer MAC address and interface to AAA.
 		 Added NAS-Port-Id RADIUS attribute support.
+	  </item>
+	</itemize>
+	</item>
+	<item> Changes:
+	<itemize>
+	  <item> Internal memory management rewritten.
 	  </item>
 	</itemize>
 	</item>
