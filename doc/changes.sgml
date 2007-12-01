@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.174 2007/11/22 12:17:24 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.175 2007/12/01 01:20:03 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -28,6 +28,10 @@
 	<item> Bugfixes:
 	<itemize>
 	  <item> Fixed /32 routes processing.
+	  </item>
+	  <item> Fixed crash on repeater shutdown.
+	  </item>
+	  <item> Fixed 'create link ' command syntax check.
 	  </item>
 	</itemize>
 	</item>
