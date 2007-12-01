@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.176 2007/12/01 01:22:24 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.177 2007/12/01 11:19:43 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -18,6 +18,10 @@
 		 Added NAS-Port-Id RADIUS attribute support.
 	  </item>
 	  <item> New 'iface' command added.
+	  </item>
+	  <item> Added IPv6 support for Tee and DialOnDemand.
+	  </item>
+	  <item> 'set iface addrs' now able to set IPv6 addresses.
 	  </item>
 	</itemize>
 	</item>
