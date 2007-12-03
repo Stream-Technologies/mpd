@@ -1,4 +1,4 @@
-<!-- $Id: auth.sgml,v 1.26 2007/11/16 23:24:19 amotin Exp $ -->
+<!-- $Id: auth.sgml,v 1.27 2007/11/20 21:27:08 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -480,6 +480,8 @@ FRAMED_POOL			-	+	-	-
 SESSION_TIMEOUT			-	+	-	-
 IDLE_TIMEOUT			-	+	-	-
 ACCT_INTERIM_INTERVAL		-	+	-	-
+ACCT_INTERIM_LIM_RECV		-	+	-	-
+ACCT_INTERIM_LIM_XMIT		-	+	-	-
 REPLY_MESSAGE			-	+	-	-
 MS_CHAP_ERROR			-	+	-	-
 IFACE				-	-	+	-
