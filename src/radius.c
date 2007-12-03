@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.105 2007/11/29 20:24:01 amotin Exp $
+ * $Id: radius.c,v 1.106 2007/11/29 21:23:49 amotin Exp $
  *
  */
 
@@ -323,8 +323,8 @@ RadiusAccount(AuthData auth)
     }
 
     Log(LG_RADIUS2, ("[%s] RADIUS: %s: rad_put_int(RAD_ACCT_SESSION_TIME): %ld", 
-      auth->info.lnkname, __func__, (long int)(time(NULL) - auth->info.last_open)));
-    if (rad_put_int(auth->radius.handle, RAD_ACCT_SESSION_TIME, time(NULL) - auth->info.last_open) != 0) {
+      auth->info.lnkname, __func__, (long int)(time(NULL) - auth->info.last_up)));
+    if (rad_put_int(auth->radius.handle, RAD_ACCT_SESSION_TIME, time(NULL) - auth->info.last_up) != 0) {
       Log(LG_RADIUS, ("[%s] RADIUS: %s: rad_put_int(RAD_ACCT_SESSION_TIME) failed: %s",
 	auth->info.lnkname, __func__, rad_strerror(auth->radius.handle)));
       return;
