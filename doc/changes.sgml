@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.179 2007/12/03 00:49:27 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.180 2007/12/03 11:25:30 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -35,6 +35,8 @@
 	  <item> Fixed crash on repeater shutdown.
 	  </item>
 	  <item> Fixed 'create link ' command syntax check.
+	  </item>
+	  <item> Many small tunings and fixes.
 	  </item>
 	</itemize>
 	</item>
