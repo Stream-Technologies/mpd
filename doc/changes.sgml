@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.182 2007/12/05 22:43:36 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.183 2007/12/06 22:04:31 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,6 +11,13 @@
 	<item> Bugfixes:
 	<itemize>
 	  <item> Rewritten ippool to avoid races on IPCP renegotiation.
+	  </item>
+	</itemize>
+	</item>
+	<item> Changes:
+	<itemize>
+	  <item> Rewritten message engine using internal circular queue
+		 instead of system pipe.
 	  </item>
 	</itemize>
 	</item>
