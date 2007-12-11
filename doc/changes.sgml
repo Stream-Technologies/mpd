@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.184 2007/12/07 17:32:58 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.185 2007/12/11 21:30:00 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,6 +8,12 @@
   <p>
     Changes since version 5.0b4:
     <itemize>
+	<item> New features:
+	<itemize>
+	  <item> 'show pptp' and 'show l2tp' commands added.
+	  </item>
+	</itemize>
+	</item>
 	<item> Bugfixes:
 	<itemize>
 	  <item> Rewritten ippool to avoid races on IPCP renegotiation.

@@ -1,4 +1,4 @@
-<!-- $Id: gencmd.sgml,v 1.34 2007/11/20 19:24:11 amotin Exp $ -->
+<!-- $Id: gencmd.sgml,v 1.35 2007/12/01 11:19:43 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -147,6 +147,10 @@ Show the device types supported by this version of mpd.
 <tag>layers</tag>
 Show the names of the layers that are valid as arguments to the <tt>open</tt>
 and <tt>close</tt> commands.
+<tag>l2tp</tag>
+Show active L2TP tunnels.
+<tag>pptp</tag>
+Show active PPTP tunnels.
 <tag>events</tag>
 Show all pending events (for debugging mpd).
 <tag>mem</tag>
