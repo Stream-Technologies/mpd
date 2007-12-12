@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.109 2007/12/04 16:11:21 amotin Exp $
+ * $Id: radius.c,v 1.110 2007/12/04 16:47:04 amotin Exp $
  *
  */
 
@@ -615,8 +615,7 @@ RadiusOpen(AuthData auth, short request_type)
 
   if (request_type == RAD_ACCESS_REQUEST) {
   
-    auth->radius.handle = rad_open();
-    if (auth->radius.handle == NULL) {
+    if ((auth->radius.handle = rad_open()) == NULL) {
       Log(LG_RADIUS, ("[%s] RADIUS: rad_open failed", auth->info.lnkname));
       return (RAD_NACK);
     }
@@ -624,8 +623,7 @@ RadiusOpen(AuthData auth, short request_type)
   /* RAD_ACCOUNTING_REQUEST */
   } else {
   
-    auth->radius.handle = rad_acct_open();
-    if (auth->radius.handle == NULL) {
+    if ((auth->radius.handle = rad_acct_open()) == NULL) {
       Log(LG_RADIUS, ("[%s] RADIUS: rad_acct_open failed", auth->info.lnkname));
       return (RAD_NACK);
     }
