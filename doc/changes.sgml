@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.185 2007/12/11 21:30:00 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.186 2007/12/11 23:01:40 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -32,6 +32,7 @@
 	</item>
     </itemize>
   </p>
+  <p>
     Changes since version 5.0b3:
     <itemize>
 	<item> New features:
