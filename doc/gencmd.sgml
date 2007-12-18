@@ -1,4 +1,4 @@
-<!-- $Id: gencmd.sgml,v 1.35 2007/12/01 11:19:43 amotin Exp $ -->
+<!-- $Id: gencmd.sgml,v 1.36 2007/12/11 23:01:40 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -192,6 +192,27 @@ set global startrule <em>num</em>
 These commands define initial values for autonumeration of ipfw
 rules, pipes, queues and tables. 
 Defaults are 10000, 10000, 10000 and 32 accordingly.
+
+<tag><tt>
+set global pptptimeout <em>seconds</em>
+<newline>set global l2tptimeout <em>seconds</em>
+</tt></tag>
+
+Set PPTP/L2TP tunnels inactivity shutdown delay.
+
+Default is 10 seconds.
+
+<tag><tt>
+set global pptplimit <em>num</em>
+<newline>set global l2tplimit <em>num</em>
+</tt></tag>
+
+Limit maximum number of calls per PPTP/L2TP tunnel. When limit
+is reached new tunnel will be created for the next call.
+This option violate PPTP RFC which requires only one tunnel existing
+for the PAC/PNS pair, but it can increase busy tunnels stability.
+
+Defaults are 100 for PPTP and 10 for L2TP.
 
 <tag><tt>
 set global enable <em>option ...</em>
