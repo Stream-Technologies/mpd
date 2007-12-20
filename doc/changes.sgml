@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.188 2007/12/20 20:40:16 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.189 2007/12/20 21:09:00 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,6 +8,12 @@
   <p>
     Changes since version 5.0rc1:
     <itemize>
+	<item> New features:
+	<itemize>
+	  <item> 'auth2' log level added.
+	  </item>
+	</itemize>
+	</item>
 	<item> Bugfixes:
 	<itemize>
 	  <item> Fixed bug in tcpmssfix when compression or encryption is used.
