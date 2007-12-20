@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.187 2007/12/18 21:14:12 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.188 2007/12/20 20:40:16 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -13,6 +13,8 @@
 	  <item> Fixed bug in tcpmssfix when compression or encryption is used.
 	  </item>
 	  <item> Fixed build on FreeBSD 5.x.
+	  </item>
+	  <item> Fixed build without PPTP or L2TP support.
 	  </item>
 	</itemize>
 	</item>
