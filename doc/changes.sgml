@@ -1,10 +1,23 @@
-<!-- $Id: changes.sgml,v 1.186 2007/12/11 23:01:40 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.187 2007/12/18 21:14:12 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
 
+  <p>
+    Changes since version 5.0rc1:
+    <itemize>
+	<item> Bugfixes:
+	<itemize>
+	  <item> Fixed bug in tcpmssfix when compression or encryption is used.
+	  </item>
+	  <item> Fixed build on FreeBSD 5.x.
+	  </item>
+	</itemize>
+	</item>
+    </itemize>
+  </p>
   <p>
     Changes since version 5.0b4:
     <itemize>
