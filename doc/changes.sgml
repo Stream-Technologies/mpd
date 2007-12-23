@@ -1,10 +1,21 @@
-<!-- $Id: changes.sgml,v 1.191 2007/12/20 22:14:29 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.192 2007/12/21 17:51:11 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
 
+  <p>
+    Changes since version 5.0rc2:
+    <itemize>
+	<item> Bugfixes:
+	<itemize>
+	  <item> Fixed MPPC options loss on link disconnect.
+	  </item>
+	</itemize>
+	</item>
+    </itemize>
+  </p>
   <p>
     Changes since version 5.0rc1:
     <itemize>
