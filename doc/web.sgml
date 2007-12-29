@@ -1,4 +1,4 @@
-<!-- $Id: web.sgml,v 1.4 2007/10/28 11:18:05 amotin Exp $ -->
+<!-- $Id: web.sgml,v 1.5 2007/11/10 21:47:26 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -59,6 +59,10 @@ This option enables basic authorisation on web server.
 The default is enable.
 
 </descrip>
+
+You can send any set of command allowed by privileges via WEB server for mpd
+infrastructure integration. Depending on URL used mpd supports two response
+formats: text/html (/cmd?command1&...) and text/plain (/bincmd?command1&...).
 
 </p>
 
