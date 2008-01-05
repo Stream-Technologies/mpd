@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.193 2007/12/23 21:00:23 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.194 2007/12/26 09:21:04 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -13,6 +13,8 @@
 	  <item> Fixed MPPC options loss on link disconnect.
 	  </item>
 	  <item> Fixed crash on PPTP CDN sending error.
+	  </item>
+	  <item> Fixed incorrect IPCP options reject processing.
 	  </item>
 	</itemize>
 	</item>
