@@ -1,4 +1,4 @@
-<!-- $Id: trouble.sgml,v 1.12 2007/06/16 19:39:16 amotin Exp $ -->
+<!-- $Id: trouble.sgml,v 1.13 2007/09/22 12:12:23 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -10,7 +10,7 @@
 
   <p>
   For further help, ask to the <tt>freebsd-net@freebsd.org</tt>
-  mailing list or sourceforge.net mpd project forum and mailing list.
+  mailing list or sourceforge.net mpd project forum.
 
 <descrip>
 
