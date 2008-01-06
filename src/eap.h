@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: eap.h,v 1.10 2007/03/18 22:43:09 amotin Exp $
+ * $Id: eap.h,v 1.11 2007/04/06 08:24:32 amotin Exp $
  *
  */
 
@@ -22,14 +22,14 @@
   /* Configuration options */
   enum {
     EAP_CONF_RADIUS,
-    EAP_CONF_MD5,
+    EAP_CONF_MD5
   };
 
   enum {
     EAP_REQUEST = 1,
     EAP_RESPONSE,
     EAP_SUCCESS,
-    EAP_FAILURE,
+    EAP_FAILURE
   };
 
   enum {
@@ -73,7 +73,7 @@
     EAP_TYPE_DEVICECONNECT,	/* DeviceConnect */
     EAP_TYPE_SPEKE,		/* EAP-SPEKE */
     EAP_TYPE_MOBAC,		/* EAP-MOBAC */
-    EAP_TYPE_FAST,		/* EAP-FAST */
+    EAP_TYPE_FAST		/* EAP-FAST */
   };
 
   extern const	struct cmdtab EapSetCmds[];

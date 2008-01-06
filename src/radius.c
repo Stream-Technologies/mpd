@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.110 2007/12/04 16:47:04 amotin Exp $
+ * $Id: radius.c,v 1.111 2007/12/12 17:53:21 amotin Exp $
  *
  */
 
@@ -43,7 +43,7 @@
     SET_RETRIES,
     SET_CONFIG,
     SET_ENABLE,
-    SET_DISABLE,
+    SET_DISABLE
   };
 
 /*
