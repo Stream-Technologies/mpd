@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.194 2007/12/26 09:21:04 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.195 2008/01/05 09:37:50 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -778,7 +778,7 @@
 	some internal structs as interface.
         </item>
 	<item>
-        The <tt>mpd.secrets</tt> file is now used as one authentication backends of many, it 
+        The <tt>mpd.secret</tt> file is now used as one authentication backends of many, it 
 	has no special role anymore, i.e. it could be disabled.
         </item>
 	<item>
@@ -853,7 +853,7 @@
 	attribute to the RADIUS request.
 	</item>
 	<item>
-	auth: <tt>internal</tt>, controles the usage of the <tt>mpd.secrets</tt> file 
+	auth: <tt>internal</tt>, controles the usage of the <tt>mpd.secret</tt> file 
 	(internal authentication backend).
         </item>
 	<item>
