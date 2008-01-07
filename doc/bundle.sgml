@@ -1,4 +1,4 @@
-<!-- $Id: bundle.sgml,v 1.29 2007/10/27 11:55:46 amotin Exp $ -->
+<!-- $Id: bundle.sgml,v 1.30 2007/11/10 21:47:26 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -106,14 +106,6 @@ however, it may help in certain situations of high packet
 loss or broken peer equipment.
 
 The default is disable.
-
-<tag><tt>shortseq</tt></tag>
-
-This option is only meaningful if multi-link PPP is negotiated.
-It proscribes shorter multi-link fragment headers,
-saving two bytes on every frame.
-
-The default id enable and accept.
 
 <tag><tt>ipcp</tt></tag>
 
