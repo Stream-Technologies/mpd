@@ -1,4 +1,4 @@
-<!-- $Id: todo.sgml,v 1.5 2006/12/10 22:35:03 amotin Exp $ -->
+<!-- $Id: todo.sgml,v 1.6 2007/05/30 11:58:03 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -16,6 +16,13 @@ a task post it to MPD's maling list.
 <p>
 Currently MPD supports only simpliest LCP callback without number
 negotiation, without CBCP support and only as client.
+</p>
+
+<tag>L2TP auth proxying</tag>
+<p>
+Currently MPD acting as LAC requires parameter renegotiation
+on every tunnel hop. It would be good to implement auth proxying
+to speedup negotiation.
 </p>
 
 <tag>Unimplemented Protocols</tag>
