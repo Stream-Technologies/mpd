@@ -1,4 +1,4 @@
-<!-- $Id: links.sgml,v 1.22 2007/12/20 22:14:29 amotin Exp $ -->
+<!-- $Id: links.sgml,v 1.23 2008/01/07 00:43:56 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -339,6 +339,12 @@ Default <tt><bf>disable</bf></tt>.
 Normally, if using MS-CHAP, the MS-Domain is stripped and only the plain
 username is used. Under certain circumstances the MS-Domain should be kept,
 for instance if IAS is used as RADIUS server.
+
+Default <tt><bf>disable</bf></tt>.
+
+<tag><tt>time-remain</tt></tag>
+
+Send Time-Remaining LCP packet to the peer if AAA returned session timeout.
 
 Default <tt><bf>disable</bf></tt>.
 
