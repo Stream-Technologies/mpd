@@ -1,4 +1,4 @@
-<!-- $Id: trafacct.sgml,v 1.2 2007/11/07 21:58:04 amotin Exp $ -->
+<!-- $Id: trafacct.sgml,v 1.3 2007/12/21 17:53:53 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -92,6 +92,10 @@ manual page.
 <tag><tt>ACCT_INPUT_OCTETS</tt></tag> 64bit input bytes counter,
 <tag><tt>ACCT_OUTPUT_OCTETS</tt></tag> 64bit output bytes counter.
 </descrip>
+
+  NOTE: as Accounting Update is implemented on a link layer it accounts
+  traffic via single physical link (without link overhead). So it accounts
+  traffic after compression, encryption and multilink were applied to it.
 
 <sect1><heading>Typed Accounting Update</heading>
 <p>
