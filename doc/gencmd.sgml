@@ -1,4 +1,4 @@
-<!-- $Id: gencmd.sgml,v 1.39 2008/01/06 09:46:26 amotin Exp $ -->
+<!-- $Id: gencmd.sgml,v 1.40 2008/01/08 22:49:14 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -212,7 +212,7 @@ is reached new tunnel will be created for the next call.
 This option violates PPTP RFC which requires only one tunnel existing
 for the PAC/PNS pair, but it can increase busy tunnels stability.
 
-Defaults are 100 (10 for L2TP on FreeBSD before 6.3-STABLE and 7.0-STABLE).
+Defaults are 100 (10 for L2TP before FreeBSD 6.3-STABLE and 7.0-RELEASE).
 
 <tag><tt>
 set global enable <em>option ...</em>
