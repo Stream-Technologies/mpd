@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.197 2008/01/06 17:50:51 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.198 2008/01/07 19:51:10 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -23,6 +23,8 @@
 	  <item> Fixed incorrect IPCP options reject processing.
 	  </item>
 	  <item> Fixed MP SHORTSEQ option.
+	  </item>
+	  <item> Fixed packet order on accepting outgoing PPTP call.
 	  </item>
 	</itemize>
 	</item>
