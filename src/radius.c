@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.112 2008/01/06 15:10:52 amotin Exp $
+ * $Id: radius.c,v 1.113 2008/01/15 19:17:52 amotin Exp $
  *
  */
 
@@ -413,7 +413,7 @@ RadStat(Context ctx, int ac, char *av[], void *arg)
   Printf("\tRetries      : %d\r\n", conf->radius_retries);
   Printf("\tConfig-file  : %s\r\n", (conf->file ? conf->file : "none"));
   Printf("\tMe (NAS-IP)  : %s\r\n", inet_ntoa(conf->radius_me));
-  Printf("\tv6Me (NAS-IP: %s\r\n", u_addrtoa(&conf->radius_mev6, buf1, sizeof(buf1)));
+  Printf("\tv6Me (NAS-IP): %s\r\n", u_addrtoa(&conf->radius_mev6, buf1, sizeof(buf1)));
   
   if (conf->server != NULL) {
 
