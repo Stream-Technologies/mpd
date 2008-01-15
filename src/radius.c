@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.111 2007/12/12 17:53:21 amotin Exp $
+ * $Id: radius.c,v 1.112 2008/01/06 15:10:52 amotin Exp $
  *
  */
 
@@ -1456,6 +1456,30 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 			auth->info.lnkname, auth->params.msoft.types, 
 			AuthMPPETypesname(auth->params.msoft.types, buf, sizeof(buf))));
 		}
+		break;
+
+    	     case RAD_MICROSOFT_MS_PRIMARY_DNS_SERVER:
+    		auth->params.peer_dns[0] = rad_cvt_addr(data);
+		Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_MICROSOFT_MS_PRIMARY_DNS_SERVER: %s",
+		    auth->info.lnkname, inet_ntoa(auth->params.peer_dns[0])));
+		break;
+
+    	     case RAD_MICROSOFT_MS_SECONDARY_DNS_SERVER:
+    		auth->params.peer_dns[1] = rad_cvt_addr(data);
+		Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_MICROSOFT_MS_SECONDARY_DNS_SERVER: %s",
+		    auth->info.lnkname, inet_ntoa(auth->params.peer_dns[1])));
+		break;
+
+    	     case RAD_MICROSOFT_MS_PRIMARY_NBNS_SERVER:
+    		auth->params.peer_nbns[0] = rad_cvt_addr(data);
+		Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_MICROSOFT_MS_PRIMARY_NBNS_SERVER: %s",
+		    auth->info.lnkname, inet_ntoa(auth->params.peer_nbns[0])));
+		break;
+
+    	     case RAD_MICROSOFT_MS_SECONDARY_NBNS_SERVER:
+    		auth->params.peer_nbns[1] = rad_cvt_addr(data);
+		Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_MICROSOFT_MS_SECONDARY_NBNS_SERVER: %s",
+		    auth->info.lnkname, inet_ntoa(auth->params.peer_nbns[1])));
 		break;
 
 	      default:
