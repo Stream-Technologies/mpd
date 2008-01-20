@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.202 2008/01/19 23:51:58 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.203 2008/01/20 20:27:02 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -13,6 +13,8 @@
 	  <item> Added support for NS specific RADIUS attributes from RFC 2548.
 	  </item>
 	  <item> Added global max-children option.
+	  </item>
+	  <item> Added link, bundle, iface and iface-index RADIUS VSA.
 	  </item>
 	</itemize>
 	</item>
