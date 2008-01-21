@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.203 2008/01/20 20:27:02 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.204 2008/01/20 21:42:05 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -15,6 +15,13 @@
 	  <item> Added global max-children option.
 	  </item>
 	  <item> Added link, bundle, iface and iface-index RADIUS VSA.
+	  </item>
+	</itemize>
+	</item>
+	<item> Changes:
+	<itemize>
+	  <item> peer-as-calling and report-mac options moved from radius
+		 to link to improve LAC operation.
 	  </item>
 	</itemize>
 	</item>

@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.33 2008/01/06 15:10:52 amotin Exp $
+ * $Id: radius.h,v 1.34 2008/01/20 21:42:06 amotin Exp $
  *
  */
 
@@ -91,9 +91,7 @@
 
   /* Configuration options */
   enum {
-    RADIUS_CONF_MESSAGE_AUTHENTIC,
-    RADIUS_CONF_PEER_AS_CALLING,
-    RADIUS_CONF_REPORT_MAC
+    RADIUS_CONF_MESSAGE_AUTHENTIC
   };
 
   extern const	struct cmdtab RadiusSetCmds[];
