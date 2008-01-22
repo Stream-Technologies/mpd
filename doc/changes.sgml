@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.204 2008/01/20 21:42:05 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.205 2008/01/21 10:11:28 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -33,6 +33,8 @@
 	  </item>
 	  <item> Changed NAK on multilink options processing.
 		 NAK enables rejected options back.
+	  </item>
+	  <item> Added missing multilink parameters check in BundJoin().
 	  </item>
 	</itemize>
 	</item>
