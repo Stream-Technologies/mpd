@@ -1,4 +1,4 @@
-<!-- $Id: compression.sgml,v 1.20 2007/10/27 12:11:18 amotin Exp $ -->
+<!-- $Id: compression.sgml,v 1.21 2007/11/10 21:47:26 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -135,9 +135,8 @@ The default is disable.
 
 <tag><tt>stateless</tt></tag>
 
-Enables stateless mode. This mode requires slightly more CPU time
-and is somewhat less secure, but allows faster recovery in the face
-of lost packets.
+Enables stateless mode. This mode requires more CPU time and is somewhat
+less secure, but allows faster recovery in the face of lost packets.
 
 The default is disable.
 
