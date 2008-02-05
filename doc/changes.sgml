@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.207 2008/01/23 19:32:46 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.208 2008/01/28 20:19:58 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -40,6 +40,8 @@
 	  <item> Added missing multilink parameters check in BundJoin().
 	  </item>
 	  <item> Fixed pppoe connection accept error handeling.
+	  </item>
+	  <item> Fixed sending of incoming traffic typed accounting on accounting stop.
 	  </item>
 	</itemize>
 	</item>
