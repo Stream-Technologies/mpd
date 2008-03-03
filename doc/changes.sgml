@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.209 2008/02/05 21:25:17 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.210 2008/03/03 14:19:20 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -42,6 +42,8 @@
 	  <item> Fixed PPPoE connection accept error handeling.
 	  </item>
 	  <item> Fixed sending of incoming traffic typed accounting on accounting stop.
+	  </item>
+	  <item> Fixed proxy-arp MAC when more then one interface matches.
 	  </item>
 	</itemize>
 	</item>
