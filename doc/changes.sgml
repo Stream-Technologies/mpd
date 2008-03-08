@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.210 2008/03/03 14:19:20 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.211 2008/03/03 15:56:05 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -44,6 +44,8 @@
 	  <item> Fixed sending of incoming traffic typed accounting on accounting stop.
 	  </item>
 	  <item> Fixed proxy-arp MAC when more then one interface matches.
+	  </item>
+	  <item> Fixed some L2TP errors processing.
 	  </item>
 	</itemize>
 	</item>
