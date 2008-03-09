@@ -1,4 +1,4 @@
-<!-- $Id: trafacct.sgml,v 1.3 2007/12/21 17:53:53 amotin Exp $ -->
+<!-- $Id: trafacct.sgml,v 1.4 2008/01/08 22:18:04 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -140,5 +140,9 @@ mpd-input-octets = Local:32132132
 mpd-input-packets = Biz:21321
 mpd-input-octets = Biz:3213213
 </verb>
+
+  To simplify AAA integration mpd able to return specified traffic types
+  using standatd RADIUS attributes. Required traffic type can be specified
+  using mpd-input-acct/mpd-output-acct attributes.
 
 </p>
