@@ -1,4 +1,4 @@
-<!-- $Id: auth.sgml,v 1.31 2008/01/20 21:42:04 amotin Exp $ -->
+<!-- $Id: auth.sgml,v 1.32 2008/03/09 12:20:06 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -471,6 +471,7 @@ Supported attributes:
 Name                       	   Access	 Accounting
 	                	Req	Resp	Req	Resp
 USER_NAME			+	+	+	+
+AUTH_TYPE			+	-	-	-
 USER_PASSWORD			+	+	-	-
 USER_NT_HASH			-	+	-	-
 USER_LM_HASH			-	+	-	-
