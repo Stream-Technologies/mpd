@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.213 2008/03/09 12:20:08 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.214 2008/03/09 21:57:34 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -25,6 +25,8 @@
 	  <item> Added mpd-input-acct/mpd-output-acct RADIUS attributes
 		 to allow sending typed traffic accounting using standard
 		 RADIUS attributes.
+	  </item>
+	  <item> Added support for local side IP management using IP pools.
 	  </item>
 	</itemize>
 	</item>
