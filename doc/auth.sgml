@@ -1,4 +1,4 @@
-<!-- $Id: auth.sgml,v 1.33 2008/03/09 12:35:38 amotin Exp $ -->
+<!-- $Id: auth.sgml,v 1.34 2008/03/09 21:57:34 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -188,6 +188,8 @@ set radius server <em>name</em> <em>secret</em> [ <em>auth-port</em> [ <em>acct-
 
 Configure RADIUS server parameters. Multiple RADIUS servers may be configured 
 by repeating this command, and up to 10 servers may be specified.
+If one of auth/acct ports specified as 0, it will not be used for requests
+of that type.
 
 <tag><tt>
 set radius timeout <em>seconds</em>
