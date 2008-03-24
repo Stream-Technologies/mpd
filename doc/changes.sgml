@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.216 2008/03/13 18:06:34 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.217 2008/03/13 18:16:44 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -31,6 +31,10 @@
 	  <item> Added support for auth/acct-only RADIUS servers.
 		 It allows to specify different servers for authentication
 		 and accounting in mpd configuration file.
+	  </item>
+	  <item> Added support for the new ng_pptpgre node design, supporting
+		 multiple calls per node. It improves performance, when multiple
+		 calls active between two IPs.
 	  </item>
 	</itemize>
 	</item>
