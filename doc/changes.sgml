@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.217 2008/03/13 18:16:44 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.218 2008/03/24 20:33:09 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -61,6 +61,8 @@
 	  <item> Fixed using correct proxy-arp MAC when more then one interface matches.
 	  </item>
 	  <item> Fixed some L2TP and PPPoE errors processing.
+	  </item>
+	  <item> Fixed TCP and UDP link type nodes naming.
 	  </item>
 	</itemize>
 	</item>
