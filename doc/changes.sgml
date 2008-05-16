@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.219 2008/04/02 17:18:24 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.220 2008/04/15 10:51:34 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,6 +11,8 @@
 	<item> Bugfixes:
 	<itemize>
 	  <item> Fix PPTP peer address reporting for real LAC/PAC mode.
+	  </item>
+	  <item> Fix auth thread busy check.
 	  </item>
 	</itemize>
 	</item>
