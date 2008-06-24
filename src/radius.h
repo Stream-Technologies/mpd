@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.36 2008/03/09 21:57:34 amotin Exp $
+ * $Id: radius.h,v 1.37 2008/06/24 18:26:45 amotin Exp $
  *
  */
 
@@ -95,6 +95,7 @@
 
   extern const	struct cmdtab RadiusSetCmds[];
 
+  /* Configuration for a radius server */
   struct radiusserver_conf {
     char	*hostname;
     char	*sharedsecret;
@@ -104,12 +105,12 @@
   };
   typedef struct radiusserver_conf *RadServe_Conf;
 
-  /* Configuration for a radius server */
   struct radiusconf {
     int		radius_timeout;
     int		radius_retries;
     struct	in_addr radius_me;
     struct	u_addr radius_mev6;
+    char	*identifier;
     char	*file;
     struct radiusserver_conf *server;
     struct optinfo	options;	/* Configured options */

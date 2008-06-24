@@ -1,4 +1,4 @@
-<!-- $Id: auth.sgml,v 1.38 2008/04/07 13:05:04 amotin Exp $ -->
+<!-- $Id: auth.sgml,v 1.39 2008/06/21 15:01:45 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -207,13 +207,20 @@ Set the number of retries for RADIUS requests.
 set radius me <em>IP</em>|<em>ifname</em>|<em>hostname</em>
 </tt></tag>
 
-Send the given IP in the RAD_NAS_IP_ADDRESS attribute to the server
+Send the given IP in the RAD_NAS_IP_ADDRESS attribute to the server.
 
 <tag><tt>
 set radius v6me <em>IPv6</em>
 </tt></tag>
 
-Send the given IP in the RAD_NAS_IPV6_ADDRESS attribute to the server
+Send the given IP in the RAD_NAS_IPV6_ADDRESS attribute to the server.
+
+<tag><tt>
+set radius identifier <em>name</em>
+</tt></tag>
+
+Send the given name in the RAD_NAS_IDENTIFIER attribute to the server.
+If not set the local hostname is used.
 
 <tag><tt>
 set radius enable message-authentic
