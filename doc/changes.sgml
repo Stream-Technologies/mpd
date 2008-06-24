@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.224 2008/06/24 18:26:44 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.225 2008/06/24 18:55:56 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,6 +11,9 @@
 	<item> New features:
 	<itemize>
 	  <item> Added 'set radius identifier' command.
+	  </item>
+	  <item> Added '$CallingID' and '$CalledID' modem chat variables.
+		 Their values will be reported to the auth backend.
 	  </item>
 	</itemize>
 	</item>
