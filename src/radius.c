@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.126 2008/06/24 18:55:57 amotin Exp $
+ * $Id: radius.c,v 1.127 2008/06/25 20:33:41 amotin Exp $
  *
  */
 
@@ -677,13 +677,15 @@ RadiusStart(AuthData auth, short request_type)
     	return (RAD_NACK);
     }
 
-    Log(LG_RADIUS2, ("[%s] RADIUS: Put RAD_NAS_PORT_ID: %s",
-        auth->info.lnkname, auth->params.peeriface));
-    if (rad_put_string(auth->radius.handle, RAD_NAS_PORT_ID,
-	    auth->params.peeriface) == -1) {
-	Log(LG_RADIUS, ("[%s] RADIUS: Put RAD_NAS_PORT_ID failed %s",
-	    auth->info.lnkname, rad_strerror(auth->radius.handle)));
-    	return (RAD_NACK);
+    if (auth->params.peeriface[0]) {
+	Log(LG_RADIUS2, ("[%s] RADIUS: Put RAD_NAS_PORT_ID: %s",
+    	auth->info.lnkname, auth->params.peeriface));
+	if (rad_put_string(auth->radius.handle, RAD_NAS_PORT_ID,
+	        auth->params.peeriface) == -1) {
+	    Log(LG_RADIUS, ("[%s] RADIUS: Put RAD_NAS_PORT_ID failed %s",
+		auth->info.lnkname, rad_strerror(auth->radius.handle)));
+		return (RAD_NACK);
+	}
     }
 
     Log(LG_RADIUS2, ("[%s] RADIUS: Put RAD_MPD_LINK: %s", 

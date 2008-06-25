@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.226 2008/06/24 21:41:20 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.227 2008/06/25 20:33:37 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -25,9 +25,10 @@
 	  </item>
 	  <item> Accounting start error now closes link.
 	  </item>
-	  <item> PPPoE peer address format changed to more traditional. For
-		 "calling" compatibility use 'set link disable peer-as-calling'
-		 command.
+	  <item> PPPoE peer address format changed to more traditional.
+	  </item>
+	  <item> Link peer-as-calling option default changed to disabled.
+		 PPTP and L2TP users are advised to check configurations!
 	  </item>
 	</itemize>
 	</item>
