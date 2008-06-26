@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.227 2008/06/25 20:33:37 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.228 2008/06/25 20:53:45 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -15,7 +15,7 @@
 	  <item> Added '$CallingID' and '$CalledID' modem chat variables.
 		 Their values will be reported to the auth backend.
 	  </item>
-	  <item> Added some tunnel related RADIUS attributes of RFC2868.
+	  <item> Added tunnel related RADIUS attributes of RFC2868 support.
 	  </item>
 	</itemize>
 	</item>
