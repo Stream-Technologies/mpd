@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.127 2008/06/25 20:33:41 amotin Exp $
+ * $Id: radius.c,v 1.128 2008/06/25 20:53:45 amotin Exp $
  *
  */
 
@@ -777,6 +777,36 @@ RadiusStart(AuthData auth, short request_type)
 	    if (rad_put_string_tag(auth->radius.handle, RAD_TUNNEL_CLIENT_ENDPOINT,
     		    0, tmpval) == -1) {
     		Log(LG_RADIUS, ("[%s] RADIUS: Put RAD_TUNNEL_CLIENT_ENDPOINT failed %s",
+    	    	    auth->info.lnkname, rad_strerror(auth->radius.handle)));
+    		return (RAD_NACK);
+	    }
+	}
+	if (auth->info.originate == LINK_ORIGINATE_LOCAL) {
+	    tmpval = auth->params.peername;
+	} else {
+	    tmpval = auth->params.selfname;
+	}
+	if (tmpval[0]) {
+	    Log(LG_RADIUS2, ("[%s] RADIUS: Put RAD_TUNNEL_SERVER_AUTH_ID: %s",
+    		auth->info.lnkname, tmpval));
+	    if (rad_put_string_tag(auth->radius.handle, RAD_TUNNEL_SERVER_AUTH_ID,
+    		    0, tmpval) == -1) {
+    		Log(LG_RADIUS, ("[%s] RADIUS: Put RAD_TUNNEL_SERVER_AUTH_ID failed %s",
+    	    	    auth->info.lnkname, rad_strerror(auth->radius.handle)));
+    		return (RAD_NACK);
+	    }
+	}
+	if (auth->info.originate == LINK_ORIGINATE_LOCAL) {
+	    tmpval = auth->params.selfname;
+	} else {
+	    tmpval = auth->params.peername;
+	}
+	if (tmpval[0]) {
+	    Log(LG_RADIUS2, ("[%s] RADIUS: Put RAD_TUNNEL_CLIENT_AUTH_ID: %s",
+    		auth->info.lnkname, tmpval));
+	    if (rad_put_string_tag(auth->radius.handle, RAD_TUNNEL_CLIENT_AUTH_ID,
+    		    0, tmpval) == -1) {
+    		Log(LG_RADIUS, ("[%s] RADIUS: Put RAD_TUNNEL_CLIENT_AUTH_ID failed %s",
     	    	    auth->info.lnkname, rad_strerror(auth->radius.handle)));
     		return (RAD_NACK);
 	    }
