@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.228 2008/06/25 20:53:45 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.229 2008/06/26 19:53:29 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -21,7 +21,8 @@
 	</item>
 	<item> Changes:
 	<itemize>
-	  <item> IPCP/IPv6CP now closing on interface address assign error.
+	  <item> IPCP/IPv6CP now closing on interface address assign error
+		 or up-script error.
 	  </item>
 	  <item> Accounting start error now closes link.
 	  </item>
