@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.229 2008/06/26 19:53:29 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.230 2008/07/01 14:42:02 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -16,6 +16,8 @@
 		 Their values will be reported to the auth backend.
 	  </item>
 	  <item> Added tunnel related RADIUS attributes of RFC2868 support.
+	  </item>
+	  <item> 'set auth max-logins' feature can now be case insensitive.
 	  </item>
 	</itemize>
 	</item>
