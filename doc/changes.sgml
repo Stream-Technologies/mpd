@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.232 2008/07/07 15:30:21 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.233 2008/07/26 19:48:56 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -34,6 +34,9 @@
 	  </item>
 	  <item> Link peer-as-calling option default changed to disabled.
 		 PPTP and L2TP users are advised to check configurations!
+	  </item>
+	  <item> Some of RADIUS accounting update log messages moved from
+		 radius to radius2 log level.
 	  </item>
 	</itemize>
 	</item>
