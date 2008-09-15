@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.86 2008/04/07 13:17:06 amotin Exp $
+# $Id: Makefile,v 1.87 2008/09/13 10:55:49 amotin Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -56,6 +56,8 @@ LDADD+=		-lpcap
 DPADD+=		${LIBPCAP}
 LDADD+=		-lpam
 DPADD+=		${LIBPAM}
+LDADD+=		-lfetch
+DPADD+=		${LIBFETCH}
 
 LDADD+=		-L${PREFIX}/lib -lpdel -lssl -lexpat
 
