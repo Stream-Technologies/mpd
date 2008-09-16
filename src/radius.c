@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.132 2008/09/13 10:46:58 amotin Exp $
+ * $Id: radius.c,v 1.133 2008/09/13 10:52:46 amotin Exp $
  *
  */
 
@@ -1812,6 +1812,14 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 	    	    auth->info.lnkname, tmpval));
 		strlcpy(auth->params.std_acct[1], tmpval,
 		    sizeof(auth->params.std_acct[1]));
+		free(tmpval);
+		break;
+	    } else if (res == RAD_MPD_ACTION) {
+		tmpval = rad_cvt_string(data, len);
+	        Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_MPD_ACTION: %s",
+	    	    auth->info.lnkname, tmpval));
+		strlcpy(auth->params.action, tmpval,
+		    sizeof(auth->params.action));
 		free(tmpval);
 		break;
 	    } else {

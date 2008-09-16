@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.237 2008/09/16 13:25:19 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.238 2008/09/16 14:07:30 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -12,7 +12,9 @@
 	<itemize>
 	  <item> Added 'drop' link action and 'set link action clear' command.
 	  </item>
-	  <item> Added global traffic filters support to reduce auth-reply size.
+	  <item> Added ability to receive link action in auth reply.
+	  </item>
+	  <item> Added global traffic filters support to reduce auth reply size.
 	  </item>
 	  <item> Added ability to include other local or remote config files.
 	  </item>

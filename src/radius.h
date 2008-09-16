@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.38 2008/06/24 18:55:57 amotin Exp $
+ * $Id: radius.h,v 1.39 2008/06/25 20:33:41 amotin Exp $
  *
  */
 
@@ -110,6 +110,7 @@
   #define RAD_MPD_IFACE_INDEX	15
   #define RAD_MPD_INPUT_ACCT	16
   #define RAD_MPD_OUTPUT_ACCT	17
+  #define RAD_MPD_ACTION	18
   #define RAD_MPD_DROP_USER	154
 
   /* Configuration options */
