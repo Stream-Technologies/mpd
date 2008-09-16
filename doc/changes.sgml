@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.234 2008/09/13 10:49:20 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.235 2008/09/16 09:00:27 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,6 +8,12 @@
   <p>
     Changes since version 5.2:
     <itemize>
+	<item> New features:
+	<itemize>
+	  <item> Added 'drop' link action and 'set link action clear' command.
+	  </item>
+	</itemize>
+	</item>
 	<item> Bugfixes:
 	<itemize>
 	  <item> Fix possible crash on nonterminated ident string receive.
