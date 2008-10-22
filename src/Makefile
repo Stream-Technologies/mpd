@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.87 2008/09/13 10:55:49 amotin Exp $
+# $Id: Makefile,v 1.88 2008/09/15 13:12:34 amotin Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -59,7 +59,10 @@ DPADD+=		${LIBPAM}
 LDADD+=		-lfetch
 DPADD+=		${LIBFETCH}
 
-LDADD+=		-L${PREFIX}/lib -lpdel -lssl -lexpat
+LDADD+=		-L${PREFIX}/lib
+LDADD+=		-lpdel
+LDADD+=		-lssl
+LDADD+=		-lexpat
 
 MPD_VERSION!=	echo -n "${VERSION} (`id -un`@`uname -n` `LC_TIME=C date +'%R %v'`)"
 
