@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.239 2008/09/16 14:47:27 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.240 2008/09/30 12:47:06 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -20,6 +20,8 @@
 	  </item>
 	  <item> Added support for new ng_netflow node features to improve
 		 bidirectional accounting.
+	  </item>
+	  <item> Improved build modularization to allow more customized builds.
 	  </item>
 	</itemize>
 	</item>
