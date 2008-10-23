@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.134 2008/09/16 14:47:29 amotin Exp $
+ * $Id: radius.c,v 1.135 2008/10/22 17:35:29 amotin Exp $
  *
  */
 
@@ -1864,7 +1864,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 	      free(acl);
 	      break;
 	    }
-	    acls1 = Malloc(MB_AUTH, sizeof(struct acl));
+	    acls1 = Malloc(MB_AUTH, sizeof(struct acl) + strlen(acl3));
 	    if (res != RAD_MPD_TABLE_STATIC) {
 		    acls1->number = i;
 		    acls1->real_number = 0;
@@ -1874,7 +1874,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 	    }
 	    if (acl2)
 		strlcpy(acls1->name, acl2, sizeof(acls1->name));
-	    strlcpy(acls1->rule, acl3, sizeof(acls1->rule));
+	    strcpy(acls1->rule, acl3);
 	    while ((*acls != NULL) && ((*acls)->number < acls1->number))
 	      acls = &((*acls)->next);
 
