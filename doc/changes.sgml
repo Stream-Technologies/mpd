@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.240 2008/09/30 12:47:06 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.241 2008/10/22 17:38:55 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -21,7 +21,13 @@
 	  <item> Added support for new ng_netflow node features to improve
 		 bidirectional accounting.
 	  </item>
+	</itemize>
+	</item>
+	<item> Changes:
+	<itemize>
 	  <item> Improved build modularization to allow more customized builds.
+	  </item>
+	  <item> Reduced memory usage.
 	  </item>
 	</itemize>
 	</item>
@@ -49,10 +55,6 @@
 	  </item>
 	  <item> Added force ability to the 'set iface addrs' command.
 	  </item>
-	</itemize>
-	</item>
-	<item> Changes:
-	<itemize>
 	  <item> IPCP/IPv6CP now closing on interface address assign error
 		 or up-script error.
 	  </item>
