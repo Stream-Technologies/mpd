@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.91 2008/10/23 08:26:14 amotin Exp $
+# $Id: Makefile,v 1.92 2008/10/23 22:14:37 amotin Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -228,7 +228,7 @@ COPTS+=         -DUSE_NG_VJC
 COPTS+=         -DUSE_IPFW
 .endif
 .if defined ( USE_FETCH )
-COPTS+=         -DUSE_IPFW
+COPTS+=         -DUSE_FETCH
 LDADD+=		-lfetch
 DPADD+=		${LIBFETCH}
 .endif
