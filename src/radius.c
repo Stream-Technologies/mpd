@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.135 2008/10/22 17:35:29 amotin Exp $
+ * $Id: radius.c,v 1.136 2008/10/23 21:05:10 amotin Exp $
  *
  */
 
@@ -1338,7 +1338,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 #endif
   struct ifaceroute	*r, *r1;
   struct u_range	range;
-#if (!defined(__FreeBSD__) || __FreeBSD_version >= 503100)
+#if defined(CCP_MPPC) && (!defined(__FreeBSD__) || __FreeBSD_version >= 503100)
   u_char	*tmpkey;
   size_t	tmpkey_len;
 #endif
@@ -1641,7 +1641,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 		  auth->info.lnkname, auth->params.msdomain));
 		break;
 
-#if (!defined(__FreeBSD__) || __FreeBSD_version >= 503100)
+#if defined(CCP_MPPC) && (!defined(__FreeBSD__) || __FreeBSD_version >= 503100)
               /* MPPE Keys MS-CHAPv2 and EAP-TLS */
 	      case RAD_MICROSOFT_MS_MPPE_RECV_KEY:
 		Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_MICROSOFT_MS_MPPE_RECV_KEY",
