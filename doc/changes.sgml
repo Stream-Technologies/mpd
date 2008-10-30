@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.241 2008/10/22 17:38:55 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.242 2008/10/23 21:03:34 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -34,6 +34,8 @@
 	<item> Bugfixes:
 	<itemize>
 	  <item> Fix possible crash on nonterminated ident string receive.
+	  </item>
+	  <item> Fix memory leaks on auth failures.
 	  </item>
 	</itemize>
 	</item>
