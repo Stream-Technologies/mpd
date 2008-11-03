@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.136 2008/10/23 21:05:10 amotin Exp $
+ * $Id: radius.c,v 1.137 2008/10/23 22:14:37 amotin Exp $
  *
  */
 
@@ -1378,7 +1378,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
       case RAD_EAP_MESSAGE:
 	if (auth->params.eapmsg != NULL) {
 	  char *tbuf;
-	  Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_EAP_MESSAGE: len %d of %d",
+	  Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_EAP_MESSAGE: len %ju of %ju",
 	    auth->info.lnkname, len, auth->params.eapmsg_len + len));
 	  tbuf = Malloc(MB_AUTH, auth->params.eapmsg_len + len);
 	  memcpy(tbuf, auth->params.eapmsg, auth->params.eapmsg_len);
@@ -1387,7 +1387,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 	  Freee(auth->params.eapmsg);
 	  auth->params.eapmsg = tbuf;
 	} else {
-	  Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_EAP_MESSAGE: len %d",
+	  Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_EAP_MESSAGE: len %ju",
 	    auth->info.lnkname, len));
 	  auth->params.eapmsg = Mdup(MB_AUTH, data, len);
 	  auth->params.eapmsg_len = len;
