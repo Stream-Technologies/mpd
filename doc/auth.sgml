@@ -1,4 +1,4 @@
-<!-- $Id: auth.sgml,v 1.45 2008/09/16 14:47:27 amotin Exp $ -->
+<!-- $Id: auth.sgml,v 1.46 2008/10/23 20:43:18 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -163,6 +163,13 @@ OPIE and CHAP, because otherwise users are also able to authenticate
 with their secret pass phrase.
 
 Default <tt><bf>disable</bf></tt>.
+
+<tag><tt>acct-mandatory</tt></tag>
+
+Makes accounting start mandatory. If enabled, on accounting start failure 
+connection will be dropped.
+
+Default <tt><bf>enable</bf></tt>.
 
 </descrip>
 </p>

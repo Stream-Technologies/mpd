@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.242 2008/10/23 21:03:34 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.243 2008/10/30 11:41:39 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -20,6 +20,9 @@
 	  </item>
 	  <item> Added support for new ng_netflow node features to improve
 		 bidirectional accounting.
+	  </item>
+	  <item> Added 'acct-mandatory' auth option to control accounting start
+		 errors handeling.
 	  </item>
 	</itemize>
 	</item>
