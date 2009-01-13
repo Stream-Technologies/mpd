@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.243 2008/10/30 11:41:39 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.244 2008/12/29 20:57:15 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -31,6 +31,9 @@
 	  <item> Improved build modularization to allow more customized builds.
 	  </item>
 	  <item> Reduced memory usage.
+	  </item>
+	  <item> Allowes MRRU less then 1500 bytes. RFC claims that 1500 must be
+		 supported, but lower values are acceptable.
 	  </item>
 	</itemize>
 	</item>
