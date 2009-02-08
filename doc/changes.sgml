@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.246 2009/01/13 10:27:47 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.247 2009/01/26 20:35:20 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -44,6 +44,8 @@
 	  <item> Fix memory leaks on auth failures.
 	  </item>
 	  <item> Change NCPs join/leave sequences to avoid ENXIO errors on connect.
+	  </item>
+	  <item> Use separate socket for getting CCP node ID to avoid fake reports.
 	  </item>
 	</itemize>
 	</item>
