@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.138 2008/11/03 22:55:39 amotin Exp $
+ * $Id: radius.c,v 1.139 2009/04/09 17:00:56 amotin Exp $
  *
  */
 
@@ -297,7 +297,6 @@ RadStat(Context ctx, int ac, char *av[], void *arg)
 static int
 RadiusAddServer(AuthData auth, short request_type)
 {
-  int		i;
   RadConf	const c = &auth->conf.radius;
   RadServe_Conf	s;
 
@@ -305,7 +304,6 @@ RadiusAddServer(AuthData auth, short request_type)
     return (RAD_ACK);
 
   s = c->server;
-  i = 1;
   while (s) {
 
     if (request_type == RAD_ACCESS_REQUEST) {
