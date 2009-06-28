@@ -1,4 +1,4 @@
-<!-- $Id: refs.sgml,v 1.9 2008/06/25 20:33:37 amotin Exp $ -->
+<!-- $Id: refs.sgml,v 1.10 2009/06/28 20:59:20 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -61,9 +61,11 @@
 
 <htmlurl url="http://www.ietf.org/rfc/rfc2866.txt" name="RFC 2866 RADIUS Accounting">
 
-<htmlurl url="http://www.ietf.org/rfc/rfc2869.txt" name="RFC 2868 Attributes for Tunnel Protocol Support">
+<htmlurl url="http://www.ietf.org/rfc/rfc2868.txt" name="RFC 2868 Attributes for Tunnel Protocol Support">
 
 <htmlurl url="http://www.ietf.org/rfc/rfc2869.txt" name="RFC 2869 RADIUS Extensions">
+
+<htmlurl url="http://www.ietf.org/rfc/rfc3576.txt" name="RFC 3576 Dynamic Authorization Extensions to RADIUS">
 
 <htmlurl url="http://www.ietf.org/rfc/rfc3579.txt" name="RFC 3579 RADIUS EAP">
 

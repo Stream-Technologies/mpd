@@ -1,10 +1,24 @@
-<!-- $Id: changes.sgml,v 1.248 2009/02/08 22:08:10 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.249 2009/04/11 21:07:27 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
 
+  <p>
+    Changes since version 5.3:
+    <itemize>
+	<item> New features:
+	<itemize>
+	  <item> Added built-in RADIUS server, supporting
+		 RFC 3576: Dynamic Authorization Extensions to RADIUS.
+	  </item>
+	  <item> Added Disconnect-Request extension support from RFC 3576.
+	  </item>
+	</itemize>
+	</item>
+    </itemize>
+  </p>
   <p>
     Changes since version 5.2:
     <itemize>
