@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.94 2009/04/09 16:45:13 amotin Exp $
+# $Id: Makefile,v 1.95 2009/04/11 21:22:29 amotin Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -131,7 +131,7 @@ COPTS+=		'-DMPD_VENDOR="${MPD_VENDOR}"'
 STDSRCS=        assert.c auth.c bund.c rep.c ccp.c chap.c \
 		console.c command.c ecp.c event.c fsm.c iface.c input.c \
 		ip.c ipcp.c ipv6cp.c lcp.c link.c log.c main.c mbuf.c mp.c \
-		msg.c ngfunc.c pap.c phys.c proto.c radius.c timer.c \
+		msg.c ngfunc.c pap.c phys.c proto.c radius.c radsrv.c timer.c \
 		util.c vars.c eap.c msoft.c web.c ippool.c
 
 # Add sources and flags for the various physical layer types
