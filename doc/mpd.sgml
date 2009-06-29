@@ -1,4 +1,4 @@
-<!-- $Id: mpd.sgml,v 1.21 2007/10/05 18:38:43 amotin Exp $ -->
+<!-- $Id: mpd.sgml,v 1.22 2007/10/27 11:55:46 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!DOCTYPE linuxdoc PUBLIC "-//FreeBSD//DTD linuxdoc//EN" [
@@ -22,6 +22,7 @@
 <!ENTITY gencmd SYSTEM "gencmd.sgml">
 <!ENTITY links SYSTEM "links.sgml">
 <!ENTITY authentication SYSTEM "auth.sgml">
+<!ENTITY dynauth SYSTEM "dynauth.sgml">
 <!ENTITY bundle SYSTEM "bundle.sgml">
 <!ENTITY ipcp SYSTEM "ipcp.sgml">
 <!ENTITY ipv6cp SYSTEM "ipv6cp.sgml">
@@ -109,6 +110,7 @@ all mpd features.
 	&ipv6cp;
 	&interface;
 	&authentication;
+	&dynauth;
 	&trafacct;
 	&ippool;
 	&nat;
