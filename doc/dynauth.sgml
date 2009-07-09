@@ -1,4 +1,4 @@
-<!-- $Id: dynauth.sgml,v 1.4 2009/07/08 14:46:04 amotin Exp $ -->
+<!-- $Id: dynauth.sgml,v 1.5 2009/07/09 10:44:43 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -137,7 +137,11 @@ Disconnect or CoA request, while session parameters could be used only
 with CoA. If there are several identification attributes present in request,
 session should match all of them to be affected.
 <p>
-NAS identification attributes are not supported by mpd.
+NAS identification attributes supported by mpd:
+<VERB>
+N   Name
+4   NAS-IP-Address
+</VERB>
 <p>
 Session identification attributes supported by mpd:
 <VERB>
