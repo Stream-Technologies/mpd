@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.139 2009/04/09 17:00:56 amotin Exp $
+ * $Id: radius.c,v 1.140 2009/05/13 01:45:43 amotin Exp $
  *
  */
 
@@ -1330,7 +1330,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
   char		*route;
   char		*tmpval;
   struct in_addr	ip;
-#if defined(USE_NG_BPF) && defined(USE_IPFW)
+#if defined(USE_NG_BPF) || defined(USE_IPFW)
   struct acl		**acls, *acls1;
   char		*acl, *acl1, *acl2, *acl3;
 #endif
