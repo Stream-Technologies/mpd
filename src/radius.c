@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.142 2009/07/14 10:55:13 amotin Exp $
+ * $Id: radius.c,v 1.143 2009/07/14 10:58:46 amotin Exp $
  *
  */
 
@@ -1125,6 +1125,7 @@ RadiusPutAcct(AuthData auth)
 
 #ifdef USE_NG_BPF
     if (auth->params.std_acct[0][0] == 0) {
+#endif
 	Log(LG_RADIUS2, ("[%s] RADIUS: Put RAD_ACCT_INPUT_OCTETS: %lu", 
     	    auth->info.lnkname, (long unsigned int)(auth->info.stats.recvOctets % MAX_U_INT32)));
 	Log(LG_RADIUS2, ("[%s] RADIUS: Put RAD_ACCT_INPUT_GIGAWORDS: %lu", 
@@ -1138,8 +1139,10 @@ RadiusPutAcct(AuthData auth)
 		    rad_strerror(auth->radius.handle)));
     		return (RAD_NACK);
 	}
+#ifdef USE_NG_BPF
     }
     if (auth->params.std_acct[1][0] == 0) {
+#endif
 	Log(LG_RADIUS2, ("[%s] RADIUS: Put RAD_ACCT_OUTPUT_OCTETS: %lu", 
     	    auth->info.lnkname, (long unsigned int)(auth->info.stats.xmitOctets % MAX_U_INT32)));
 	Log(LG_RADIUS2, ("[%s] RADIUS: Put RAD_ACCT_OUTPUT_GIGAWORDS: %lu", 
@@ -1153,6 +1156,7 @@ RadiusPutAcct(AuthData auth)
 		    rad_strerror(auth->radius.handle)));
     		return (RAD_NACK);
 	}
+#ifdef USE_NG_BPF
     }
     SLIST_FOREACH(ssr, &auth->info.ss.stat[0], next) {
 	char str[64];
