@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.251 2009/06/29 01:19:00 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.252 2009/07/08 14:45:59 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -17,6 +17,9 @@
 	  <item> Added Disconnect-Request extension support from RFC 3576.
 	  </item>
 	  <item> Added CoA-Request extension support from RFC 3576.
+	  </item>
+	  <item> Added `authname ...` command to choose active link by peer
+		 auth name.
 	  </item>
 	</itemize>
 	</item>
