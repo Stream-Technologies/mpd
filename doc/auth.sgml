@@ -1,4 +1,4 @@
-<!-- $Id: auth.sgml,v 1.48 2009/04/12 18:56:54 amotin Exp $ -->
+<!-- $Id: auth.sgml,v 1.49 2009/07/24 15:11:01 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -311,6 +311,10 @@ N   Name                       	   Access	 Accounting
 29  MS-Secondary-DNS-Server	-	+	-	-
 30  MS-Primary-NBNS-Server	-	+	-	-
 31  MS-Secondary-NBNS-Server	-	+	-	-
+
+    DSL Forum VSA (3561)
+1   Agent-Circuit-Id		+	-	+	-
+2   Agent-Remote-Id		+	-	+	-
 
     mpd VSA (12341)
 1   mpd-rule			-	+	-	-

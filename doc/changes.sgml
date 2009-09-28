@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.252 2009/07/08 14:45:59 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.253 2009/07/17 12:37:01 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -20,6 +20,10 @@
 	  </item>
 	  <item> Added `authname ...` command to choose active link by peer
 		 auth name.
+	  </item>
+	  <item> Added support for DSL Forum vendor-specific
+		 Circuit-ID/Remote-ID PPPoE tags and respective RFC 4679
+		 RADIUS VSA.
 	  </item>
 	</itemize>
 	</item>
