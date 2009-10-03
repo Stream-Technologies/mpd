@@ -1,4 +1,4 @@
-<!-- $Id: refs.sgml,v 1.10 2009/06/28 20:59:20 amotin Exp $ -->
+<!-- $Id: refs.sgml,v 1.11 2009/06/28 21:17:54 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -40,6 +40,8 @@
 <htmlurl url="http://www.ietf.org/rfc/rfc1990.txt" name="RFC 1990 The PPP Multilink Protocol (MP)">
 
 <htmlurl url="http://www.ietf.org/rfc/rfc1994.txt" name="RFC 1994 PPP Challenge Handshake Authentication Protocol (CHAP)">
+
+<htmlurl url="http://www.ietf.org/rfc/rfc2118.txt" name="RFC 2118 Microsoft Point-To-Point Compression (MPPC) Protocol">
 
 <htmlurl url="http://www.ietf.org/rfc/rfc2284.txt" name="RFC 2284 EAP">
 

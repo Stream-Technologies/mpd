@@ -1,4 +1,4 @@
-<!-- $Id: compression.sgml,v 1.21 2007/11/10 21:47:26 amotin Exp $ -->
+<!-- $Id: compression.sgml,v 1.22 2008/01/28 20:19:58 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -104,10 +104,14 @@ These commands configure various MPPC options.
 Enables MPPC compression. This is the only compression method supported by 
 Microsoft Windows RAS.
 
-Note: this option requires ng_mppc node compression support which is disabled
-by default as it requires some Hi/Fn proprietary files. If support is not
-detected, compression will not be negotiated. Use 'show version' command
-to get actual status.
+Note: This option requires ng_mppc node to be built with compression support,
+which is disabled by default, requiring external compressor code.
+Open-source implementation of this code, based on RFC2118, could be found
+at http://mavhome.dp.ua/MPPC/. But MPPC compression algorithm itself covered
+by US patent, so you may need to contact Hi/Fn Inc. to obtain their proprietary
+implementation.
+If kernel support is not detected, compression will not be negotiated.
+Use 'show version' command to get actual status.
 
 The default is disable.
 
