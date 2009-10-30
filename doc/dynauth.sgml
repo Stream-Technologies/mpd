@@ -1,4 +1,4 @@
-<!-- $Id: dynauth.sgml,v 1.7 2009/07/17 12:46:23 amotin Exp $ -->
+<!-- $Id: dynauth.sgml,v 1.8 2009/07/17 13:26:44 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -65,7 +65,8 @@
   server to dedicated UDP port on NAS with regular RADIUS protocol.
 
   To have this function working, mpd should be built with <em>libradius</em>
-  library, having RADIUS server functionality.
+  library, having RADIUS server functionality (FreeBSD 7/8-STABLE after
+  2009-10-30).
 
   This chapter describes commands that configure mpd's built-in RADIUS
   server. All of these commands are executed in global context.
