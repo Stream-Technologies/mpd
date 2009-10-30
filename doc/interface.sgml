@@ -1,4 +1,4 @@
-<!-- $Id: interface.sgml,v 1.25 2008/10/23 20:42:48 amotin Exp $ -->
+<!-- $Id: interface.sgml,v 1.26 2009/10/30 15:25:06 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -107,7 +107,7 @@ If up-script exit status is not 0, mpd will kill respective protocol.
 The <tt><bf>down-script</bf></tt> is called like this:
 <tscreen><tt>
 <em>script</em> <em>interface</em> <em>proto</em> <em>local-ip</em> 
-<em>remote-ip</em> <em>authname</em>
+<em>remote-ip</em> <em>authname</em> <em>peer-address</em>
 </tt></tscreen>
 
 <tag><tt>
