@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.253 2009/07/17 12:37:01 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.254 2009/09/28 11:04:19 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -24,6 +24,8 @@
 	  <item> Added support for DSL Forum vendor-specific
 		 Circuit-ID/Remote-ID PPPoE tags and respective RFC 4679
 		 RADIUS VSA.
+	  </item>
+	  <item> Peer address argument added to interface up-script.
 	  </item>
 	</itemize>
 	</item>
