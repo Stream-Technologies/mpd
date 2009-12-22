@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.18 2007/10/27 11:55:46 amotin Exp $
+# $Id: Makefile,v 1.19 2009/06/29 01:11:20 amotin Exp $
 
 .NOTPARALLEL:
 
@@ -23,7 +23,7 @@ CLEANFILES+=	version.sgml mpd.8 mpd.ps
 
 .in:
 	VERSION=`grep ^VERSION= ../src/Makefile | awk '{ print $$2 }'`; \
-	DATE=`date +'%Y-%m-%d`; \
+	DATE=`date +'%Y-%m-%d'`; \
 	sed \
 	  -e "s/@DATE@/$$DATE/g" \
 	  -e "s/@VERSION@/$$VERSION/g" \
