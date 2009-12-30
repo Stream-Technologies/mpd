@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.145 2009/09/28 11:04:19 amotin Exp $
+ * $Id: radius.c,v 1.146 2009/09/30 14:40:06 amotin Exp $
  *
  */
 
@@ -1912,6 +1912,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
 		(res != RAD_MPD_TABLE_STATIC)) {
 	      Log(LG_ERR, ("[%s] RADIUS: Duplicate acl",
 		auth->info.lnkname));
+	      free(acls1);
 	      free(acl);
 	      break;
 	    } else {
