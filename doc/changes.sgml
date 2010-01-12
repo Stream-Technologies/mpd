@@ -1,10 +1,21 @@
-<!-- $Id: changes.sgml,v 1.255 2009/10/30 15:25:05 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.256 2009/10/30 15:31:04 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
 
   <sect><heading>Change history<label id="changes"></heading>
 
+  <p>
+    Changes since version 5.4:
+    <itemize>
+	<item> New features:
+	<itemize>
+	  <item> Added `set link redial-delay ...` command.
+	  </item>
+	</itemize>
+	</item>
+    </itemize>
+  </p>
   <p>
     Changes since version 5.3 (most of this work was sponsored by
     <htmlurl url="http://ufanet.ru/" name="JSC 'Ufanet'">):
