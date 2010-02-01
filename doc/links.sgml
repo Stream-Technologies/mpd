@@ -1,4 +1,4 @@
-<!-- $Id: links.sgml,v 1.29 2009/09/07 12:59:03 amotin Exp $ -->
+<!-- $Id: links.sgml,v 1.30 2010/01/12 13:18:04 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -232,7 +232,7 @@ link.  Mpd supports MD5 style CHAP and Microsoft style CHAP versions
 1 and 2.  Mpd will prefer Microsoft CHAP over MD5 CHAP to get
 encryption keys.
 
-This option is an alias for <tt>md5-chap</tt> <tt>ms-chapv1</tt> <tt>ms-chapv2</tt>
+This option is an alias for <tt>chap-md5</tt> <tt>chap-msv1</tt> <tt>chap-msv2</tt>
 
 <tag><tt>chap-md5</tt></tag>
 
