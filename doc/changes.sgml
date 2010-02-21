@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.257 2010/01/12 14:22:41 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.258 2010/01/28 20:09:10 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -13,6 +13,8 @@
 	  <item> Added `set link redial-delay ...` command.
 	  </item>
 	  <item> Print global filters on `show iface|customer` commands.
+	  </item>
+	  <item> Added protocol/port forwarding support for NAT.
 	  </item>
 	  <item> Added utmpx support on 9-CURRENT.
 	  </item>
