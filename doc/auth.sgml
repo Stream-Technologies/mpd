@@ -1,4 +1,4 @@
-<!-- $Id: auth.sgml,v 1.50 2009/09/28 11:04:18 amotin Exp $ -->
+<!-- $Id: auth.sgml,v 1.51 2009/09/30 14:40:05 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -205,11 +205,15 @@ set radius timeout <em>seconds</em>
 
 Set the timeout for completion of RADIUS requests.
 
+The default is 5 second.
+
 <tag><tt>
 set radius retries <em>#retries</em>
 </tt></tag>
 
 Set the number of retries for RADIUS requests.
+
+The default is 3 retries.
 
 <tag><tt>
 set radius me <em>IP</em>|<em>ifname</em>|<em>hostname</em>
