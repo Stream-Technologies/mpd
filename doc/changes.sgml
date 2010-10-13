@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.259 2010/02/21 19:50:35 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.260 2010/03/01 12:21:49 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,6 +11,8 @@
 	<item> Bugfixes:
 	<itemize>
 	  <item> Fix build on older FreeBSD versions.
+	  </item>
+	  <item> Fix several memory leaks.
 	  </item>
 	</itemize>
 	</item>
