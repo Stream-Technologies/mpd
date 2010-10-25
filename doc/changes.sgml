@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.260 2010/03/01 12:21:49 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.261 2010/10/13 22:00:15 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -8,6 +8,13 @@
   <p>
     Changes since version 5.5:
     <itemize>
+	<item> Changes:
+	<itemize>
+	  <item> Remove dependency from libpdel library.
+		 Import required files into the MPD tree.
+	  </item>
+	</itemize>
+	</item>
 	<item> Bugfixes:
 	<itemize>
 	  <item> Fix build on older FreeBSD versions.
