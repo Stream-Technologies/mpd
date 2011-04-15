@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.263 2011/03/25 11:47:43 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.264 2011/03/25 12:34:53 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -29,6 +29,8 @@
 	  <item> Fix several memory leaks.
 	  </item>
 	  <item> Fix building without SYSLOG_FACILITY option.
+	  </item>
+	  <item> Fix byte order in ports in `set nat red-port`.
 	  </item>
 	</itemize>
 	</item>
