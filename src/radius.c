@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.152 2010/10/12 11:20:15 amotin Exp $
+ * $Id: radius.c,v 1.153 2010/12/29 12:13:27 amotin Exp $
  *
  */
 
@@ -1427,7 +1427,7 @@ RadiusGetParams(AuthData auth, int eap_proxy)
       case RAD_USER_NAME:
 	tmpval = rad_cvt_string(data, len);
 	/* copy it into the persistent data struct */
-	strcpy(auth->params.authname, tmpval);
+	strlcpy(auth->params.authname, tmpval, sizeof(auth->params.authname));
 	free(tmpval);
 	Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_USER_NAME: %s ",
 	  auth->info.lnkname, auth->params.authname));
