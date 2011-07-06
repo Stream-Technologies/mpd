@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.264 2011/03/25 12:34:53 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.265 2011/04/15 19:01:36 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -10,6 +10,10 @@
     <itemize>
 	<item> New features:
 	<itemize>
+	  <item> Added `set iface name ...` command.
+	  </item>
+	  <item> Added `set iface description ...` command.
+	  </item>
 	  <item> Added `set l2tp|pptp|tcp|udp resolve-once ...` command.
 		They allow to resolve peer address every time on reconnect.
 	  </item>
@@ -24,6 +28,10 @@
 	</item>
 	<item> Bugfixes:
 	<itemize>
+	  <item> Fix invoke 'set iface up|down-script' without arguments.
+	  </item>
+	  <item> Fix 'show eap' command
+	  </item>
 	  <item> Fix build on older FreeBSD versions.
 	  </item>
 	  <item> Fix several memory leaks.
