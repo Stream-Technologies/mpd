@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.265 2011/04/15 19:01:36 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.267 2011/07/06 12:56:07 dmitryluhtionov Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -10,6 +10,8 @@
     <itemize>
 	<item> New features:
 	<itemize>
+	  <item> Added `mpd-peer-ident` RADIUS arrtibute.
+	  </item>
 	  <item> Added `set iface name ...` command.
 	  </item>
 	  <item> Added `set iface description ...` command.
