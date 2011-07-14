@@ -1,4 +1,4 @@
-<!-- $Id: auth.sgml,v 1.52 2010/08/27 10:06:03 amotin Exp $ -->
+<!-- $Id: auth.sgml,v 1.53 2011/07/10 12:26:49 dmitryluhtionov Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -340,6 +340,8 @@ N   Name                       	   Access	 Accounting
 17  mpd-output-acct		-	+	-	-
 18  mpd-action			-	+	-	-
 19  mpd-peer-ident		+	-	+	-
+20  mpd-iface-name		-	+	-	-
+21  mpd-iface-descr		-	+	-	-
 154 mpd-drop-user		-	-	-	+
 </VERB>
 
@@ -370,6 +372,8 @@ ATTRIBUTE	mpd-input-acct	16	string
 ATTRIBUTE	mpd-output-acct	17	string
 ATTRIBUTE	mpd-action	18	string
 ATTRIBUTE	mpd-peer-ident	19	string
+ATTRIBUTE	mpd-iface-name	20	string
+ATTRIBUTE	mpd-iface-descr	21	string
 ATTRIBUTE	mpd-drop-user	154	integer
 
 END-VENDOR	mpd
@@ -563,6 +567,8 @@ MPD_OUTPUT_OCTETS		-	-	+	-
 MPD_OUTPUT_PACKETS		-	-	+	-
 MPD_ACTION			-	+	-	-
 MPD_DROP_USER			-	-	-	+
+MPD_IFACE_NAME			-	+	-	-
+MPD_IFACE_DESCR			-	+	-	-
 </verb>
 
 Attribute USER_PASSWORD provided in Access-Request only for PAP auth.
