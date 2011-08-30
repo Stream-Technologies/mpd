@@ -1,4 +1,4 @@
-<!-- $Id: interface.sgml,v 1.27 2009/10/30 15:31:04 amotin Exp $ -->
+<!-- $Id: interface.sgml,v 1.28 2011/07/07 13:06:13 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -31,6 +31,12 @@ set iface description [ <em>description</em> ]
 </tt></tag>
 
 This command changes interface description.
+
+<tag><tt>
+set iface group [ <em>group</em> ]
+</tt></tag>
+
+This command add interface to specific group.
 
 <tag><tt>
 set iface addrs [!]<em>local-ip</em> [!]<em>remote-ip</em>
