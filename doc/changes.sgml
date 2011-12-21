@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.268 2011/07/10 12:26:49 dmitryluhtionov Exp $ -->
+<!-- $Id: changes.sgml,v 1.273 2011/08/30 11:55:32 dmitryluhtionov Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -51,6 +51,8 @@
 	  <item> Fix building without SYSLOG_FACILITY option.
 	  </item>
 	  <item> Fix byte order in ports in `set nat red-port`.
+	  </item>
+	  <item> Fix some potential crashes because of NULL dereferences.
 	  </item>
 	</itemize>
 	</item>
