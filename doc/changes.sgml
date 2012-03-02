@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.275 2011/12/28 09:17:31 dmitryluhtionov Exp $ -->
+<!-- $Id: changes.sgml,v 1.276 2012/01/11 11:50:16 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,6 +11,9 @@
 	<item> Bugfixes:
 	<itemize>
 	  <item> Restore `show sessions` as unprivileged command.
+	  </item>
+	  <item> Fix infinite event loop when STDIN redirected to /dev/null
+		 after it recently got non-blocking mode support.
 	  </item>
 	</itemize>
 	</item>
