@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.42 2011/07/10 12:26:49 dmitryluhtionov Exp $
+ * $Id: radius.h,v 1.44 2011/08/30 11:47:02 dmitryluhtionov Exp $
  *
  */
 
@@ -125,6 +125,7 @@
   };
 
   extern const	struct cmdtab RadiusSetCmds[];
+  extern const	struct cmdtab RadiusUnSetCmds[];
 
   /* Configuration for a radius server */
   struct radiusserver_conf {
