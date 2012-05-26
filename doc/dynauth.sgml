@@ -1,4 +1,4 @@
-<!-- $Id: dynauth.sgml,v 1.9 2009/10/30 13:10:09 amotin Exp $ -->
+<!-- $Id: dynauth.sgml,v 1.10 2010/04/13 12:27:47 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -163,9 +163,11 @@ N   Name
 15  mpd-iface-index
 </VERB>
 <p>
-Session parameners attributes supported by mpd:
+Session parameters attributes supported by mpd:
 <VERB>
 N   Name
+24  State
+25  Class
 27  Session-Timeout
 28  Idle-Timeout
 85  Acct-Interim-Interval

@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.277 2012/03/02 08:26:47 amotin Exp $ -->
+<!-- $Id: changes.sgml,v 1.278 2012/03/19 08:30:45 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -11,6 +11,8 @@
 	<item> New features:
 	<itemize>
 	  <item> Added `unset radius server ...` command.
+	  </item>
+	  <item> Added `Class` CoA attribute from RFC 2865.
 	  </item>
 	</itemize>
 	</item>
