@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.279 2012/05/26 10:48:17 dmitryluhtionov Exp $ -->
+<!-- $Id: changes.sgml,v 1.280 2012/05/31 20:08:02 dmitryluhtionov Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -455,7 +455,7 @@
 	  </item>
 	  <item> MPPC related options moved from 'set ccp' to the new 'set mppc' command.
 	  </item>
-	  <item> 'set bundle retry' commend renamed to 'set bundle fsm-timeout'.
+	  <item> 'set bundle retry' command renamed to 'set bundle fsm-timeout'.
 	  </item>
 	  <item> Number of auth retries increased to 5.
 	  </item>
