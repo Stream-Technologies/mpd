@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.280 2012/05/31 20:08:02 dmitryluhtionov Exp $ -->
+<!-- $Id: changes.sgml,v 1.281 2012/09/14 12:17:47 dmitryluhtionov Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -10,6 +10,8 @@
     <itemize>
 	<item> New features:
 	<itemize>
+	  <item> Added ability to make interface description from template.
+	  </item>
 	  <item> Added global `qthreshold` option.
 	  </item>
 	  <item> Added `unset radius server ...` command.
