@@ -1,4 +1,4 @@
-<!-- $Id: invoke.sgml,v 1.7 2007/10/05 17:36:02 amotin Exp $ -->
+<!-- $Id: invoke.sgml,v 1.8 2007/11/10 15:34:41 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -82,6 +82,13 @@
 
 	Mpd normally logs via <tt>syslog(3)</tt> with the identifier
 	<tt>mpd</tt>. This option allows you to change that identifier.
+
+	<tag><tt>
+	-m  --pam-service <em>service</em>
+	</tt></tag>
+
+	Mpd normally invoke <tt>pam(3)</tt> with the service
+	<tt>mpd</tt>. This option allows you to change that service.
 
 	<tag><tt>
 	-v  --version
