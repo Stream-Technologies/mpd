@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.107 2012/01/11 11:50:16 amotin Exp $
+# $Id: Makefile,v 1.108 2012/06/03 19:16:19 dmitryluhtionov Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -13,6 +13,7 @@ BINDIR?=		${PREFIX}/sbin
 VERSION=		5.7a
 NOMAN=
 NO_MAN=
+
 
 # Default configuration directory
 
@@ -58,17 +59,22 @@ USE_AUTH_PAM=		yes
 USE_AUTH_SYSTEM=	yes
 
 # Build with builtin libpdel
-
 NOLIBPDEL=		yes
 
-# Build without builtin web server
-
+# Build without builtin web server.
 #NOWEB=			yes
 
 # Set syslog logging facility. Change LOG_DAEMON to whatever you like.
-
+# Comment this line disable syslog (3) support
 SYSLOG_FACILITY=	LOG_DAEMON
+
+# Print wide protocol names instead of short names.
+# Comment this line, to save about 10 KB space
 COPTS+=			-DPROTO_NAME_LIST
+
+# Reduce some internal structures size to save more memory
+# This is to limit amount of active sessions
+SMALL_SYSTEM=		yes
 
 # Compiler & linker flags
 
