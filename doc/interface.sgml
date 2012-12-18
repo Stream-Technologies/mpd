@@ -1,4 +1,4 @@
-<!-- $Id: interface.sgml,v 1.28 2011/07/07 13:06:13 amotin Exp $ -->
+<!-- $Id: interface.sgml,v 1.29 2011/08/30 11:47:02 dmitryluhtionov Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -31,6 +31,22 @@ set iface description [ <em>description</em> ]
 </tt></tag>
 
 This command changes interface description.
+
+Template may contain conversion specifications:
+
+<verb>
+%% expands to single % sign;
+%a for interface local address;
+%A for peer address;
+%i for system interface index;
+%I for interface name;
+%l for name of bundle's first link
+%M for peer MAC address of bundle's first link
+%S for interface status (DoD/UP/DOWN)
+%t for type of bundle's first link (pppoe, pptp, l2tp etc.)
+%u for self auth name (or dash if self auth name not used)
+%U for peer auth name (or dash if peer has not authenticated)
+</verb>
 
 <tag><tt>
 set iface group [ <em>group</em> ]
