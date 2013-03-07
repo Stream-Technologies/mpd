@@ -1,4 +1,4 @@
-<!-- $Id: nat.sgml,v 1.4 2007/11/10 21:47:26 amotin Exp $ -->
+<!-- $Id: nat.sgml,v 1.5 2010/02/21 19:50:36 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -52,6 +52,24 @@ set nat red-port <em>proto</em> <em>alias_addr</em> <em>alias_port</em> <em>loca
 Redirect incoming connections arriving to given public (alias) address and port,
 (optionally from specified remote address)
 to a host and port of a machine on the local network.
+
+<tag><tt>
+unset nat red-addr <em>alias_addr</em> <em>local_addr</em>
+</tt></tag>
+
+Deletes specific <em>set nat red-addr ...</em> rule.
+
+<tag><tt>
+unset nat red-proto <em>proto</em> <em>alias_addr</em> <em>local_addr</em> [ <em>remote_addr</em> ]
+</tt></tag>
+
+Deletes specific <em>set nat red-proto ...</em> rule.
+
+<tag><tt>
+unset nat red-port <em>proto</em> <em>alias_addr</em> <em>alias_port</em> <em>local_addr</em> <em>local_port</em> [ <em>remote_addr</em> <em>remote_port</em> ]
+</tt></tag>
+
+Deletes specific <em>set nat red-port ...</em> rule.
 
 <tag><tt>set nat enable <em>option ...</em> </tt></tag><p>
 <tag><tt>set nat disable <em>option ...</em> </tt></tag><p>

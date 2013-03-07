@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.280 2012/05/31 20:08:02 dmitryluhtionov Exp $ -->
+<!-- $Id: changes.sgml,v 1.283 2012/12/18 15:39:47 dmitryluhtionov Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -14,6 +14,8 @@
 	  </item>
 	  <item> Added `unset radius server ...` command.
 	  </item>
+	  <item> Added `unset nat ...` command.
+	  </item>
 	  <item> Added `Class` CoA attribute from RFC 2865.
 	  </item>
 	  <item> New command 'show netflow' added.
@@ -22,7 +24,7 @@
 	</item>
 	<item> Changes:
 	<itemize>
-	  <item> NAT rules may be added without shutdowning interface.
+	  <item> NAT rules may be added/deleted without shutdowning interface.
 	  </item>
 	  <item> NetFlow can export IPv6 data.
 	  </item>
