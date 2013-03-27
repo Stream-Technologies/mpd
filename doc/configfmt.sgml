@@ -1,4 +1,4 @@
-<!-- $Id: configfmt.sgml,v 1.10 2007/10/27 12:11:18 amotin Exp $ -->
+<!-- $Id: configfmt.sgml,v 1.11 2008/01/06 09:58:43 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -47,7 +47,7 @@ client:
 	create bundle template B1
 
 	create link static L1 modem
-	set modem device /dev/cuad0
+	set modem device /dev/cuau0
 	set modem speed 115200
 	set modem script DialPeer
 	set modem idle-script AnswerCall
