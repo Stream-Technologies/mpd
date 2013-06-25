@@ -1,4 +1,4 @@
-<!-- $Id: pppoe.sgml,v 1.9 2008/01/31 12:08:47 amotin Exp $ -->
+<!-- $Id: pppoe.sgml,v 1.10 2009/09/28 11:04:19 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -47,6 +47,15 @@ set pppoe acname <em>name</em>
 
 Set name of this PPPoE access concentrator to be sent to clients.
 If not specified, local hostname will be used.
+
+<tag><tt>
+set pppoe mac-format <em>format</em>
+</tt></tag>
+
+Set radius server attribute 31 mac format as `unix-like` - aa:bb:cc:dd:ee:ff,
+or `unformatted` - aabbccddeeff.
+
+The default is "unformatted".
 
 </descrip>
 
