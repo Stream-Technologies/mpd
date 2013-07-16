@@ -1,4 +1,4 @@
-<!-- $Id: l2tp.sgml,v 1.14 2008/01/06 01:18:31 amotin Exp $ -->
+<!-- $Id: l2tp.sgml,v 1.15 2011/03/25 11:47:43 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -76,6 +76,14 @@ unique hostname supported for every pair of listening IP (set l2tp self ...)
 and peer ip (set l2tp peer ...).
 If several hostnames defined, only the first matching will be used for all
 incoming connections.
+
+<tag><tt>
+set l2tp peermask <em>mask</em>
+</tt></tag>
+
+Check peer hostname, related to wildcard <tt><em>mask</em></tt>.
+Wildcard can contain any shell-like mask, such as "*.myhost.com"
+Peer can set self hostname with <tt><em>set l2tp hostname</em></tt> command.
 
 <tag><tt>
 set l2tp secret <em>secret</em>
