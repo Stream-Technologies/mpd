@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.111 2013/03/27 12:36:50 dmitryluhtionov Exp $
+# $Id: Makefile,v 1.112 2013/06/25 11:50:27 dmitryluhtionov Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -294,6 +294,9 @@ COPTS+=         -DUSE_IPFW
 COPTS+=         -DUSE_FETCH
 LDADD+=		-lfetch
 DPADD+=		${LIBFETCH}
+.endif
+.if defined ( SMALL_SYSTEM )
+COPTS+=         -DSMALL_SYSTEM
 .endif
 
 # Add in required support files and libraries
