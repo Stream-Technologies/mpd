@@ -1,4 +1,4 @@
-<!-- $Id: console.sgml,v 1.8 2007/10/28 11:18:05 amotin Exp $ -->
+<!-- $Id: console.sgml,v 1.9 2007/11/10 21:47:26 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -57,6 +57,12 @@ The options available for the console are:
 This options enables writing of logging messages to the current console.
 
 The default is enable for stdout and disable for the rest.
+
+<tag><tt>auth</tt></tag>
+
+This options enables autorized login to console. This is a read-only value.
+
+The default is enable.
 
 </descrip>
 
