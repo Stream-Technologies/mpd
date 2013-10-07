@@ -1,4 +1,4 @@
-<!-- $Id: interface.sgml,v 1.29 2011/08/30 11:47:02 dmitryluhtionov Exp $ -->
+<!-- $Id: interface.sgml,v 1.31 2012/12/21 09:47:13 dmitryluhtionov Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -186,6 +186,13 @@ set up proxy ARP for the remote machine:
 set iface enable proxy-arp
 <newline>set ipcp ranges 192.168.1.10/32 192.168.1.20/32
 </tt></tscreen>
+
+The default is disable.
+
+<tag><tt>keep-timeout</tt></tag>
+
+When this option is enabled, we are not clear ``session timeout''
+counter. This is useful together with CoA requests.
 
 The default is disable.
 
