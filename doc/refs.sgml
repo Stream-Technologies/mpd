@@ -1,4 +1,4 @@
-<!-- $Id: refs.sgml,v 1.11 2009/06/28 21:17:54 amotin Exp $ -->
+<!-- $Id: refs.sgml,v 1.12 2009/10/03 10:23:43 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -30,8 +30,6 @@
 <htmlurl url="http://www.ietf.org/rfc/rfc1969.txt" name="RFC 1969 The PPP DES Encryption Protocol (DESE)">
 
 <htmlurl url="http://www.ietf.org/rfc/rfc1973.txt" name="RFC 1973 PPP in Frame Relay">
-
-<htmlurl url="http://www.ietf.org/rfc/rfc1974.txt" name="RFC 1974 PPP Stac LZS Compression Protocol">
 
 <htmlurl url="http://www.ietf.org/rfc/rfc1978.txt" name="RFC 1978 PPP Predictor Compression Protocol">
 
