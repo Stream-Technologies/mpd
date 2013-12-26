@@ -1,4 +1,4 @@
-<!-- $Id: int-auth.sgml,v 1.3 2003/08/10 18:40:32 mbretter Exp $ -->
+<!-- $Id: int-auth.sgml,v 1.4 2007/05/28 14:40:13 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -37,7 +37,7 @@ use it! MS-CHAPv2 uses a peer challenge and a server
 challenge and uses SHA1 as hashing algorithm, so it's much more
 secure then MS-CHAPv1. MS-CHAPv2 requires the NT-Hash be available.
 
-Usualy UNIX systems have a different non-revertable hashing
+Usually UNIX systems have a different non-revertable hashing
 algorithm for passwords, therefore it is not possible to use the
 traditional UNIX password database if you want to use any
 CHAP algorithm, with the exception that FreeBSD versions 5.1 and
