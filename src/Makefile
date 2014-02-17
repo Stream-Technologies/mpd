@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.112 2013/06/25 11:50:27 dmitryluhtionov Exp $
+# $Id: Makefile,v 1.113 2013/10/07 13:16:20 dmitryluhtionov Exp $
 #
 # Makefile for mpd, multi-link PPP daemon for FreeBSD
 #
@@ -117,7 +117,6 @@ LDADD+=		-L${PREFIX}/lib
 LDADD+=		-lpdel
 LDADD+=		-lexpat
 .endif
-LDADD+=		-lssl
 
 MPD_VERSION!=	echo -n "${VERSION} (`id -un`@`uname -n` `LC_TIME=C date +'%R %v'`)"
 
@@ -154,6 +153,7 @@ STDSRCS=        assert.c auth.c bund.c rep.c ccp.c chap.c \
 COPTS+=		-DNOWEB
 .else
 STDSRCS+=	web.c
+LDADD+=		-lssl
 .endif
 
 .if defined ( NOLIBPDEL )
@@ -300,11 +300,8 @@ COPTS+=         -DSMALL_SYSTEM
 .endif
 
 # Add in required support files and libraries
-
-.if defined ( NEED_DES )
 LDADD+=		-lcrypto
 DPADD+=		${LIBCRYPTO}
-.endif
 
 # Now add standard sources
 
