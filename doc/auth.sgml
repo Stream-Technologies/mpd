@@ -1,4 +1,4 @@
-<!-- $Id: auth.sgml,v 1.55 2011/08/30 11:47:02 dmitryluhtionov Exp $ -->
+<!-- $Id: auth.sgml,v 1.56 2013/03/07 08:14:18 dmitryluhtionov Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -204,6 +204,13 @@ unset radius server <em>name</em> [ <em>auth-port</em> [ <em>acct-port</em> ]]
 </tt></tag>
 
 Deletes cpecific RADIUS server from pool.
+
+<tag><tt>
+set radius src-addr <em>ipaddr</em>
+</tt></tag>
+
+Configure IP address on the multihomed host that is used as a source address
+for all requests.
 
 <tag><tt>
 set radius timeout <em>seconds</em>

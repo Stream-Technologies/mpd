@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.44 2011/08/30 11:47:02 dmitryluhtionov Exp $
+ * $Id: radius.h,v 1.45 2012/03/19 08:30:45 amotin Exp $
  *
  */
 
@@ -140,6 +140,9 @@
   struct radiusconf {
     int		radius_timeout;
     int		radius_retries;
+#ifdef HAVE_RAD_BIND
+    struct	in_addr src_addr;
+#endif
     struct	in_addr radius_me;
     struct	u_addr radius_mev6;
     char	*identifier;
