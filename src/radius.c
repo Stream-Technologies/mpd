@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.c,v 1.164 2013/10/17 14:57:23 dmitryluhtionov Exp $
+ * $Id: radius.c,v 1.165 2014/02/25 13:50:14 dmitryluhtionov Exp $
  *
  */
 
@@ -305,6 +305,7 @@ RadStat(Context ctx, int ac, char *av[], void *arg)
   Printf("\tClass          : 0x%s\r\n", buf);
   Freee(buf);
   
+  Printf("\tFilter Id      : %s\r\n", (a->params.filter_id ? a->params.filter_id : ""));
   return (0);
 }
 
@@ -1570,10 +1571,15 @@ RadiusGetParams(AuthData auth, int eap_proxy)
         break;
 
       case RAD_FILTER_ID:
+	Freee(auth->params.filter_id);
+	auth->params.filter_id = NULL;
+	if (len == 0)
+	    break;
 	tmpval = rad_cvt_string(data, len);
-	Log(LG_RADIUS2, ("[%s] RADIUS: Get (RAD_FILTER_ID: %s)",
-	  auth->info.lnkname, tmpval));
+	auth->params.filter_id = Mdup(MB_AUTH, tmpval, len + 1);
 	free(tmpval);
+	Log(LG_RADIUS2, ("[%s] RADIUS: Get RAD_FILTER_ID: %s",
+	  auth->info.lnkname, auth->params.filter_id));
         break;
 
       case RAD_SERVICE_TYPE:
