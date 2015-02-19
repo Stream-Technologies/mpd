@@ -1,4 +1,4 @@
-<!-- $Id: changes.sgml,v 1.296 2014/02/25 15:41:57 dmitryluhtionov Exp $ -->
+<!-- $Id: changes.sgml,v 1.300 2015/02/19 14:15:17 dmitryluhtionov Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -33,7 +33,7 @@
 	  </item>
 	  <item> Added `Filter-Id` RADIUS attribute.
 	  </item>
-	  <item> Added support for Backtrace Access Library
+	  <item> Added support for Backtrace Access Library.
 	  </item>
 	</itemize>
 	</item>
