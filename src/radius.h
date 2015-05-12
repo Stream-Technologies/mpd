@@ -1,7 +1,7 @@
 /*
  * See ``COPYRIGHT.mpd''
  *
- * $Id: radius.h,v 1.45 2012/03/19 08:30:45 amotin Exp $
+ * $Id: radius.h,v 1.46 2014/02/25 13:50:14 dmitryluhtionov Exp $
  *
  */
 
@@ -85,6 +85,10 @@
 
   #ifndef RAD_MAX_ATTR_LEN
   #define RAD_MAX_ATTR_LEN 253
+  #endif
+
+  #ifndef RAD_FRAMED_IPV6_ADDRESS
+  #define RAD_FRAMED_IPV6_ADDRESS 168
   #endif
 
   /* for mppe-keys */
