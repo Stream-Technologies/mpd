@@ -9,7 +9,7 @@
 # in at the console. Lines without padding are labels. Lines
 # starting with a "#" are comments.
 #
-# $Id: mpd.conf.sample,v 1.47 2012/12/18 15:39:47 dmitryluhtionov Exp $
+# $Id: mpd.conf.sample,v 1.48 2014/04/14 07:00:44 dmitryluhtionov Exp $
 #
 #################################################################
 
@@ -278,6 +278,11 @@ pptp_client:
 #
 
 	create bundle static B1
+	set bundle enable compression
+	set ccp yes mppc
+	set mppc no e40
+	set mppc yes e128
+	set mppc yes stateless
 	set iface route default
 	set ipcp ranges 0.0.0.0/0 0.0.0.0/0
 # Enable network Address Translation (NAT)
