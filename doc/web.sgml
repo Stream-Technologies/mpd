@@ -1,4 +1,4 @@
-<!-- $Id: web.sgml,v 1.5 2007/11/10 21:47:26 amotin Exp $ -->
+<!-- $Id: web.sgml,v 1.6 2007/12/29 20:17:13 amotin Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -63,6 +63,8 @@ The default is enable.
 You can send any set of command allowed by privileges via WEB server for mpd
 infrastructure integration. Depending on URL used mpd supports two response
 formats: text/html (/cmd?command1&...) and text/plain (/bincmd?command1&...).
+Also you can see output `show summary` command in JSON format, typing `/json`
+in URL.
 
 </p>
 
