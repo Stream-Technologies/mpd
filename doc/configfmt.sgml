@@ -1,4 +1,4 @@
-<!-- $Id: configfmt.sgml,v 1.11 2008/01/06 09:58:43 amotin Exp $ -->
+<!-- $Id: configfmt.sgml,v 1.12 2013/03/27 13:54:42 dmitryluhtionov Exp $ -->
 <!-- mpd netgraph enabled user mode PPP daemon -->
 
 <!-- <!DOCTYPE linuxdoc PUBLIC '-//FreeBSD//DTD linuxdoc//EN'> -->
@@ -6,7 +6,7 @@
   <sect><heading>Configuration file format<label id="configfmt"></heading>
 
 <p>
-Mpd uses four different configuration files when it executes. These files
+Mpd uses three different configuration files when it executes. These files
 are described below.
 
 <sect1><heading>General properties</heading>
@@ -153,5 +153,3 @@ in the script.
 See <ref id="chat" name="Chat Scripting">
 for a complete decscription of chat scripting.
 </p>
-
-
